@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Kseniya Efremova](https://up.htmlacademy.ru/adaptive/21/user/1469483).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Баранков] (https://htmlacademy.ru/profile/id518169).
 
 ---
 
