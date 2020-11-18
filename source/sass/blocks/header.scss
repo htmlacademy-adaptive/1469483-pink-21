@@ -1,0 +1,26 @@
+.page-header {
+  background: #283645;
+  color: $light-on-dark-color;
+}
+
+// .page-header__logo {
+//   position: absolute;
+//   left: 0;
+//   top: 0;
+// }
+
+.main-nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav__item a {
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: $light-on-dark-color;
+}

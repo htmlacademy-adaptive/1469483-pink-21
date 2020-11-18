@@ -1,0 +1,44 @@
+.price__wrapper {
+  background-color: $bg-color-block;
+}
+
+.price__list {
+  list-style: none;
+}
+
+.price__header-wrapper {
+  background-color: #283645;
+  color: $light-on-dark-color;
+}
+
+.price__header {
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $light-on-dark-color;
+}
+
+.price__cost {
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $light-on-dark-color;
+}
+
+.price__name {
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $main-header-text-color;
+}

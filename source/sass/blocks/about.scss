@@ -1,0 +1,38 @@
+.about__items {
+  background-color: $bg-color-block;
+  background-image: url("../../img/index-about-iphone-screen.png"), url("../../img/index-about-iphone.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.about__info-text {
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  color: $main-header-text-color;
+  padding: 0;
+  margin: 0;
+}
+
+.about__items-header {
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: $subtitle-text-color;
+}
+
+.about__items-text {
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: $main-header-text-color;
+}

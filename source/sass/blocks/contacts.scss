@@ -1,0 +1,40 @@
+
+
+.contacts__text {
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  color: $main-header-text-color;
+  padding: 0;
+  margin: 0;
+}
+
+.contacts__item {
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: $main-header-text-color;
+  padding: 0;
+  margin: 0;
+}
+
+.contacts__phone,
+.contacts__mail,
+.contacts__addres {
+  display: block;
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  color: #d22856;
+  padding: 0;
+  margin: 0 auto;
+}
