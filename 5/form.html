@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
+  <base href="https://htmlacademy-adaptive.github.io/1469483-pink-21/5/">
+</head>
+
+<body class="page__body">
+  <header class="page-header">
+    <a class="page-header__logo" href="#">Pink</a>
+    <nav class="main-nav">
+      <button class="page-header__menu-button" type="button">
+        <span>Меню</span>
+      </button>
+      <div>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="">Html Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <h1 class="form-header">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    <section class="forms">
+      <div class="forms__wrapper">
+        <form action="https://echo.htmlacademy.ru" method="POST">
+          <fieldset class="forms__user">
+            <legend class="visually-hidden">ФИО</legend>
+            <p class="forms__user-family">
+              <label class="forms__user-header" for="user-family">Фамилия:</label>
+              <input class="forms__user-contains" id="user-family" type="text" placeholder="Укажите фамилию *" required>
+            </p>
+            <p class="forms__user-name">
+              <label class="forms__user-header" for="user-name">Имя:</label>
+              <input class="forms__user-contains" id="user-name" type="text" placeholder="Введите ваше имя *" required>
+            </p>
+            <p class="forms__user-patronymic">
+              <label class="forms__user-header" for="user-patronymic">Отчество:</label>
+              <input class="forms__user-contains" id="user-patronymic" type="text" placeholder="Ну и отчество тоже">
+            </p>
+          </fieldset>
+          <fieldset class="forms__progress">
+            <legend class="forms__header">Ваши безбашенные
+              достижения в путешествии</legend>
+            <div class="progress">
+              <ul class="progress__list">
+                <li class="progress__item">
+                  <input class="visually-hidden progress__checkbox" id="selfie" name="Сделал селфи с акулой"
+                    type="checkbox" checked>
+                  <label class="forms__input-names" for="selfie">Сделал селфи с акулой</label>
+                </li>
+                <li class="progress__item">
+                  <input class="visually-hidden progress__checkbox" id="burnt" name="Обгорел на пляже" type="checkbox"
+                    checked>
+                  <label class="forms__input-names" for="burnt">Обгорел на пляже</label>
+                </li>
+                <li class="progress__item">
+                  <input class="visually-hidden progress__checkbox" id="chuck" name="Видел Чака Норриса"
+                    type="checkbox">
+                  <label class="forms__input-names" for="chuck">Видел Чака Норриса</label>
+                </li>
+                <li class="progress__item">
+                  <input class="visually-hidden progress__checkbox" id="souvenir" name="Накупил сувениров"
+                    type="checkbox">
+                  <label class="forms__input-names" for="souvenir">Накупил сувениров</label>
+                </li>
+                <li class="progress__item">
+                  <input class="visually-hidden progress__checkbox" id="tower" name="Удержал башню" type="checkbox"
+                    checked>
+                  <label for="tower">Удержал башню</label>
+                </li>
+                <li class="progress__item">
+                  <input class="visually-hidden progress__checkbox" id="hotel" name="Разгромил отель" type="checkbox">
+                  <label class="forms__input-names" for="hotel">Разгромил отель</label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+          <fieldset class="forms__contacts">
+            <legend class="visually-hidden">Контакты</legend>
+            <p class="forms__contacts-phone">
+              <label class="forms__user-header" for="user-family">Номер телефона</label>
+              <input class="forms_user-contains" id="user-family" type="tel" placeholder="Номер, пожалуйста">
+            </p>
+            <p class="forms_contacts-mail">
+              <label class="forms__user-header" for="user-name">Адрес почты</label>
+              <input class="forms__user-contains" id="user-name" type="email" placeholder="Введите почту *" required>
+            </p>
+          </fieldset>
+          <fieldset class="forms__platforms">
+            <legend class="forms__header">С каким приложением
+              путешествовали?</legend>
+            <div class="platforms">
+              <ul class="platforms__list">
+                <li class="platforms__item">
+                  <input class="visually-hidden platforms__radio" id="ios" name="platform" value="Ios" type="radio"
+                    checked>
+                  <label class="forms__input-names" for="ios">Pink для iOS</label>
+                </li>
+                <li class="platforms__item">
+                  <input class="visually-hidden platforms__radio" id="android" name="platform" value="Android"
+                    type="radio">
+                  <label class="forms__input-names" for="android">Pink на Android</label>
+                </li>
+                <li class="platforms__item">
+                  <input class="visually-hidden platforms__radio" id="windows" name="platform" value="Windows"
+                    type="radio">
+                  <label class="forms__input-names" for="windows">Windows Phone</label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+          <fieldset class="forms__emotion">
+            <legend class="forms__header">Опишите свои эмоции</legend>
+            <input class="forms__emotion-discription" type="text"
+              placeholder="Можно прям в красках, не стесняясь в выражениях">
+          </fieldset>
+          <button class="forms__button" type="submit">Отправить форму</button>
+        </form>
+        <p class="forms__rules"><span>*</span> — обязательные поля</p>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <h2 class="page-footer__logo">Pink</h2>
+      <div class="page-footer__socials">
+        <div class="socials">
+          <a class="socials__item socials__item--twitter" href="#"></a>
+          <a class="socials__item socials__item-item--fb" href="#"></a>
+          <a class="socials__item socials__item--youtube" href="#"></a>
+        </div>
+      </div>
+      <p class="page-footer__develop">Разработано</p>
+    </div>
+  </footer>
+</body>
+
+</html>
