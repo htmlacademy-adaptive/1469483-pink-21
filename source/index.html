@@ -4,11 +4,14 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body">
   <header class="page-header">
-    <a class="page-header__logo" href="#">Pink</a>
+    <a class="page-header__logo" href="#">
+      <img src="img/index-pink-head.png" alt="PINK">
+    </a>
     <nav class="main-nav">
       <button class="page-header__menu-button" type="button">
         <span>Меню</span>
@@ -35,20 +38,19 @@
     <section class="promo">
       <div class="promo__wrapper">
         <h2 class="promo__header">Взгляните на жизнь иначе!</h2>
-        <img src="https://via.placeholder.com/150x150" alt="телефон в руке" width="150" height="150">
         <button class="promo__download-button" type="button">Скачать приложение</button>
         <div class="promo__platforms">
           <a href="#">
-            <img src="https://via.placeholder.com/150x150" alt="ios" width="47" height="56">
+            <img src="img/index-apple-logo.png" alt="ios" width="47" height="56">
           </a>
           <a href="#">
-            <img src="https://via.placeholder.com/150x150" alt="android" width="43" height="47">
+            <img src="img/index-android-logo.png" alt="android" width="43" height="47">
           </a>
           <a href="#">
-            <img src="https://via.placeholder.com/150x150" alt="microsoft" width="44" height="41">
+            <img src="img/index-microsoft-logo.png" alt="microsoft" width="44" height="41">
           </a>
           <p class="promo__description">
-            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+            Доступно для iPhone, iPad, Android,<br>Windows Phone, OS X, Windows 8
           </p>
         </div>
       </div>
@@ -112,56 +114,62 @@
       <div class="price__wrapper slider">
         <ul class="price__list">
           <li class="price__list-item slider__item">
-            <h3 class="price__header">База</h3>
-            <p class="price__cost">1,99 USD</p>
+            <div class="price__header-wrapper">
+              <h3 class="price__header">База</h3>
+              <p class="price__cost">1,99 USD</p>
+            </div>
             <dl class="price__name-wrapper">
               <dt class="price__name">Розовый фильтр</dt>
               <dd class="price__choice">
-                <img src="https://via.placeholder.com/150x150" alt="yes" width="27" height="27">
+                <img src="img/price-yes.png" alt="yes" width="27" height="27">
               </dd>
               <dt class="price__name">Смайлики</dt>
               <dd class="price__choice">
-                <img src="https://via.placeholder.com/150x150" alt="no" width="27" height="27">
+                <img src="img/price-no.png" alt="no" width="27" height="27">
               </dd>
               <dt class="price__name">Комментарии</dt>
               <dd class="price__choice">
-                <img src="https://via.placeholder.com/150x150" alt="no" width="27" height="27">
+                <img src="img/price-no.png" alt="no" width="27" height="27">
               </dd>
             </dl>
           </li>
           <li class="price__list-item slider__item">
-            <h3 class="price__header">Стандарт</h3>
-            <p class="price__cost">3,99 USD</p>
+            <div class="price__header-wrapper">
+              <h3 class="price__header">Стандарт</h3>
+              <p class="price__cost">3,99 USD</p>
+            </div>
             <dl class="price__name-wrapper">
               <dt class="price__name">Розовый фильтр</dt>
               <dd class="price__choice">
-                <img src="https://via.placeholder.com/150x150" alt="yes" width="27" height="27">
+                <img src="img/price-yes.png" alt="yes" width="27" height="27">
               </dd>
               <dt class="price__name">Смайлики</dt>
               <dd class="price__choice">
-                <img src="https://via.placeholder.com/150x150" alt="yes" width="27" height="27">
+                <img src="img/price-yes.png" alt="yes" width="27" height="27">
               </dd>
               <dt class="price__name">Комментарии</dt>
               <dd class="price__choice">
-                <img src="https://via.placeholder.com/150x150" alt="no" width="27" height="27">
+                <img src="img/price-no.png" alt="no" width="27" height="27">
               </dd>
             </dl>
           </li>
           <li class="price__list-item slider__item">
-            <h3 class="price__header">Анлим</h3>
-            <p class="price__cost">9,99 USD</p>
+            <div class="price__header-wrapper">
+              <h3 class="price__header">Анлим</h3>
+              <p class="price__cost">9,99 USD</p>
+            </div>
             <dl class="price__name-wrapper">
               <dt class="price__name">Розовый фильтр</dt>
               <dd class="price__choice">
-                <img src="https://via.placeholder.com/150x150" alt="yes" width="27" height="27">
+                <img src="img/price-yes.png" alt="yes" width="27" height="27">
               </dd>
               <dt class="price__name">Смайлики</dt>
               <dd class="price__choice">
-                <img src="https://via.placeholder.com/150x150" alt="yes" width="27" height="27">
+                <img src="img/price-yes.png" alt="yes" width="27" height="27">
               </dd>
               <dt class="price__name">Комментарии</dt>
               <dd class="price__choice">
-                <img src="https://via.placeholder.com/150x150" alt="yes" width="27" height="27">
+                <img src="img/price-yes.png" alt="yes" width="27" height="27">
               </dd>
             </dl>
           </li>
@@ -178,31 +186,33 @@
         <h2 class="visually-hidden">Контакты</h2>
         <p class="contacts__text">Остались вопросы?
           Свяжитесь с нами!</p>
-        <p class="contacts__item">Звоните:
-          <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
-        </p>
-        <p class="contacts__item">Пишите:
-          <a class="contacts__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </p>
-        <p class="contacts__item">Приезжайте в гости:
-          <span class="contacts__addres">
-            ул. Большая
-            Конюшенная, 19/8
-          </span>
-        </p>
-        <img src="https://via.placeholder.com/150x150" alt="map" width="" height="">
+        <p class="contacts__item">Звоните:</p>
+        <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
+        <p class="contacts__item">Пишите:</p>
+        <a class="contacts__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        <p class="contacts__item">Приезжайте в гости:</p>
+        <span class="contacts__addres">
+          ул. Большая
+          Конюшенная, 19/8
+        </span>
+        <div class="contacts__map">
+          <img class="contacts__map-map" src="img/index-map.png" alt="map" width="" height="">
+        </div>
+        <div class="contacts__map-marker">
+          <img class="contacts__map-marker-marker" src="img/index-map-marker.png" alt="map-marker" width="" height="">
+        </div>
       </div>
     </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <h2 class="page-footer__logo">Pink</h2>
+      <a class="page-footer__logo" href="#">
+        <img src="img/index-logo-footer.png" alt="Pink">
+      </a>
       <div class="page-footer__socials">
-        <div class="socials">
-          <a class="socials__item socials__item--twitter" href="#"></a>
-          <a class="socials__item socials__item-item--fb" href="#"></a>
-          <a class="socials__item socials__item--youtube" href="#"></a>
-        </div>
+        <a class="socials__item socials__item--twitter" href="#"></a>
+        <a class="socials__item socials__item-item--fb" href="#"></a>
+        <a class="socials__item socials__item--youtube" href="#"></a>
       </div>
       <p class="page-footer__develop">Разработано</p>
     </div>

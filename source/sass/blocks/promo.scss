@@ -1,0 +1,43 @@
+.promo__wrapper {
+  background: #1d2631;
+  color: $light-on-dark-color;
+  background-image: url("../img/index-phone.png"), url("../img/index-screen.png"), url("../img/index-back-mobile.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.promo__header {
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+}
+
+.promo__download-button {
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  border: 3px solid #ffffff;
+  border-radius: 29px;
+  background: #1d2631;
+  color: $light-on-dark-color;
+  padding-left: 58px;
+  padding-top: 21px;
+  padding-right: 59px;
+  padding-bottom: 21px;
+  outline: none;
+}
+
+.promo__description {
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+}
