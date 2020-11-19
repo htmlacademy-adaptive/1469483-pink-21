@@ -1,0 +1,258 @@
+body {
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff"), url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff"), url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff2"); }
+
+.page-body {
+  background-color: #ffffff;
+  font-family: "Open Sans", "PT Sans", sans-serif; }
+
+.page-header {
+  background: #283645;
+  color: #ffffff; }
+
+.main-nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.main-nav__item a {
+  font-family: "Open Sans", "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #ffffff; }
+
+.promo__wrapper {
+  background: #1d2631;
+  color: #ffffff;
+  background-image: url("../../img/index-phone.png"), url("../../img/index-screen.png"), url("../../img/index-back-mobile.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%; }
+
+.promo__header {
+  font-family: "Open Sans", "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center; }
+
+.promo__download-button {
+  font-family: "Open Sans", "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  border: 3px solid #ffffff;
+  border-radius: 29px;
+  background: #1d2631;
+  color: #ffffff;
+  padding-left: 58px;
+  padding-top: 21px;
+  padding-right: 59px;
+  padding-bottom: 21px;
+  outline: none; }
+
+.promo__description {
+  font-family: "Open Sans", "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center; }
+
+.about__items {
+  background-color: #f2f2f2;
+  background-image: url("../../img/index-about-iphone-screen.png"), url("../../img/index-about-iphone.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%; }
+
+.about__info-text {
+  font-family: "Open Sans", "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  color: #283645;
+  padding: 0;
+  margin: 0; }
+
+.about__items-header {
+  font-family: "Open Sans", "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000; }
+
+.about__items-text {
+  font-family: "Open Sans", "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #283645; }
+
+.reviews__list {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.reviews__header {
+  font-family: "Open Sans", "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+  padding: 0;
+  margin: 0; }
+
+.reviews__text {
+  font-family: "Open Sans", "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: #283645;
+  padding: 0;
+  margin: 0; }
+
+.price__wrapper {
+  background-color: #f2f2f2; }
+
+.price__list {
+  list-style: none; }
+
+.price__header-wrapper {
+  background-color: #283645;
+  color: #ffffff; }
+
+.price__header {
+  font-family: "Open Sans", "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff; }
+
+.price__cost {
+  font-family: "Open Sans", "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff; }
+
+.price__name {
+  font-family: "Open Sans", "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #283645; }
+
+.contacts__text {
+  font-family: "Open Sans", "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  color: #283645;
+  padding: 0;
+  margin: 0; }
+
+.contacts__item {
+  font-family: "Open Sans", "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #283645;
+  padding: 0;
+  margin: 0; }
+
+.contacts__phone,
+.contacts__mail,
+.contacts__addres {
+  display: block;
+  font-family: "Open Sans", "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  color: #d22856;
+  padding: 0;
+  margin: 0 auto; }
+
+.page-footer__develop {
+  font-family: #283645;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #283645;
+  background-image: url("../../img/html-academy.png");
+  background-repeat: no-repeat; }
+
+.socials__item {
+  display: block;
+  width: 48px;
+  height: 48px;
+  border: 3px solid #283645;
+  border-radius: 50%;
+  opacity: 0.1; }
+
+.socials__item--twitter {
+  background-image: url("../../img/twitter.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat; }
+
+.socials__item-item--fb {
+  background-image: url("../../img/facebook.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat; }
+
+.socials__item--youtube {
+  background-image: url("../../img/youtube.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat; }
+
+/*# sourceMappingURL=style.css.map */
