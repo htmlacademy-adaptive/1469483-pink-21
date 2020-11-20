@@ -17,13 +17,13 @@
       <div>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="">Главная</a>
+            <a href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="">Фотографии</a>
+            <a href="#">Фотографии</a>
           </li>
           <li class="main-nav__item">
-            <a href="">Конкурс</a>
+            <a href="form.html">Конкурс</a>
           </li>
           <li class="main-nav__item">
             <a href="">Html Academy</a>
@@ -33,15 +33,15 @@
     </nav>
   </header>
   <main class="page-main">
-    <h1 class="catalog-header">Фотографии пользователей</h1>
-    <p class="catalog-info">Взгляните на фотографии, которые выкладывают пользователи!
-      Видите, как не хватает ваших?</p>
     <section class="catalog-content">
       <div class="catalog-content__wrapper">
+        <h1 class="catalog-header">Фотографии пользователей</h1>
+        <p class="catalog-info">Взгляните на фотографии, которые выкладывают пользователи!
+          Видите, как не хватает ваших?</p>
         <div class="catalog">
           <div class="catalog__main-photo catalog-item">
             <button class="catalog__main-photo-button" type="button">Панорама дня</button>
-            <img class="catalog-item__img" src="https://via.placeholder.com/150x150" alt="Анна" width="320"
+            <img class="catalog-item__img" src="img/catalog-panorama.jpg" alt="Анна" width="320"
               height="137">
             <p class="catalog-item__name">Анна<span class="item-time">(5 минут назад)</span></p>
             <p class="catalog-item__review">Прыгать или нет? Напишите в
@@ -105,13 +105,13 @@
           <img class="filter-items__img" src="https://via.placeholder.com/150x150" alt="photo" width="280" height="374">
           <ul class="filter-items__item">
             <li class="filter-items__item-button">
-              <button class="item-button__img" type="button">crop</button>
+              <button class="item-button__img item-button__img-crop item-button__img--active " type="button"></button>
             </li>
             <li class="filter-items__item-button">
-              <button class="item-button__img" type="button">fill</button>
+              <button class="item-button__img item-button__img-fill" type="button"></button>
             </li>
             <li class="filter-items__item-button">
-              <button class="item-button__img" type="button">contrast</button>
+              <button class="item-button__img item-button__img-contrast" type="button"></button>
             </li>
           </ul>
           <div class="filter-items__scale">
@@ -121,8 +121,8 @@
             <div class="filter-items__scale-switch"></div>
           </div>
           <div class="filter-items__buttons filter-buttons">
-            <button class="filter-buttons__button filter-buttons__button--submit" type="button">Запостить</button>
-            <button class="filter-buttons__button filter-buttons__button--cancel" type="button">Отмена</button>
+            <button class="filter-buttons__button filter-buttons__button--active" type="button">Запостить</button>
+            <button class="filter-buttons__button" type="button">Отмена</button>
           </div>
         </div>
       </div>
