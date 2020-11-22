@@ -1,4 +1,4 @@
-.filter-items {
+.catalog-filter__filter-items {
   background-color: $bg-color-block;
 }
 
@@ -35,7 +35,7 @@
   background-image: url("../img/contrast.png");
 }
 
-.catalog-filter__buttons-button {
+.catalog-filter__button {
   width: 280px;
   font-family: $main-font-family;
   font-style: normal;
@@ -54,7 +54,7 @@
   opacity: 0.1;
 }
 
-.catalog-filter__buttons-button--active {
+.catalog-filter__button--active {
   color: #d22856;
   border-color: #d22856;
   opacity: 1;
