@@ -1,4 +1,4 @@
-.catalog-header {
+.catalog-content__header {
   font-family: $main-font-family;
   font-style: normal;
   font-weight: 300;
@@ -11,7 +11,7 @@
   background-position: 50% 50%;
 }
 
-.catalog-info {
+.catalog-content__info {
   font-family: $main-font-family;
   font-style: normal;
   font-weight: normal;
@@ -21,7 +21,7 @@
   color: $main-header-text-color;
 }
 
-.catalog__main-photo-button {
+.catalog-content__main-photo-button {
   font-family: $main-font-family;
   font-style: normal;
   font-weight: bold;
@@ -39,7 +39,7 @@
   outline: none;
 }
 
-.catalog-item__name {
+.catalog-content-item__name {
   font-family: $main-font-family;
   font-style: normal;
   font-weight: bold;
@@ -48,7 +48,7 @@
   color: $main-header-text-color;
 }
 
-.item-time {
+.catalog-content__item-time {
   font-family: $main-font-family;
   font-style: normal;
   font-weight: 300;
@@ -59,7 +59,7 @@
   opacity: 0.5;
 }
 
-.catalog-item__review {
+.catalog-content-item__review {
   font-family: $main-font-family;
   font-style: normal;
   font-weight: normal;
@@ -68,7 +68,7 @@
   color: $main-header-text-color;
 }
 
-.catalog-item__likee {
+.catalog-content-item__likee {
   font-family: $main-font-family;
   font-style: normal;
   font-weight: normal;

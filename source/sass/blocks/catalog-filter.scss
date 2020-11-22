@@ -12,7 +12,7 @@
   color: $main-header-text-color;
 }
 
-.item-button__img {
+.catalog-filter-item-button__img {
   width: 44px;
   height: 44px;
   background-position: center;
@@ -23,19 +23,19 @@
   cursor: pointer;
 }
 
-.item-button__img-crop {
-  background-image: url("../../img/crop.png");
+.catalog-filter-item-button__img-crop {
+  background-image: url("../img/crop.png");
 }
 
-.item-button__img-fill {
-  background-image: url("../../img/fill.png");
+.catalog-filter-item-button__img-fill {
+  background-image: url("../img/fill.png");
 }
 
-.item-button__img-contrast {
-  background-image: url("../../img/contrast.png");
+.catalog-filter-item-button__img-contrast {
+  background-image: url("../img/contrast.png");
 }
 
-.filter-buttons__button {
+.catalog-filter-buttons__button {
   width: 280px;
   font-family: $main-font-family;
   font-style: normal;
@@ -54,7 +54,7 @@
   opacity: 0.1;
 }
 
-.filter-buttons__button--active {
+.catalog-filter-buttons__button--active {
   color: #d22856;
   border-color: #d22856;
   opacity: 1;
