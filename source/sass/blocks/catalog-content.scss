@@ -39,7 +39,7 @@
   outline: none;
 }
 
-.catalog-content-item__name {
+.catalog-content__item-name {
   font-family: $main-font-family;
   font-style: normal;
   font-weight: bold;
@@ -59,7 +59,7 @@
   opacity: 0.5;
 }
 
-.catalog-content-item__review {
+.catalog-content__item-review {
   font-family: $main-font-family;
   font-style: normal;
   font-weight: normal;
@@ -68,7 +68,7 @@
   color: $main-header-text-color;
 }
 
-.catalog-content-item__likee {
+.catalog-content__item-likee {
   font-family: $main-font-family;
   font-style: normal;
   font-weight: normal;
