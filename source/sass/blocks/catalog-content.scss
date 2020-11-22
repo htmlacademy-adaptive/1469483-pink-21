@@ -1,0 +1,79 @@
+.catalog-content__header {
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  color: $light-on-dark-color;
+  background-image: url("../img/catalog-header-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.catalog-content__info {
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: $main-header-text-color;
+}
+
+.catalog-content__main-photo-button {
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $light-on-dark-color;
+  background-color: #d22856;
+  padding-left: 19px;
+  padding-top: 13px;
+  padding-right: 20px;
+  padding-bottom: 14px;
+  border: none;
+  outline: none;
+}
+
+.catalog-content__item-name {
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: $main-header-text-color;
+}
+
+.catalog-content__item-time {
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  color: $main-header-text-color;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+.catalog-content__item-review {
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: $main-header-text-color;
+}
+
+.catalog-content__item-likee {
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #d22856;
+}

@@ -1,0 +1,61 @@
+.catalog-filter__filter-items {
+  background-color: $bg-color-block;
+}
+
+.catalog-filter__description {
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: $main-header-text-color;
+}
+
+.catalog-filter__item-button-img {
+  width: 44px;
+  height: 44px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.catalog-filter__button-crop {
+  background-image: url("../img/crop.png");
+}
+
+.catalog-filter__button-fill {
+  background-image: url("../img/fill.png");
+}
+
+.catalog-filter__button-contrast {
+  background-image: url("../img/contrast.png");
+}
+
+.catalog-filter__button {
+  width: 280px;
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  color: $main-header-text-color;
+  outline: none;
+  cursor: pointer;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  border: 3px solid #283645;
+  box-sizing: border-box;
+  border-radius: 30px;
+  opacity: 0.1;
+}
+
+.catalog-filter__button--active {
+  color: #d22856;
+  border-color: #d22856;
+  opacity: 1;
+}
