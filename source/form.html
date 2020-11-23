@@ -33,9 +33,14 @@
     </nav>
   </header>
   <main class="page-main">
-    <h1 class="form-header">Конкурс на самое безбашенное путешествие с Пинк</h1>
     <section class="forms">
       <div class="forms__wrapper">
+        <div class="forms__header-wrapper">
+          <h1 class="forms__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
+          <p class="forms__text">Поделитесь своей историей и получите
+            шанс выиграть ценный приз — 1000
+            миль на вашу бонусную карту!</p>
+        </div>
         <form action="https://echo.htmlacademy.ru" method="POST">
           <fieldset class="forms__user">
             <legend class="visually-hidden">ФИО</legend>
@@ -53,38 +58,39 @@
             </p>
           </fieldset>
           <fieldset class="forms__progress">
-            <legend class="forms__header">Ваши безбашенные
-              достижения в путешествии</legend>
-            <div class="progress">
-              <ul class="progress__list">
-                <li class="progress__item">
-                  <input class="visually-hidden progress__checkbox" id="selfie" name="Сделал селфи с акулой"
+            <legend class="visually-hidden">достижения</legend>
+            <div class="forms__progress-wrapper">
+              <h2 class="forms__progress-header">Ваши безбашенные
+                достижения в путешествии</h2>
+              <ul class="forms__progress-list">
+                <li class="forms__progress-item">
+                  <input class="visually-hidden forms__progress-checkbox" id="selfie" name="Сделал селфи с акулой"
                     type="checkbox" checked>
-                  <label class="forms__input-names" for="selfie">Сделал селфи с акулой</label>
+                  <label class="forms__progress-input-names" for="selfie">Сделал селфи с акулой</label>
                 </li>
-                <li class="progress__item">
-                  <input class="visually-hidden progress__checkbox" id="burnt" name="Обгорел на пляже" type="checkbox"
+                <li class="forms__progress-item">
+                  <input class="visually-hidden forms__progress-checkbox" id="burnt" name="Обгорел на пляже" type="checkbox"
                     checked>
-                  <label class="forms__input-names" for="burnt">Обгорел на пляже</label>
+                  <label class="forms__progress-input-names" for="burnt">Обгорел на пляже</label>
                 </li>
-                <li class="progress__item">
-                  <input class="visually-hidden progress__checkbox" id="chuck" name="Видел Чака Норриса"
+                <li class="forms__progress-item">
+                  <input class="visually-hidden forms__progress-checkbox" id="chuck" name="Видел Чака Норриса"
                     type="checkbox">
-                  <label class="forms__input-names" for="chuck">Видел Чака Норриса</label>
+                  <label class="forms__progress-input-names" for="chuck">Видел Чака Норриса</label>
                 </li>
-                <li class="progress__item">
-                  <input class="visually-hidden progress__checkbox" id="souvenir" name="Накупил сувениров"
+                <li class="forms__progress-item">
+                  <input class="visually-hidden forms__progress-checkbox" id="souvenir" name="Накупил сувениров"
                     type="checkbox">
-                  <label class="forms__input-names" for="souvenir">Накупил сувениров</label>
+                  <label class="forms__progress-input-names" for="souvenir">Накупил сувениров</label>
                 </li>
-                <li class="progress__item">
-                  <input class="visually-hidden progress__checkbox" id="tower" name="Удержал башню" type="checkbox"
+                <li class="forms__progress-item">
+                  <input class="visually-hidden forms__progress-checkbox" id="tower" name="Удержал башню" type="checkbox"
                     checked>
-                  <label for="tower">Удержал башню</label>
+                  <label class="forms__progress-input-names" for="tower">Удержал башню</label>
                 </li>
-                <li class="progress__item">
-                  <input class="visually-hidden progress__checkbox" id="hotel" name="Разгромил отель" type="checkbox">
-                  <label class="forms__input-names" for="hotel">Разгромил отель</label>
+                <li class="forms__progress-item">
+                  <input class="visually-hidden forms__progress-checkbox" id="hotel" name="Разгромил отель" type="checkbox">
+                  <label class="forms__progress-input-names" for="hotel">Разгромил отель</label>
                 </li>
               </ul>
             </div>
@@ -92,39 +98,40 @@
           <fieldset class="forms__contacts">
             <legend class="visually-hidden">Контакты</legend>
             <p class="forms__contacts-phone">
-              <label class="forms__user-header" for="user-family">Номер телефона</label>
-              <input class="forms_user-contains" id="user-family" type="tel" placeholder="Номер, пожалуйста">
+              <label class="forms__contacts-header" for="user-family">Номер телефона</label>
+              <input class="forms__contacts-contains" id="user-family" type="tel" placeholder="Номер, пожалуйста">
             </p>
             <p class="forms_contacts-mail">
-              <label class="forms__user-header" for="user-name">Адрес почты</label>
-              <input class="forms__user-contains" id="user-name" type="email" placeholder="Введите почту *" required>
+              <label class="forms__contacts-header" for="user-name">Адрес почты</label>
+              <input class="forms__contacts-contains" id="user-name" type="email" placeholder="Введите почту *" required>
             </p>
           </fieldset>
           <fieldset class="forms__platforms">
-            <legend class="forms__header">С каким приложением
-              путешествовали?</legend>
-            <div class="platforms">
-              <ul class="platforms__list">
-                <li class="platforms__item">
-                  <input class="visually-hidden platforms__radio" id="ios" name="platform" value="Ios" type="radio"
+            <legend class="visually-hidden">платформа</legend>
+            <div class="forms__platforms-wrapper">
+              <h2 class="forms__platforms-header">С каким приложением
+                путешествовали?</h2>
+              <ul class="forms__platforms-list">
+                <li class="forms__platforms-item">
+                  <input class="visually-hidden forms__platforms-radio" id="ios" name="platform" value="Ios" type="radio"
                     checked>
-                  <label class="forms__input-names" for="ios">Pink для iOS</label>
+                  <label class="forms__platforms-input-names" for="ios">Pink для iOS</label>
                 </li>
-                <li class="platforms__item">
-                  <input class="visually-hidden platforms__radio" id="android" name="platform" value="Android"
+                <li class="forms__platforms-item">
+                  <input class="visually-hidden forms__platforms-radio" id="android" name="platform" value="Android"
                     type="radio">
-                  <label class="forms__input-names" for="android">Pink на Android</label>
+                  <label class="forms__platforms-input-names" for="android">Pink на Android</label>
                 </li>
-                <li class="platforms__item">
-                  <input class="visually-hidden platforms__radio" id="windows" name="platform" value="Windows"
+                <li class="forms__platforms-item">
+                  <input class="visually-hidden forms__platforms-radio" id="windows" name="platform" value="Windows"
                     type="radio">
-                  <label class="forms__input-names" for="windows">Windows Phone</label>
+                  <label class="forms__platforms-input-names" for="windows">Windows Phone</label>
                 </li>
               </ul>
             </div>
           </fieldset>
           <fieldset class="forms__emotion">
-            <legend class="forms__header">Опишите свои эмоции</legend>
+            <legend class="forms__emotion-header">Опишите свои эмоции</legend>
             <input class="forms__emotion-discription" type="text"
               placeholder="Можно прям в красках, не стесняясь в выражениях">
           </fieldset>
