@@ -1,0 +1,87 @@
+.forms__header-wrapper {
+  background-image: url("../img/forms-header-back.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.forms__header {
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  color: $light-on-dark-color;
+}
+
+.forms__text {
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: $main-header-text-color;
+}
+
+.forms__user,
+.forms__progress,
+.forms__contacts,
+.forms__platforms,
+.forms__emotion {
+  border: 0;
+}
+
+.forms__user-header,
+.forms__progress-header,
+.forms__contacts-header,
+.forms__platforms-header,
+.forms__emotion-header,
+.forms__rules,
+.forms__rules span {
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $forms-header-color;
+}
+
+.forms__user-contains,
+.forms__progress-input-names,
+.forms__contacts-contains,
+.forms__platforms-input-names,
+.forms__emotion-discription {
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: $main-header-text-color;
+}
+
+.forms__progress,
+.forms__platforms {
+  background-color: $bg-color-block;
+}
+
+.forms__button {
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 23px 45px;
+  color: $light-on-dark-color;
+  background: #2aab6d;
+  border: 2px solid #2aab6d;
+  border-radius: 1px;
+  cursor: pointer;
+}
+
+.forms__rules {
+  color: $main-header-text-color;
+}
