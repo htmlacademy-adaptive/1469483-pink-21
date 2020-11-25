@@ -1,8 +1,52 @@
-.about__items {
-  background-color: $bg-color-block;
+.about {
+  margin-bottom: 50px;
+}
+
+.about__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    background-image: url("../img/iphone-screen-tablet-about.png"), url("../img/iphone-tablet-about.png");
+    background-position: 12% 100%, 10% 160%;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: none;
+  }
+}
+
+.about__info {
+  padding-bottom: 70px;
+}
+
+.about__list {
+  list-style: none;
+  height: 720px;
+  background-color: #f2f2f2;
   background-image: url("../img/index-about-iphone-screen.png"), url("../img/index-about-iphone.png");
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 50% 100%, 50% 109%;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 450px;
+    padding-right: 50px;
+    background-image: none;
+    z-index: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 0;
+  }
 }
 
 .about__info-text {
@@ -15,9 +59,22 @@
   color: $main-header-text-color;
   padding: 0;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    font-size: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+  }
 }
 
-.about__items-header {
+.about__info-question {
+  padding-bottom: 30px;
+}
+
+.about__list-header {
   font-family: $main-font-family;
   font-style: normal;
   font-weight: bold;
@@ -25,9 +82,15 @@
   line-height: 24px;
   text-align: center;
   color: $subtitle-text-color;
+  margin: 0;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
 }
 
-.about__items-text {
+.about__list-text {
   font-family: $main-font-family;
   font-style: normal;
   font-weight: normal;
@@ -35,4 +98,48 @@
   line-height: 24px;
   text-align: center;
   color: $main-header-text-color;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  width: 300px;
+  height: auto;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+}
+
+.about__effect {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.about__effect-header {
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.about__effect-text {
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: $main-header-text-color;
+}
+
+.about__effect-more {
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration-line: underline;
+  color: #d22856;
 }

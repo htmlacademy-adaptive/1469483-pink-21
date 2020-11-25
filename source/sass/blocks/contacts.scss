@@ -1,3 +1,22 @@
+.contacts__items-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 570px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+
 .contacts__text {
   font-family: $main-font-family;
   font-style: normal;
@@ -6,7 +25,7 @@
   line-height: 120%;
   text-align: center;
   color: $main-header-text-color;
-  padding: 0;
+  padding-bottom: 30px;
   margin: 0;
 }
 
