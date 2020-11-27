@@ -1,10 +1,50 @@
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
 .page-footer__develop {
+  position: relative;
   font-family: $main-header-text-color;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   color: $main-header-text-color;
-  background-image: url("../img/html-academy.png");
+}
+
+.page-footer__develop::after {
+  position: absolute;
+  top: -5px;
+  left: 100px;
+  content: "";
+  width: 27px;
+  height: 34px;
+  background-image: url("../../img/html-academy.png");
   background-repeat: no-repeat;
+}
+
+.page-footer__logo {
+  display: block;
+
+  @media (min-width: $desktop-width) {
+    img {
+      display: none;
+    }
+    width: 147px;
+    height: 40px;
+    background-image: url("../img/index-logo-footer-desk.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}
+
+.page-footer__socials {
+  display: flex;
 }
