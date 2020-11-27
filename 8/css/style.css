@@ -188,13 +188,14 @@ img {
   padding-right: 20px; }
   @media (min-width: 660px) {
     .page-header__logo {
-      order: 2;
       height: 40px;
       background-image: url("../img/logo-tablet.svg");
       background-repeat: no-repeat;
       padding-top: 27px;
       padding-bottom: 43px;
-      padding-right: 20px; } }
+      padding-right: 20px; }
+      .page-header__logo img {
+        display: none; } }
   @media (min-width: 960px) {
     .page-header__logo {
       height: 40px;
@@ -211,8 +212,6 @@ img {
   margin: 0; }
   @media (min-width: 960px) {
     .main-nav__list {
-      order: 2;
-      display: flex;
       flex-direction: row; } }
 
 @media (min-width: 960px) {
@@ -229,7 +228,6 @@ img {
   color: #ffffff; }
   @media (min-width: 960px) {
     .main-nav__item a {
-      order: 2;
       text-transform: none; } }
 
 .promo {
@@ -258,7 +256,6 @@ img {
       height: 620px;
       background-color: #1d2631;
       background-image: url("../img/phone-tablet.png"), url("../img/screen-tablet.png");
-      background-repeat: no-repeat;
       background-position: 77% 100%, 79% 47%; } }
   @media (min-width: 960px) {
     .promo__bg-img {
@@ -350,9 +347,8 @@ img {
   flex-direction: column; }
   @media (min-width: 660px) {
     .about__wrapper {
-      order: 2;
       background-image: url("../img/iphone-screen-tablet-about.png"), url("../img/iphone-tablet-about.png");
-      background-position: 12% 100%, 10% 160%;
+      background-position: 12% 42%, 10% 39%;
       background-repeat: no-repeat;
       z-index: 1; } }
   @media (min-width: 960px) {
@@ -371,7 +367,6 @@ img {
   background-position: 50% 100%, 50% 109%; }
   @media (min-width: 660px) {
     .about__list {
-      order: 2;
       display: flex;
       flex-direction: column;
       align-items: flex-end;
@@ -397,7 +392,6 @@ img {
   margin: 0; }
   @media (min-width: 660px) {
     .about__info-text {
-      order: 2;
       font-size: 40px; } }
   @media (min-width: 960px) {
     .about__info-text {
@@ -440,7 +434,20 @@ img {
   display: none; }
   @media (min-width: 660px) {
     .about__effect {
-      display: block; } }
+      display: block;
+      background-image: url("../img/timer-round-tablet.png"), url("../img/timer-hours-tablet.png"), url("../img/timer-tablet.png");
+      background-repeat: no-repeat;
+      background-position: 17% 64%, 21% 55%, 15% 50%; } }
+  @media (min-width: 960px) {
+    .about__effect {
+      background-color: #f2f2f2;
+      background-image: url("../img/timer-round-desk.png"), url("../img/timer-hours-desk.png"), url("../img/timer-desk.png");
+      background-position: 17% 64%, 21% 55%, 15% 50%; } }
+
+.about__effect-wrapper {
+  width: 350px;
+  height: 300px;
+  margin-left: auto; }
 
 .about__effect-header {
   font-family: "Open Sans", "PT Sans", sans-serif;
@@ -457,6 +464,9 @@ img {
   font-size: 14px;
   line-height: 24px;
   color: #283645; }
+  @media (min-width: 960px) {
+    .about__effect-text {
+      font-size: 18px; } }
 
 .about__effect-more {
   font-family: "Open Sans", "PT Sans", sans-serif;
@@ -467,6 +477,9 @@ img {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: #d22856; }
+  @media (min-width: 960px) {
+    .about__effect-more {
+      font-size: 18px; } }
 
 .reviews__list {
   list-style: none;
@@ -596,6 +609,10 @@ img {
   padding: 0;
   margin: 0; }
 
+@media (min-width: 960px) {
+  .contacts__item .contacts__addres {
+    order: 2; } }
+
 .contacts__phone,
 .contacts__mail,
 .contacts__addres {
@@ -610,22 +627,56 @@ img {
   padding: 0;
   margin: 0 auto; }
 
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px; }
+  @media (min-width: 660px) {
+    .page-footer__wrapper {
+      flex-direction: row;
+      justify-content: space-around; } }
+
 .page-footer__develop {
+  position: relative;
   font-family: #283645;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-  color: #283645;
-  background-image: url("../img/html-academy.png");
+  color: #283645; }
+
+.page-footer__develop::after {
+  position: absolute;
+  top: -5px;
+  left: 100px;
+  content: "";
+  width: 27px;
+  height: 34px;
+  background-image: url("../../img/html-academy.png");
   background-repeat: no-repeat; }
+
+.page-footer__logo {
+  display: block; }
+  @media (min-width: 960px) {
+    .page-footer__logo {
+      width: 147px;
+      height: 40px;
+      background-image: url("../img/index-logo-footer-desk.png");
+      background-repeat: no-repeat;
+      background-position: 50% 50%; }
+      .page-footer__logo img {
+        display: none; } }
+
+.page-footer__socials {
+  display: flex; }
 
 .socials__item {
   display: block;
   width: 48px;
   height: 48px;
   border: 3px solid #e9ebec;
-  border-radius: 50%; }
+  border-radius: 50%;
+  margin-right: 20px; }
 
 .socials__item--twitter {
   background-image: url("../img/twit.png");
