@@ -899,4 +899,17 @@ img {
 .forms__rules {
   color: #283645; }
 
+.container {
+  margin: 0 auto;
+  max-width: 320px;
+  padding: 0; }
+  @media (min-width: 660px) {
+    .container {
+      max-width: 640px;
+      padding: 0 10px; } }
+  @media (min-width: 960px) {
+    .container {
+      max-width: 1960px;
+      padding: 0 20px; } }
+
 /*# sourceMappingURL=style.css.map */
