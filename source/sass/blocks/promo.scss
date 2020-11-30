@@ -1,9 +1,67 @@
-.promo__wrapper {
-  background: #1d2631;
-  color: $light-on-dark-color;
-  background-image: url("../img/index-phone.png"), url("../img/index-screen.png"), url("../img/index-back-mobile.png");
+.promo {
+  height: 733px;
+  background-color: #1d2631;
+  background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: 50% 50%;
+  z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    height: 620px;
+    background-image: url("../img/back-tablet.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 750px;
+    background-image: url("../img/back-desktop.jpg");
+  }
+}
+
+.promo__bg-img {
+  background-image: url("../img/index-phone.png"), url("../img/index-screen.png");
+  background-repeat: no-repeat;
+  background-position: 50% 20%, 50% 23%;
+
+  @media (min-width: $tablet-width) {
+    height: 620px;
+    background-color: #1d2631;
+    background-image: url("../img/phone-tablet.png"), url("../img/screen-tablet.png");
+    background-position: 77% 100%, 79% 47%;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 750px;
+    background-color: #1d2631;
+    background-image: url("../img/phone-desk.png"), url("../img/screen-desk.png");
+    background-position: 76% 100%, 73% 50%;
+  }
+}
+
+.promo__wrapper {
+  display: flex;
+  flex-direction: column;
+  color: $light-on-dark-color;
+  margin-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    width: 500px;
+    padding-top: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+    padding-top: 100px;
+  }
+}
+
+.promo__header-wrapper {
+  height: 400px;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+    height: auto;
+  }
 }
 
 .promo__header {
@@ -13,9 +71,18 @@
   font-size: 24px;
   line-height: 120%;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+  }
 }
 
 .promo__download-button {
+  display: block;
   font-family: $main-font-family;
   font-style: normal;
   font-weight: bold;
@@ -31,6 +98,20 @@
   padding-right: 59px;
   padding-bottom: 21px;
   outline: none;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    background: transparent;
+  }
+}
+
+.promo__platforms {
+  padding-top: 50px;
+  margin: 0 auto;
+}
+
+.promo__platforms a {
+  padding-right: 20px;
 }
 
 .promo__description {
@@ -40,4 +121,8 @@
   font-size: 14px;
   line-height: 24px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
 }
