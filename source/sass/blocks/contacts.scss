@@ -41,10 +41,8 @@
   margin: 0;
 }
 
-
-// это условие не работает, почему?
 @media (min-width: $desktop-width) {
-  .contacts__item .contacts__addres {
+  .contacts__item:nth-child(2) {
     order: 2;
   }
 }
