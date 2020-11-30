@@ -1,10 +1,15 @@
 .about {
   margin-bottom: 50px;
+  background-color: #f2f2f2;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .about__wrapper {
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/iphone-screen-tablet-about.png"), url("../img/iphone-tablet-about.png");
@@ -23,17 +28,19 @@
 }
 
 .about__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
   height: 720px;
-  background-color: #f2f2f2;
   background-image: url("../img/index-about-iphone-screen.png"), url("../img/index-about-iphone.png");
   background-repeat: no-repeat;
   background-position: 50% 100%, 50% 109%;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
     height: 450px;
     padding-right: 50px;
     background-image: none;
@@ -42,33 +49,10 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+    justify-content: space-between;
     margin: 0 auto;
     padding: 0;
   }
-}
-
-.about__info-text {
-  font-family: $main-font-family;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 120%;
-  text-align: center;
-  color: $main-header-text-color;
-  padding: 0;
-  margin: 0;
-
-  @media (min-width: $tablet-width) {
-    font-size: 40px;
-  }
-
-  @media (min-width: $desktop-width) {
-    font-size: 50px;
-  }
-}
-
-.about__info-question {
-  padding-bottom: 30px;
 }
 
 .about__list-header {
@@ -102,64 +86,5 @@
 
   @media (min-width: $tablet-width) {
     text-align: left;
-  }
-}
-
-.about__effect {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-    background-image: url("../img/timer-round-tablet.png"), url("../img/timer-hours-tablet.png"), url("../img/timer-tablet.png");
-    background-repeat: no-repeat;
-    background-position: 17% 64%, 21% 55%, 15% 50%;
-  }
-
-  @media (min-width: $desktop-width) {
-    background-color: #f2f2f2;
-    background-image: url("../img/timer-round-desk.png"), url("../img/timer-hours-desk.png"), url("../img/timer-desk.png");
-    background-position: 17% 64%, 21% 55%, 15% 50%;
-  }
-}
-
-.about__effect-wrapper {
-  width: 350px;
-  height: 300px;
-  margin-left: auto;
-}
-
-.about__effect-header {
-  font-family: $main-font-family;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 30px;
-  line-height: 36px;
-  color: #000000;
-}
-
-.about__effect-text {
-  font-family: $main-font-family;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: $main-header-text-color;
-
-  @media (min-width: $desktop-width) {
-    font-size: 18px;
-  }
-}
-
-.about__effect-more {
-  font-family: $main-font-family;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  text-decoration-line: underline;
-  color: #d22856;
-
-  @media (min-width: $desktop-width) {
-    font-size: 18px;
   }
 }

@@ -1,5 +1,9 @@
-.price__wrapper {
+.price {
   background-color: $bg-color-block;
+}
+
+.price__wrapper {
+
 }
 
 .price__list {
@@ -20,6 +24,7 @@
   text-align: center;
   text-transform: uppercase;
   color: $light-on-dark-color;
+  margin: 0;
 }
 
 .price__cost {

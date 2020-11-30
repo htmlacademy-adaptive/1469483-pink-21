@@ -1,0 +1,26 @@
+.features {
+  margin-bottom: 50px;
+}
+.features-text {
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  color: $main-header-text-color;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+  }
+}
+
+.features-question {
+  padding-bottom: 30px;
+}
