@@ -11,7 +11,7 @@
 
 <body class="page-body">
   <header class="page-header">
-    <div class="wrapper">
+    <div class="page-header__wrapper wrapper">
       <a class="page-header__logo" href="#">
         <img src="img/index-pink-head.png" alt="PINK" width="74" height="23">
       </a>
@@ -60,13 +60,13 @@
         </div>
       </div>
     </section>
+    <section class="features">
+      <p class="features-text features-question">Устали от серости мегаполиса?</p>
+      <p class="features-text features-answer"> Нам есть, что вам предложить!</p>
+    </section>
     <section class="about">
       <div class="about__wrapper wrapper">
         <h2 class="visually-hidden">О нас</h2>
-        <div class="about__info">
-          <p class="about__info-text about__info-question">Устали от серости мегаполиса?</p>
-          <p class="about__info-text about__info-answer"> Нам есть, что вам предложить!</p>
-        </div>
         <ul class="about__list">
           <li class="about__list-item">
             <h3 class="about__list-header">Поднимает настроение</h3>
@@ -84,16 +84,16 @@
             </p>
           </li>
         </ul>
-        <div class="about__effect">
-          <div class="about__effect-wrapper">
-            <h2 class="about__effect-header">Эффект
-              на 24 часа!</h2>
-            <p class="about__effect-text">Британские ученые провели исследования
-              и доказали, что положительный эффект
-              от использования приложения длится целые сутки!</p>
-            <a class="about__effect-more" href="#">Узнать больше об исследовании</a>
-          </div>
-        </div>
+      </div>
+    </section>
+    <section class="effect">
+      <div class="effect__wrapper wrapper">
+        <h2 class="effect__header">Эффект
+          на 24 часа!</h2>
+        <p class="effect__text">Британские ученые провели исследования
+          и доказали, что положительный эффект
+          от использования приложения длится целые сутки!</p>
+        <a class="effect__more" href="#">Узнать больше об исследовании</a>
       </div>
     </section>
     <section class="reviews">
@@ -126,69 +126,59 @@
       </div>
     </section>
     <section class="price">
-      <div class="price__wrapper wrapper slider">
-        <ul class="price__list">
-          <li class="price__list-item slider__item slider__item--active">
-            <div class="price__header-wrapper">
-              <h3 class="price__header">База</h3>
-              <p class="price__cost">1,99 USD</p>
-            </div>
-            <dl class="price__name-wrapper">
-              <dt class="price__name">Розовый фильтр</dt>
-              <dd class="price__choice">
+      <div class="price__wrapper wrapper">
+        <table class="price-table">
+          <tbody>
+            <tr>
+              <th class="price-table__cell-hidden"></th>
+              <th class="price-table__header price-table__header-wrapper">База<br>
+                <span class="price-table__cost ">1,99 USD</span>
+              </th>
+              <th class="price-table__header price-table__header-wrapper price-table__header--hit">Стандарт<br>
+                <span class="price-table__cost">3,99 USD</span>
+              </th>
+              <th class="price-table__header price-table__header-wrapper">Анлим<br>
+                <span class="price-table__cost">9,99 USD</span>
+              </th>
+            </tr>
+            <tr>
+              <td class="price-table__name price-table__name-hidden--mobile">Розовый фильтр</td>
+              <td><span class="price-table__name price-table__name-hidden">Розовый фильтр</span>
                 <img src="img/price-yes.png" alt="yes" width="27" height="27">
-              </dd>
-              <dt class="price__name">Смайлики</dt>
-              <dd class="price__choice">
+              </td>
+              <td><span class="price-table__name price-table__name-hidden">Розовый фильтр</span>
+                <img src="img/price-yes.png" alt="yes" width="27" height="27">
+              </td>
+              <td><span class="price-table__name price-table__name-hidden">Розовый фильтр</span>
+                <img src="img/price-yes.png" alt="yes" width="27" height="27">
+              </td>
+            </tr>
+            <tr>
+              <td class="price-table__name price-table__name-hidden--mobile">Смайлики</td>
+              <td><span class="price-table__name price-table__name-hidden">Смайлики</span>
                 <img src="img/price-no.png" alt="no" width="27" height="27">
-              </dd>
-              <dt class="price__name">Комментарии</dt>
-              <dd class="price__choice">
+              </td>
+              <td><span class="price-table__name price-table__name-hidden">Смайлики</span>
+                <img src="img/price-yes.png" alt="yes" width="27" height="27">
+              </td>
+              <td><span class="price-table__name price-table__name-hidden">Смайлики</span>
+                <img src="img/price-yes.png" alt="yes" width="27" height="27">
+              </td>
+            </tr>
+            <tr>
+              <td class="price-table__name price-table__name-hidden--mobile">Комментарии</td>
+              <td><span class="price-table__name price-table__name-hidden">Комментарии</span>
                 <img src="img/price-no.png" alt="no" width="27" height="27">
-              </dd>
-            </dl>
-          </li>
-          <li class="price__list-item slider__item">
-            <div class="price__header-wrapper">
-              <h3 class="price__header">Стандарт</h3>
-              <p class="price__cost">3,99 USD</p>
-            </div>
-            <dl class="price__name-wrapper">
-              <dt class="price__name">Розовый фильтр</dt>
-              <dd class="price__choice">
-                <img src="img/price-yes.png" alt="yes" width="27" height="27">
-              </dd>
-              <dt class="price__name">Смайлики</dt>
-              <dd class="price__choice">
-                <img src="img/price-yes.png" alt="yes" width="27" height="27">
-              </dd>
-              <dt class="price__name">Комментарии</dt>
-              <dd class="price__choice">
+              </td>
+              <td><span class="price-table__name price-table__name-hidden">Комментарии</span>
                 <img src="img/price-no.png" alt="no" width="27" height="27">
-              </dd>
-            </dl>
-          </li>
-          <li class="price__list-item slider__item">
-            <div class="price__header-wrapper">
-              <h3 class="price__header">Анлим</h3>
-              <p class="price__cost">9,99 USD</p>
-            </div>
-            <dl class="price__name-wrapper">
-              <dt class="price__name">Розовый фильтр</dt>
-              <dd class="price__choice">
+              </td>
+              <td><span class="price-table__name price-table__name-hidden">Комментарии</span>
                 <img src="img/price-yes.png" alt="yes" width="27" height="27">
-              </dd>
-              <dt class="price__name">Смайлики</dt>
-              <dd class="price__choice">
-                <img src="img/price-yes.png" alt="yes" width="27" height="27">
-              </dd>
-              <dt class="price__name">Комментарии</dt>
-              <dd class="price__choice">
-                <img src="img/price-yes.png" alt="yes" width="27" height="27">
-              </dd>
-            </dl>
-          </li>
-        </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
         <p class="price__toggles slider__toggles">
           <button class="slider__toggle slider__toggle--active" type="button">1</button>
           <button class="slider__toggle" type="button">2</button>
