@@ -125,69 +125,59 @@
       </div>
     </section>
     <section class="price">
-      <div class="price__wrapper wrapper slider">
-        <ul class="price__list">
-          <li class="price__list-item slider__item slider__item--active">
-            <div class="price__header-wrapper">
-              <h3 class="price__header">База</h3>
-              <p class="price__cost">1,99 USD</p>
-            </div>
-            <dl class="price__name-wrapper">
-              <dt class="price__name">Розовый фильтр</dt>
-              <dd class="price__choice">
+      <div class="price__wrapper wrapper">
+        <table class="price-table">
+          <tbody>
+            <tr>
+              <th class="price-table__cell-hidden"></th>
+              <th class="price-table__header price-table__header-wrapper">База<br>
+                <span class="price-table__cost ">1,99 USD</span>
+              </th>
+              <th class="price-table__header price-table__header-wrapper price-table__header--hit">Стандарт<br>
+                <span class="price-table__cost">3,99 USD</span>
+              </th>
+              <th class="price-table__header price-table__header-wrapper">Анлим<br>
+                <span class="price-table__cost">9,99 USD</span>
+              </th>
+            </tr>
+            <tr>
+              <td class="price-table__name price-table__name-hidden--mobile">Розовый фильтр</td>
+              <td><span class="price-table__name price-table__name-hidden">Розовый фильтр</span>
                 <img src="img/price-yes.png" alt="yes" width="27" height="27">
-              </dd>
-              <dt class="price__name">Смайлики</dt>
-              <dd class="price__choice">
+              </td>
+              <td><span class="price-table__name price-table__name-hidden">Розовый фильтр</span>
+                <img src="img/price-yes.png" alt="yes" width="27" height="27">
+              </td>
+              <td><span class="price-table__name price-table__name-hidden">Розовый фильтр</span>
+                <img src="img/price-yes.png" alt="yes" width="27" height="27">
+              </td>
+            </tr>
+            <tr>
+              <td class="price-table__name price-table__name-hidden--mobile">Смайлики</td>
+              <td><span class="price-table__name price-table__name-hidden">Смайлики</span>
                 <img src="img/price-no.png" alt="no" width="27" height="27">
-              </dd>
-              <dt class="price__name">Комментарии</dt>
-              <dd class="price__choice">
+              </td>
+              <td><span class="price-table__name price-table__name-hidden">Смайлики</span>
+                <img src="img/price-yes.png" alt="yes" width="27" height="27">
+              </td>
+              <td><span class="price-table__name price-table__name-hidden">Смайлики</span>
+                <img src="img/price-yes.png" alt="yes" width="27" height="27">
+              </td>
+            </tr>
+            <tr>
+              <td class="price-table__name price-table__name-hidden--mobile">Комментарии</td>
+              <td><span class="price-table__name price-table__name-hidden">Комментарии</span>
                 <img src="img/price-no.png" alt="no" width="27" height="27">
-              </dd>
-            </dl>
-          </li>
-          <li class="price__list-item slider__item">
-            <div class="price__header-wrapper">
-              <h3 class="price__header">Стандарт</h3>
-              <p class="price__cost">3,99 USD</p>
-            </div>
-            <dl class="price__name-wrapper">
-              <dt class="price__name">Розовый фильтр</dt>
-              <dd class="price__choice">
-                <img src="img/price-yes.png" alt="yes" width="27" height="27">
-              </dd>
-              <dt class="price__name">Смайлики</dt>
-              <dd class="price__choice">
-                <img src="img/price-yes.png" alt="yes" width="27" height="27">
-              </dd>
-              <dt class="price__name">Комментарии</dt>
-              <dd class="price__choice">
+              </td>
+              <td><span class="price-table__name price-table__name-hidden">Комментарии</span>
                 <img src="img/price-no.png" alt="no" width="27" height="27">
-              </dd>
-            </dl>
-          </li>
-          <li class="price__list-item slider__item">
-            <div class="price__header-wrapper">
-              <h3 class="price__header">Анлим</h3>
-              <p class="price__cost">9,99 USD</p>
-            </div>
-            <dl class="price__name-wrapper">
-              <dt class="price__name">Розовый фильтр</dt>
-              <dd class="price__choice">
+              </td>
+              <td><span class="price-table__name price-table__name-hidden">Комментарии</span>
                 <img src="img/price-yes.png" alt="yes" width="27" height="27">
-              </dd>
-              <dt class="price__name">Смайлики</dt>
-              <dd class="price__choice">
-                <img src="img/price-yes.png" alt="yes" width="27" height="27">
-              </dd>
-              <dt class="price__name">Комментарии</dt>
-              <dd class="price__choice">
-                <img src="img/price-yes.png" alt="yes" width="27" height="27">
-              </dd>
-            </dl>
-          </li>
-        </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
         <p class="price__toggles slider__toggles">
           <button class="slider__toggle slider__toggle--active" type="button">1</button>
           <button class="slider__toggle" type="button">2</button>

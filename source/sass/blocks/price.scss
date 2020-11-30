@@ -2,20 +2,40 @@
   background-color: $bg-color-block;
 }
 
-.price__wrapper {
+.price-table {
+  width: 100%;
 
+  @media (min-width: $desktop-width) {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
-.price__list {
-  list-style: none;
+.price-table tbody {
+  background-color: #ffffff;
 }
 
-.price__header-wrapper {
+.price-table img {
+  display: block;
+  margin: 0 auto;
+}
+
+.price-table__header-wrapper {
   background-color: #283645;
   color: $light-on-dark-color;
+  width: 276px;
+
+  @media (min-width: $tablet-width) {
+    width: 152px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 233px;
+  }
 }
 
-.price__header {
+.price-table__header {
+  position: relative;
   font-family: $main-font-family;
   font-style: normal;
   font-weight: bold;
@@ -25,9 +45,31 @@
   text-transform: uppercase;
   color: $light-on-dark-color;
   margin: 0;
+  padding-top: 19px;
+  padding-bottom: 63px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
 }
 
-.price__cost {
+// .price-table__header--hit {
+//   position: absolute;
+//   content: "";
+//   left: 0;
+//   top: 0;
+//   width: 27px;
+//   height: 10px;
+//   background-image: url("../img/hit.png");
+//   background-repeat: no-repeat;
+//   transform: rotate(-45deg);
+// }
+
+.price-table__cost {
   font-family: $main-font-family;
   font-style: normal;
   font-weight: 300;
@@ -36,9 +78,13 @@
   text-align: center;
   text-transform: uppercase;
   color: $light-on-dark-color;
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+  }
 }
 
-.price__name {
+.price-table__name {
   font-family: $main-font-family;
   font-style: normal;
   font-weight: normal;
@@ -46,4 +92,46 @@
   line-height: 30px;
   text-transform: uppercase;
   color: $main-header-text-color;
+  padding-left: 20px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    text-transform: none;
+    padding-left: 15px;
+    padding-top: 18px;
+    padding-bottom: 17px;
+    width: 153px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    padding-left: 22px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    width: 234px;
+  }
+}
+
+.price-table__name-hidden {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.price-table__name-hidden--mobile {
+
+  @media (min-width: $mobile-width) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.price-table__cell-hidden {
+  border-style: hidden;
+  background: $bg-color-block;
 }
