@@ -313,7 +313,6 @@
     padding: 0 10px;
     border: 2px solid #e5e5e5;
     border-radius: 1px;
-    order: 1;
   }
 
   @media (min-width: $desktop-width) {
@@ -439,5 +438,4 @@
 .forms__rules {
   color: $main-header-text-color;
   text-align: center;
-
 }
