@@ -3,65 +3,67 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo" href="#">Pink</a>
-    <nav class="main-nav">
-      <button class="page-header__menu-button" type="button">
-        <span>Меню</span>
-      </button>
-      <div>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="catalog.html">Фотографии</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#">Конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="">Html Academy</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div class="page-header__wrapper wrapper">
+      <a class="page-header__logo" href="#">
+        <img src="img/index-pink-head.png" alt="PINK" width="74" height="23">
+      </a>
+      <nav class="main-nav">
+        <button class="page-header__menu-button" type="button">
+        </button>
+        <div>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="catalog.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="">Html Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
   </header>
   <main class="page-main">
     <section class="forms">
+      <div class="forms__header-wrapper">
+        <h1 class="forms__header">Конкурс на самое безбашенное<br> путешествие с Пинк</h1>
+      </div>
       <div class="forms__wrapper">
-        <div class="forms__header-wrapper">
-          <h1 class="forms__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
-          <p class="forms__text">Поделитесь своей историей и получите
-            шанс выиграть ценный приз — 1000
-            миль на вашу бонусную карту!</p>
-        </div>
+        <p class="forms__text wrapper">Поделитесь своей историей и получите шанс выиграть
+          ценный приз — 1000 миль на вашу бонусную карту!
+          <span>Пожалуйста, заполните форму ниже:</span></p>
         <form action="https://echo.htmlacademy.ru" method="POST">
-          <fieldset class="forms__user">
+          <fieldset class="forms__user wrapper">
             <legend class="visually-hidden">ФИО</legend>
-            <p class="forms__user-family">
+            <p class="forms__user-items-wrapper">
               <label class="forms__user-header" for="user-family">Фамилия:</label>
               <input class="forms__user-contains" id="user-family" type="text" placeholder="Укажите фамилию *" required>
             </p>
-            <p class="forms__user-name">
+            <p class="forms__user-items-wrapper">
               <label class="forms__user-header" for="user-name">Имя:</label>
               <input class="forms__user-contains" id="user-name" type="text" placeholder="Введите ваше имя *" required>
             </p>
-            <p class="forms__user-patronymic">
+            <p class="forms__user-items-wrapper">
               <label class="forms__user-header" for="user-patronymic">Отчество:</label>
               <input class="forms__user-contains" id="user-patronymic" type="text" placeholder="Ну и отчество тоже">
             </p>
           </fieldset>
           <fieldset class="forms__progress">
-            <legend class="visually-hidden">достижения</legend>
-            <div class="forms__progress-wrapper">
-              <h2 class="forms__progress-header">Ваши безбашенные
-                достижения в путешествии</h2>
+            <legend class="forms__progress-header">Ваши безбашенные
+              достижения в путешествии</legend>
+            <div class="forms__progress-wrapper wrapper">
               <ul class="forms__progress-list">
                 <li class="forms__progress-item">
                   <input class="visually-hidden forms__progress-checkbox" id="selfie" name="Сделал селфи с акулой"
@@ -69,8 +71,8 @@
                   <label class="forms__progress-input-names" for="selfie">Сделал селфи с акулой</label>
                 </li>
                 <li class="forms__progress-item">
-                  <input class="visually-hidden forms__progress-checkbox" id="burnt" name="Обгорел на пляже" type="checkbox"
-                    checked>
+                  <input class="visually-hidden forms__progress-checkbox" id="burnt" name="Обгорел на пляже"
+                    type="checkbox" checked>
                   <label class="forms__progress-input-names" for="burnt">Обгорел на пляже</label>
                 </li>
                 <li class="forms__progress-item">
@@ -84,37 +86,40 @@
                   <label class="forms__progress-input-names" for="souvenir">Накупил сувениров</label>
                 </li>
                 <li class="forms__progress-item">
-                  <input class="visually-hidden forms__progress-checkbox" id="tower" name="Удержал башню" type="checkbox"
-                    checked>
+                  <input class="visually-hidden forms__progress-checkbox" id="tower" name="Удержал башню"
+                    type="checkbox" checked>
                   <label class="forms__progress-input-names" for="tower">Удержал башню</label>
                 </li>
                 <li class="forms__progress-item">
-                  <input class="visually-hidden forms__progress-checkbox" id="hotel" name="Разгромил отель" type="checkbox">
+                  <input class="visually-hidden forms__progress-checkbox" id="hotel" name="Разгромил отель"
+                    type="checkbox">
                   <label class="forms__progress-input-names" for="hotel">Разгромил отель</label>
                 </li>
               </ul>
             </div>
           </fieldset>
-          <fieldset class="forms__contacts">
-            <legend class="visually-hidden">Контакты</legend>
-            <p class="forms__contacts-phone">
-              <label class="forms__contacts-header" for="user-family">Номер телефона</label>
-              <input class="forms__contacts-contains" id="user-family" type="tel" placeholder="Номер, пожалуйста">
-            </p>
-            <p class="forms__contacts-mail">
-              <label class="forms__contacts-header" for="user-name">Адрес почты</label>
-              <input class="forms__contacts-contains" id="user-name" type="email" placeholder="Введите почту *" required>
-            </p>
+          <fieldset class="forms__contacts wrapper">
+            <legend class="forms__contacts-name">Контактная информация</legend>
+            <div class="forms__contacts-wrapper">
+              <p class="forms__contacts-tel forms__contacts-item">
+                <label class="forms__contacts-header" for="user-family">Номер телефона</label>
+                <input class="forms__contacts-contains" id="user-family" type="tel" placeholder="Номер, пожалуйста">
+              </p>
+              <p class="forms__contacts-mail forms__contacts-item">
+                <label class="forms__contacts-header" for="user-name">Адрес почты</label>
+                <input class="forms__contacts-contains" id="user-name" type="email" placeholder="Введите почту *"
+                  required>
+              </p>
+            </div>
           </fieldset>
           <fieldset class="forms__platforms">
-            <legend class="visually-hidden">платформа</legend>
-            <div class="forms__platforms-wrapper">
-              <h2 class="forms__platforms-header">С каким приложением
-                путешествовали?</h2>
+            <legend class="forms__platforms-header">С каким приложением
+              путешествовали?</legend>
+            <div class="forms__platforms-wrapper wrapper">
               <ul class="forms__platforms-list">
                 <li class="forms__platforms-item">
-                  <input class="visually-hidden forms__platforms-radio" id="ios" name="platform" value="Ios" type="radio"
-                    checked>
+                  <input class="visually-hidden forms__platforms-radio" id="ios" name="platform" value="Ios"
+                    type="radio" checked>
                   <label class="forms__platforms-input-names" for="ios">Pink для iOS</label>
                 </li>
                 <li class="forms__platforms-item">
@@ -130,30 +135,58 @@
               </ul>
             </div>
           </fieldset>
-          <fieldset class="forms__emotion">
+          <fieldset class="forms__emotion wrapper">
             <legend class="forms__emotion-header">Опишите свои эмоции</legend>
-            <input class="forms__emotion-discription" type="text"
-              placeholder="Можно прям в красках, не стесняясь в выражениях">
+            <textarea class="forms__emotion-discription" type="text"
+              placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
-          <button class="forms__button" type="submit">Отправить форму</button>
+          <div class="forms__submit-items wrapper">
+            <button class="forms__button" type="submit">Отправить форму</button>
+            <p class="forms__rules"><span>*</span> — обязательные поля</p>
+          </div>
         </form>
-        <p class="forms__rules"><span>*</span> — обязательные поля</p>
+
       </div>
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <h2 class="page-footer__logo">Pink</h2>
+    <div class="page-footer__wrapper wrapper">
+      <a class="page-footer__logo" href="#">
+        <img src="img/index-logo-footer.png" alt="Pink">
+      </a>
       <div class="page-footer__socials">
-        <div class="socials">
-          <a class="socials__item socials__item--twitter" href="#"></a>
-          <a class="socials__item socials__item-item--fb" href="#"></a>
-          <a class="socials__item socials__item--youtube" href="#"></a>
-        </div>
+        <a class="socials__item socials__item--twitter" href="#"></a>
+        <a class="socials__item socials__item-item--fb" href="#"></a>
+        <a class="socials__item socials__item--youtube" href="#"></a>
       </div>
-      <p class="page-footer__develop">Разработано</p>
+      <a class="page-footer__develop" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
     </div>
   </footer>
+  <section class="modal-error">
+    <div class="modal-error__wrapper">
+      <h2 class="modal-error__header">Что-то пошло
+        не так!</h2>
+      <p class="modal-error__text">Проверьте поля, выделенные
+        красным, скорее всего вы забыли
+        их заполнить</p>
+      <div class="modal-error__button-wrapper">
+        <button class="modal-error__button" type="button">Ок</button>
+      </div>
+    </div>
+  </section>
+  <section class="modal-done">
+    <div class="modal-done__wrapper">
+      <h2 class="modal-done__header">Ваша заявка
+        отправлена</h2>
+      <p class="modal-done__text">Спасибо за ваше участие, ваша
+        заявка уже поступила к нам. В
+        ближайшее время мы рассмотрим
+        ее и<br> оповестим вас.</p>
+      <div class="modal-done__button-wrapper">
+        <button class="modal-done__button" type="button">Закрыть окно</button>
+      </div>
+    </div>
+  </section>
 </body>
 
 </html>
