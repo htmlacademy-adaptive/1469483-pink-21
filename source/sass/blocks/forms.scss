@@ -1,3 +1,19 @@
+.forms__wrapper {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    max-width: 640px;
+    padding: 0 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 920px;
+    padding: 0 20px;
+  }
+}
+
 .forms__header-wrapper {
   background-color: #283645;
   height: 237px;
@@ -9,6 +25,16 @@
 
   @media (min-width: $desktop-width) {
     height: 394px;
+  }
+}
+
+.forms__form-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
@@ -97,6 +123,7 @@
 .forms__progress,
 .forms__platforms {
   background-color: $bg-color-block;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     background-color: transparent;
@@ -104,12 +131,20 @@
 }
 
 .forms__user {
-  width: 100%;
+  width: 300px;
   border: none;
+  padding: 0;
+  margin: 0 auto;
   margin-bottom: 50px;
 
+  @media (min-width: $tablet-width) {
+    width: 600px;
+    order: -5;
+  }
+
   @media (min-width: $desktop-width) {
-    width: 470px;
+    width: 434px;
+    padding-right: 74px;
   }
 }
 
@@ -144,7 +179,7 @@
   margin-bottom: 50px;
 
   @media (min-width: $tablet-width) {
-    width: 640px;
+    width: 620px;
     padding: 0 10px;
     border: 2px solid #e5e5e5;
     border-radius: 1px;
@@ -163,6 +198,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
+    text-align: center;
   }
 }
 
@@ -175,6 +211,7 @@
 .forms__progress-list {
   list-style: none;
   margin-top: 30px;
+  padding-left: 30px;
 
   @media (min-width: $tablet-width) {
     padding-left: 50px;
@@ -223,10 +260,12 @@
 .forms__contacts {
   border: none;
   margin-bottom: 50px;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     border: 2px solid #e5e5e5;
     border-radius: 1px;
+    order: -3;
   }
 }
 
@@ -242,6 +281,7 @@
     line-height: 30px;
     text-transform: uppercase;
     color: #d22856;
+    text-align: center;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -307,17 +347,28 @@
 .forms__platforms {
   border: none;
   margin: 0 auto;
+  margin-bottom: 50px;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
-    width: 640px;
+    width: 620px;
     padding: 0 10px;
     border: 2px solid #e5e5e5;
     border-radius: 1px;
+    order: -4;
   }
 
   @media (min-width: $desktop-width) {
-    width: 920px;
-    padding: 0 20px;
+    width: 431px;
+  }
+}
+
+.forms__platforms-wrapper {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 100px;
   }
 }
 
@@ -326,11 +377,19 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
   }
 }
 
 .forms__platforms-list {
-  padding-left: 30px;
+  padding-left: 50px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 30px;
+    padding-left: 0;
+  }
 }
 
 .forms__platforms-item {
@@ -373,15 +432,22 @@
   border: none;
   display: flex;
   justify-content: center;
+  width: 300px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     border: 2px solid #e5e5e5;
     border-radius: 1px;
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
   }
 }
 
 .forms__emotion-header {
-  margin: 0 auto;
+  text-align: center;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -398,6 +464,7 @@
   @media (min-width: $tablet-width) {
     width: 496px;
     height: 189px;
+    margin-top: 20px;
     margin-bottom: 20px;
   }
 }
@@ -406,6 +473,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 50px;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     flex-wrap: nowrap;
