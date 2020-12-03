@@ -45,8 +45,8 @@
         <p class="forms__text wrapper">Поделитесь своей историей и получите шанс выиграть
           ценный приз — 1000 миль на вашу бонусную карту!
           <span>Пожалуйста, заполните форму ниже:</span></p>
-        <form action="https://echo.htmlacademy.ru" method="POST">
-          <fieldset class="forms__user wrapper">
+        <form class="forms__form-wrapper" action="https://echo.htmlacademy.ru" method="POST">
+          <fieldset class="forms__user">
             <legend class="visually-hidden">ФИО</legend>
             <p class="forms__user-items-wrapper">
               <label class="forms__user-header" for="user-family">Фамилия:</label>
@@ -64,7 +64,7 @@
           <fieldset class="forms__progress">
             <legend class="forms__progress-header">Ваши безбашенные
               достижения в путешествии</legend>
-            <div class="forms__progress-wrapper wrapper">
+            <div class="forms__progress-wrapper">
               <ul class="forms__progress-list">
                 <li class="forms__progress-item">
                   <input class="visually-hidden forms__progress-checkbox" id="selfie" name="Сделал селфи с акулой"
@@ -99,7 +99,7 @@
               </ul>
             </div>
           </fieldset>
-          <fieldset class="forms__contacts wrapper">
+          <fieldset class="forms__contacts">
             <legend class="forms__contacts-name">Контактная информация</legend>
             <div class="forms__contacts-wrapper">
               <p class="forms__contacts-tel forms__contacts-item">
@@ -116,7 +116,7 @@
           <fieldset class="forms__platforms">
             <legend class="forms__platforms-header">С каким приложением
               путешествовали?</legend>
-            <div class="forms__platforms-wrapper wrapper">
+            <div class="forms__platforms-wrapper">
               <ul class="forms__platforms-list">
                 <li class="forms__platforms-item">
                   <input class="visually-hidden forms__platforms-radio" id="ios" name="platform" value="Ios"
@@ -136,12 +136,12 @@
               </ul>
             </div>
           </fieldset>
-          <fieldset class="forms__emotion wrapper">
+          <fieldset class="forms__emotion">
             <legend class="forms__emotion-header">Опишите свои эмоции</legend>
             <textarea class="forms__emotion-discription" type="text"
               placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
-          <div class="forms__submit-items wrapper">
+          <div class="forms__submit-items">
             <button class="forms__button" type="submit">Отправить форму</button>
             <p class="forms__rules"><span>*</span> — обязательные поля</p>
           </div>
