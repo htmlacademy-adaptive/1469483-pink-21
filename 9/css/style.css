@@ -177,20 +177,16 @@ img {
   padding: 0; }
   @media (min-width: 660px) {
     .wrapper {
-      min-width: 640px;
+      max-width: 640px;
       padding: 0 10px; } }
   @media (min-width: 960px) {
     .wrapper {
-      min-width: 920px;
+      max-width: 920px;
       padding: 0 20px; } }
 
 .page__body {
   background-color: #ffffff;
-  font-family: "Open Sans", "PT Sans", sans-serif;
-  display: grid;
-  grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: start; }
+  font-family: "Open Sans", "PT Sans", sans-serif; }
 
 .page-header {
   display: flex;
@@ -661,19 +657,20 @@ img {
 
 .page-footer__develop {
   position: relative;
-  font-family: #283645;
+  font-family: "Open Sans", "PT Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   color: #283645;
   text-align: center; }
-  @media (min-width: 960px) {
+  @media (min-width: 660px) {
     .page-footer__develop {
       padding-top: 13px;
       width: 100px;
       height: 34px;
-      margin-left: 100px; } }
+      margin-left: 50px;
+      margin-right: 50px; } }
 
 .page-footer__develop::after {
   position: absolute;
@@ -684,9 +681,9 @@ img {
   height: 34px;
   background-image: url("../../img/html-academy.png");
   background-repeat: no-repeat; }
-  @media (min-width: 960px) {
+  @media (min-width: 660px) {
     .page-footer__develop::after {
-      left: -40px;
+      left: 110px;
       top: 5px; } }
 
 .page-footer__logo {
@@ -975,11 +972,13 @@ img {
   width: 300px;
   border: none;
   padding: 0;
-  margin: 0 auto;
-  margin-bottom: 50px; }
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 50px;
+  margin-left: 0px; }
   @media (min-width: 660px) {
     .forms__user {
-      width: 600px;
+      width: 100%;
       order: -5; } }
   @media (min-width: 960px) {
     .forms__user {
@@ -1080,8 +1079,11 @@ img {
 
 .forms__contacts {
   border: none;
+  width: 100%;
+  margin-top: 0px;
+  margin-right: 0px;
   margin-bottom: 50px;
-  width: 100%; }
+  margin-left: 0px; }
   @media (min-width: 660px) {
     .forms__contacts {
       border: 2px solid #e5e5e5;
@@ -1153,12 +1155,13 @@ img {
 
 .forms__platforms {
   border: none;
-  margin: 0 auto;
+  margin-top: 0px;
+  margin-right: 0px;
   margin-bottom: 50px;
+  margin-left: 0px;
   width: 100%; }
   @media (min-width: 660px) {
     .forms__platforms {
-      width: 620px;
       padding: 0 10px;
       border: 2px solid #e5e5e5;
       border-radius: 1px;
@@ -1168,7 +1171,6 @@ img {
       width: 431px; } }
 
 .forms__platforms-wrapper {
-  width: 320px;
   margin: 0 auto; }
   @media (min-width: 660px) {
     .forms__platforms-wrapper {
