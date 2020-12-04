@@ -1,4 +1,5 @@
 .page-footer {
+  margin-top: 50px;
   margin-bottom: 50px;
 }
 
@@ -14,27 +15,43 @@
 
 .page-footer__develop {
   position: relative;
-  font-family: $main-header-text-color;
+  font-family: $main-font-family;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   color: $main-header-text-color;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 13px;
+    width: 100px;
+    height: 34px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
 }
 
 .page-footer__develop::after {
   position: absolute;
   top: -5px;
-  left: 100px;
+  left: 75px;
   content: "";
   width: 27px;
   height: 34px;
   background-image: url("../../img/html-academy.png");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    left: 110px;
+    top: 5px;
+  }
 }
 
 .page-footer__logo {
   display: block;
+  margin: 0 auto;
+  padding-bottom: 30px;
 
   @media (min-width: $desktop-width) {
     img {
@@ -50,4 +67,6 @@
 
 .page-footer__socials {
   display: flex;
+  margin: 0 auto;
+  padding-bottom: 50px;
 }
