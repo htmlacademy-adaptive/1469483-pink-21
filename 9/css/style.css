@@ -969,13 +969,14 @@ img {
       background-color: transparent; } }
 
 .forms__user {
+  box-sizing: border-box;
   width: 300px;
   border: none;
   padding: 0;
-  margin-top: 0px;
-  margin-right: 0px;
+  margin-top: 0;
+  margin-right: auto;
   margin-bottom: 50px;
-  margin-left: 0px; }
+  margin-left: auto; }
   @media (min-width: 660px) {
     .forms__user {
       width: 100%;
@@ -1007,6 +1008,7 @@ img {
   padding-left: 20px; }
 
 .forms__progress {
+  box-sizing: border-box;
   border: none;
   margin: 0 auto;
   margin-bottom: 50px; }
@@ -1078,12 +1080,13 @@ img {
   border-radius: 1px; }
 
 .forms__contacts {
+  box-sizing: border-box;
   border: none;
   width: 100%;
-  margin-top: 0px;
-  margin-right: 0px;
+  margin-top: 0;
+  margin-right: 0;
   margin-bottom: 50px;
-  margin-left: 0px; }
+  margin-left: 0; }
   @media (min-width: 660px) {
     .forms__contacts {
       border: 2px solid #e5e5e5;
@@ -1154,11 +1157,12 @@ img {
     background-position: 50% 50%; } }
 
 .forms__platforms {
+  box-sizing: border-box;
   border: none;
-  margin-top: 0px;
-  margin-right: 0px;
+  margin-top: 0;
+  margin-right: 0;
   margin-bottom: 50px;
-  margin-left: 0px;
+  margin-left: 0;
   width: 100%; }
   @media (min-width: 660px) {
     .forms__platforms {
@@ -1225,19 +1229,19 @@ img {
   border-radius: 50%; }
 
 .forms__emotion {
+  box-sizing: border-box;
   border: none;
   display: flex;
   justify-content: center;
-  width: 300px;
-  margin: 0 auto; }
+  width: 100%;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 50px;
+  margin-left: 0; }
   @media (min-width: 660px) {
     .forms__emotion {
       border: 2px solid #e5e5e5;
-      border-radius: 1px;
-      width: 620px; } }
-  @media (min-width: 960px) {
-    .forms__emotion {
-      width: 100%; } }
+      border-radius: 1px; } }
 
 .forms__emotion-header {
   text-align: center;
