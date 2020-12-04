@@ -1,7 +1,4 @@
 .page__body {
   background-color: $bg-color;
   font-family: $main-font-family;
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: start;
 }
