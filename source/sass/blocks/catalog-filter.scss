@@ -1,5 +1,41 @@
 .catalog-filter__filter-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: $bg-color-block;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    height: 700px;
+  }
+}
+
+.catalog-filter__filter-items-img {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    height: 400px;
+  }
+}
+
+.catalog-filter__items-list {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+  }
+}
+
+.catalog-filter__item-button {
+  padding-right: 15px;
+}
+
+.catalog-filter__item-button:last-child {
+  padding-right: 0;
 }
 
 .catalog-filter__description {
@@ -10,6 +46,13 @@
   line-height: 30px;
   text-align: center;
   color: $main-header-text-color;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .catalog-filter__item-button-img {
@@ -23,16 +66,8 @@
   cursor: pointer;
 }
 
-.catalog-filter__button-crop {
-  background-image: url("../img/crop.png");
-}
-
-.catalog-filter__button-fill {
-  background-image: url("../img/fill.png");
-}
-
-.catalog-filter__button-contrast {
-  background-image: url("../img/contrast.png");
+.item-button__img--active svg {
+  fill: #d22856;
 }
 
 .catalog-filter__button {
