@@ -784,7 +784,7 @@ img {
   padding-bottom: 0; }
   @media (min-width: 660px) {
     .catalog-content__item-wrapper-main {
-      width: 96%; } }
+      width: 91%; } }
   @media (min-width: 960px) {
     .catalog-content__item-wrapper-main {
       width: 93%; } }
@@ -843,6 +843,11 @@ img {
       flex-wrap: wrap;
       flex-direction: row;
       align-items: baseline;
+      justify-content: space-around;
+      width: 620px; } }
+  @media (min-width: 960px) {
+    .catalog-content__list {
+      width: 100%;
       justify-content: space-between; } }
 
 .catalog-content__item {
@@ -949,8 +954,7 @@ img {
     .catalog-filter__items-wrapper {
       flex-wrap: nowrap;
       width: 100%;
-      margin: 0;
-      padding-left: 265px; } }
+      margin: 0; } }
 
 .catalog-filter__items-list {
   display: flex;
@@ -959,7 +963,7 @@ img {
   @media (min-width: 660px) {
     .catalog-filter__items-list {
       flex-direction: column;
-      margin-left: -243px;
+      margin-left: 0;
       margin-right: 0;
       margin-bottom: 20px;
       margin-top: -49px; } }
@@ -992,7 +996,8 @@ img {
   height: 44px;
   border: none;
   outline: none;
-  cursor: pointer; }
+  cursor: pointer;
+  background-color: transparent; }
 
 .catalog-filter__item-button-img svg {
   fill: #283645;
@@ -1019,9 +1024,7 @@ img {
   width: 300px; }
   @media (min-width: 960px) {
     .catalog-filter__items-buttons {
-      justify-content: space-between; } }
-  @media (min-width: 960px) {
-    .catalog-filter__items-buttons {
+      justify-content: space-around;
       width: 100%; } }
 
 .catalog-filter__button {
@@ -1087,6 +1090,23 @@ img {
   @media (min-width: 960px) {
     .catalog-filter__scale-line {
       width: 288px; } }
+
+@media (min-width: 660px) {
+  .catalog-filter__scale-line::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 278px;
+    background: #283645;
+    opacity: 0.1;
+    top: 33px;
+    left: -74px; } }
+
+@media (min-width: 960px) {
+  .catalog-filter__scale-line::before {
+    width: 335px;
+    top: 33px;
+    left: -45px; } }
 
 .catalog-filter__scale-crop .catalog-filter__scale-switch {
   position: absolute;
