@@ -59,7 +59,7 @@
   padding-bottom: 0;
 
   @media (min-width: $tablet-width) {
-    width: 96%;
+    width: 91%;
   }
 
   @media (min-width: $desktop-width) {
@@ -127,6 +127,12 @@
     flex-wrap: wrap;
     flex-direction: row;
     align-items: baseline;
+    justify-content: space-around;
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
     justify-content: space-between;
   }
 }

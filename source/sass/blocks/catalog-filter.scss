@@ -55,7 +55,6 @@
     flex-wrap: nowrap;
     width: 100%;
     margin: 0;
-    padding-left: 265px;
   }
 }
 
@@ -66,7 +65,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
-    margin-left: -243px;
+    margin-left: 0;
     margin-right: 0;
     margin-bottom: 20px;
     margin-top: -49px;
@@ -106,6 +105,7 @@
   border: none;
   outline: none;
   cursor: pointer;
+  background-color: transparent;
 }
 
 .catalog-filter__item-button-img svg {
@@ -137,10 +137,7 @@
   width: 300px;
 
   @media (min-width: $desktop-width) {
-    justify-content: space-between;
-  }
-
-  @media (min-width: $desktop-width) {
+    justify-content: space-around;
     width: 100%;
   }
 }
@@ -219,6 +216,25 @@
 
   @media (min-width: $desktop-width) {
     width: 288px;
+  }
+}
+
+.catalog-filter__scale-line::before {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 278px;
+    background: #283645;
+    opacity: 0.1;
+    top: 33px;
+    left: -74px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 335px;
+    top: 33px;
+    left: -45px;
   }
 }
 
