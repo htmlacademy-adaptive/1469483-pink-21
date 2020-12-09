@@ -1,14 +1,12 @@
 .price {
   background-color: $bg-color-block;
+  margin-bottom: 54px;
 }
 
 .price__table {
   width: 100%;
-
-  @media (min-width: $desktop-width) {
-    width: 80%;
-    margin: 0 auto;
-  }
+  padding-top: 31px;
+  padding-bottom: 30px;
 }
 
 .price__table tbody {
@@ -24,13 +22,17 @@
   background-color: #283645;
   color: $light-on-dark-color;
   width: 276px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 
   @media (min-width: $tablet-width) {
     width: 152px;
+    height: 80px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 233px;
+    width: 350px;
+    height: 100px;
   }
 }
 
@@ -45,11 +47,12 @@
   text-transform: uppercase;
   color: $light-on-dark-color;
   margin: 0;
-  padding-top: 19px;
+  padding-top: 14px;
   padding-bottom: 63px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 44px;
+    padding-bottom: 0;
+    padding-top: 7px;
   }
 
   @media (min-width: $desktop-width) {
@@ -57,17 +60,10 @@
   }
 }
 
-// .price__table-header--hit {
-//   position: absolute;
-//   content: "";
-//   left: 0;
-//   top: 0;
-//   width: 27px;
-//   height: 10px;
-//   background-image: url("../img/hit.png");
-//   background-repeat: no-repeat;
-//   transform: rotate(-45deg);
-// }
+.price__table-header--hit {
+  background-image: url("../img/hit.png");
+  background-repeat: no-repeat;
+}
 
 .price__table-cost {
   font-family: $main-font-family;
@@ -93,23 +89,23 @@
   text-transform: uppercase;
   color: $main-header-text-color;
   padding-left: 20px;
-  padding-top: 24px;
+  padding-top: 7px;
   padding-bottom: 25px;
   width: 280px;
 
   @media (min-width: $tablet-width) {
     text-transform: none;
     padding-left: 15px;
-    padding-top: 18px;
-    padding-bottom: 17px;
+    padding-top: 7px;
+    padding-bottom: 6px;
     width: 153px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
     padding-left: 22px;
-    padding-top: 23px;
-    padding-bottom: 23px;
+    padding-top: 13px;
+    padding-bottom: 13px;
     width: 234px;
   }
 }

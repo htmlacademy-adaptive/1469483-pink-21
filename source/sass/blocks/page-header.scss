@@ -3,6 +3,16 @@
   flex-direction: column;
   background: #283645;
   color: $light-on-dark-color;
+  height: 60px;
+
+  @media (min-width: $tablet-width) {
+    height: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 .page-header__wrapper {
@@ -13,11 +23,9 @@
 }
 
 .page-header__logo {
-  display: block;
-  height: 69px;
-  padding-top: 23px;
-  padding-bottom: 23px;
-  padding-right: 20px;
+  width: 74px;
+  margin-left: 20px;
+  margin-top: 24px;
 
   @media (min-width: $tablet-width) {
     img {
@@ -34,5 +42,12 @@
     background-image: url("../img/logo-desktop.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo {
+    margin-left: 142px;
+    margin-top: 26px;
   }
 }

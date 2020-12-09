@@ -12,8 +12,9 @@
   // flex-direction: column;
 
   @media (min-width: $tablet-width) {
+    height: 480px;
     background-image: url("../img/iphone-screen-tablet-about.png"), url("../img/iphone-tablet-about.png");
-    background-position: 12% 42%, 10% 39%;
+    background-position: 8% 106%, 5% 5%;
     background-repeat: no-repeat;
     z-index: 1;
   }
@@ -32,19 +33,19 @@
   flex-direction: column;
   align-items: flex-end;
   list-style: none;
-  padding: 0;
+  padding-top: 66px;
   margin: 0;
   width: 100%;
-  height: 720px;
+  height: 769px;
   background-image: url("../img/index-about-iphone-screen.png"), url("../img/index-about-iphone.png");
   background-repeat: no-repeat;
   background-position: 50% 100%, 50% 109%;
 
   @media (min-width: $tablet-width) {
     height: 450px;
-    padding-right: 50px;
     background-image: none;
     z-index: -1;
+    padding-top: 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -52,6 +53,43 @@
     justify-content: space-between;
     margin: 0 auto;
     padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about__list-item {
+    position: relative;
+    height: 200px;
+  }
+
+  .about__list-item--mood::before {
+    position: absolute;
+    top: -386px;
+    left: 34px;
+    content: "";
+    width: 186px;
+    height: 382px;
+    background-image: url("../img/phone-mood.png");
+  }
+
+  .about__list-item--world::before {
+    position: absolute;
+    top: -386px;
+    left: 34px;
+    content: "";
+    width: 186px;
+    height: 382px;
+    background-image: url("../img/phone-world.png");
+  }
+
+  .about__list-item--friends::before {
+    position: absolute;
+    top: -386px;
+    left: 34px;
+    content: "";
+    width: 186px;
+    height: 382px;
+    background-image: url("../img/phone-friends.png");
   }
 }
 
@@ -64,10 +102,25 @@
   text-align: center;
   color: $subtitle-text-color;
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 12px;
+
+  br {
+    display: none;
+  }
 
   @media (min-width: $tablet-width) {
     text-align: left;
+    padding-bottom: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+
+    br {
+      display: block;
+    }
   }
 }
 
@@ -86,5 +139,12 @@
 
   @media (min-width: $tablet-width) {
     text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    width: 249px;
   }
 }

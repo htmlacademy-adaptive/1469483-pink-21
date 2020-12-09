@@ -5,20 +5,32 @@
     display: block;
     background-image: url("../img/timer-round-tablet.png"), url("../img/timer-hours-tablet.png"), url("../img/timer-tablet.png");
     background-repeat: no-repeat;
-    background-position: 17% 64%, 21% 55%, 15% 50%;
+    background-position: 9% 62%, 16% 55%, 5% 10%;
+    margin-bottom: 82px;
   }
 
   @media (min-width: $desktop-width) {
+    height: 429px;
     background-color: #f2f2f2;
     background-image: url("../img/timer-round-desk.png"), url("../img/timer-hours-desk.png"), url("../img/timer-desk.png");
-    background-position: 17% 64%, 21% 55%, 15% 50%;
+    background-position: 24% 62%, 26% 56%, 23% 50%;
   }
 }
 
 .effect__wrapper {
-  width: 350px;
+  width: 100%;
   height: 300px;
   margin-left: auto;
+}
+
+.effect__header,
+.effect__text,
+.effect__more {
+  padding-left: 322px;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 343px;
+  }
 }
 
 .effect__header {
@@ -29,7 +41,18 @@
   line-height: 36px;
   color: #000000;
   margin: 0;
-  padding-bottom: 30px;
+  padding-bottom: 9px;
+  padding-top: 47px;
+
+  @media (min-width: $desktop-width) {
+    line-height: 30px;
+    padding-top: 134px;
+    padding-bottom: 29px;
+
+    br {
+      display: none;
+    }
+  }
 }
 
 .effect__text {
@@ -40,10 +63,19 @@
   line-height: 24px;
   color: $main-header-text-color;
   margin: 0;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
+
+  br {
+    display: none;
+  }
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
+    padding-bottom: 48px;
+
+    br {
+      display: block;
+    }
   }
 }
 
@@ -59,11 +91,4 @@
   @media (min-width: $desktop-width) {
     font-size: 18px;
   }
-}
-
-
-.effect__header,
-.effect__text,
-.effect__more {
-  padding-left: 300px;
 }
