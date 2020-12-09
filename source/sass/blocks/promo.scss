@@ -17,9 +17,9 @@
 }
 
 .promo__bg-img {
-  background-image: url("../img/index-phone.png"), url("../img/index-screen.png");
+  background-image: url("../img/index-phone.png");
   background-repeat: no-repeat;
-  background-position: 0% 32%, 55% 33%;
+  background-position: 50% 31%;
 
   @media (min-width: $tablet-width) {
     height: 645px;
@@ -79,7 +79,8 @@
   line-height: 120%;
   text-align: center;
   margin: 0;
-  padding-top: 33px;
+  padding-top: 24px;
+  padding-left: 18px;
 
   br {
     display: none;

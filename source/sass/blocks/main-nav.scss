@@ -8,7 +8,7 @@
 
 .main-nav__menu-button {
   position: absolute;
-  top: -32px;
+  top: -48px;
   right: 15px;
   z-index: 2;
   display: block;
@@ -20,7 +20,7 @@
   outline: none;
 
   @media (min-width: $tablet-width) {
-    top: -28px;
+    top: -67px;
   }
 
   @media (min-width: $desktop-width) {
@@ -54,8 +54,8 @@
 }
 
 .main-nav--open .main-nav__menu-button {
-  top: -8px;
-  left: auto;
+  top: -42px;
+  right: -9px;
 
   &::before,
   &::after {
@@ -63,7 +63,7 @@
     position: absolute;
     top: 11px;
     left: 13px;
-    width: 23px;
+    width: 27px;
     height: 3px;
     background-color: #ffffff;
   }
@@ -83,7 +83,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    top: -22px;
+    top: -54px;
   }
 }
 
@@ -129,8 +129,8 @@
   line-height: 32px;
   text-transform: uppercase;
   color: $light-on-dark-color;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 18px;
+  padding-bottom: 13px;
   background: #283645;
   box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
   border-top: 1px solid #485461;
