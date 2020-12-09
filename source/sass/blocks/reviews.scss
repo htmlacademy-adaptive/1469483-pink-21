@@ -1,12 +1,16 @@
 .reviews {
   margin-bottom: 152px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 130px;
+  }
+
   @media (min-width: $desktop-width) {
     background-image: url("../img/quotes.png");
     background-repeat: no-repeat;
-    background-position: 50% 4%;
+    background-position: 50% 6%;
     padding-top: 208px;
-    margin-bottom: 190px;
+    margin-bottom: 132px;
   }
 }
 
@@ -31,14 +35,14 @@
   line-height: 30px;
   text-align: center;
   color: $subtitle-text-color;
-  padding-bottom: 20px;
+  padding-bottom: 13px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
     order: 2;
     font-size: 20px;
-    padding-top: 30px;
-    padding-bottom: 10px;
+    padding-top: 35px;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -117,12 +121,12 @@
 
 .reviews__slider-button--left {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 27px;
+  left: -8px;
 }
 
 .reviews__slider-button--right {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 27px;
+  right: -24px;
 }

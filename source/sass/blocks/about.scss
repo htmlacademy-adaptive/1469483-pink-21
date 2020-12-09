@@ -1,5 +1,5 @@
 .about {
-  margin-bottom: 50px;
+  margin-bottom: 41px;
   background-color: #f2f2f2;
 
   @media (min-width: $desktop-width) {
@@ -46,6 +46,7 @@
     background-image: none;
     z-index: -1;
     padding-top: 70px;
+    margin-left: -46px;
   }
 
   @media (min-width: $desktop-width) {
@@ -60,36 +61,41 @@
   .about__list-item {
     position: relative;
     height: 200px;
+    padding-top: 9px;
+    z-index: 1;
   }
 
   .about__list-item--mood::before {
     position: absolute;
-    top: -386px;
-    left: 34px;
+    top: -347px;
+    left: 33px;
     content: "";
     width: 186px;
     height: 382px;
     background-image: url("../img/phone-mood.png");
+    z-index: -1;
   }
 
   .about__list-item--world::before {
     position: absolute;
-    top: -386px;
-    left: 34px;
+    top: -347px;
+    left: 41px;
     content: "";
     width: 186px;
     height: 382px;
     background-image: url("../img/phone-world.png");
+    z-index: -1;
   }
 
   .about__list-item--friends::before {
     position: absolute;
-    top: -386px;
-    left: 34px;
+    top: -347px;
+    left: 47px;
     content: "";
     width: 186px;
     height: 382px;
     background-image: url("../img/phone-friends.png");
+    z-index: -1;
   }
 }
 
@@ -117,6 +123,7 @@
     font-size: 30px;
     line-height: 30px;
     text-align: center;
+    padding-bottom: 22px;
 
     br {
       display: block;
@@ -134,7 +141,7 @@
   color: $main-header-text-color;
   margin: 0 auto;
   padding-bottom: 30px;
-  width: 300px;
+  width: 265px;
   height: auto;
 
   @media (min-width: $tablet-width) {

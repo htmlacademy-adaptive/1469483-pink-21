@@ -1,16 +1,42 @@
 .price {
   background-color: $bg-color-block;
-  margin-bottom: 54px;
+  margin-bottom: 49px;
+  height: 45vh;
+
+  @media (min-width: $tablet-width) {
+    height: 36vh;
+    margin-bottom: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 49vh;
+    margin-bottom: 61px;
+  }
 }
 
 .price__wrapper {
   overflow: hidden;
 }
 
+.price__table-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .price__table {
-  width: 100%;
-  padding-top: 31px;
-  padding-bottom: 30px;
+  display: block;
+  width: 900px;
+  padding-top: 27px;
+  padding-bottom: 70px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 59px;
+  }
 }
 
 .price__table tbody {
@@ -52,7 +78,7 @@
   color: $light-on-dark-color;
   margin: 0;
   padding-top: 14px;
-  padding-bottom: 63px;
+  padding-bottom: 23px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
@@ -93,9 +119,8 @@
   text-transform: uppercase;
   color: $main-header-text-color;
   padding-left: 20px;
-  padding-top: 7px;
-  padding-bottom: 25px;
-  width: 280px;
+  padding-right: 20px;
+  padding-top: 15px;
 
   @media (min-width: $tablet-width) {
     text-transform: none;
@@ -107,10 +132,11 @@
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
-    padding-left: 22px;
+    padding-left: 0;
+    padding-right: 0;
     padding-top: 13px;
     padding-bottom: 13px;
-    width: 234px;
+    width: 275px;
   }
 }
 
@@ -120,17 +146,35 @@
   }
 }
 
-.price__table-name-hidden--mobile {
-  @media (min-width: $mobile-width) {
-    display: none;
+@media (max-width: $mobile-width) {
+  .price__table-name-hidden--mobile {
+    width: 0;
+    min-width: 0;
+    padding: 15px;
+    font-size: 0;
+    line-height: 0;
   }
 
-  @media (min-width: $tablet-width) {
-    display: block;
+  .price__table-mobile-only {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: baseline;
   }
 }
 
 .price__table-cell-hidden {
   border-style: hidden;
   background: $bg-color-block;
+}
+
+.price__toggles {
+  position: relative;
+
+  .slider__toggles {
+    top: -20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

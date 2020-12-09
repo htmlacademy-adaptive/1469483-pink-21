@@ -9,7 +9,7 @@
 .main-nav__menu-button {
   position: absolute;
   top: -48px;
-  right: 15px;
+  right: 23px;
   z-index: 2;
   display: block;
   width: 50px;
@@ -20,7 +20,8 @@
   outline: none;
 
   @media (min-width: $tablet-width) {
-    top: -67px;
+    top: -71px;
+    right: 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -83,7 +84,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    top: -54px;
+    top: -68px;
+    right: 24px;
   }
 }
 
@@ -101,7 +103,7 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
-    margin-left: -63px;
+    margin-left: 13px;
     margin-top: 38px;
   }
 }
@@ -114,7 +116,7 @@
     &:last-child {
       padding-right: 0;
     }
-    padding-right: 79px;
+    padding-right: 72px;
     width: auto;
   }
 }
@@ -135,6 +137,10 @@
   box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
   border-top: 1px solid #485461;
   border-bottom: 1px solid #000000;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 16px;
+  }
 
   @media (min-width: $desktop-width) {
     text-transform: none;

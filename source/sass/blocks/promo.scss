@@ -1,10 +1,10 @@
 .promo {
-  height: 675px;
+  height: 668px;
   background-color: #1d2631;
   background-image: url("../img/header-bg.jpg");
   background-repeat: no-repeat;
   background-position: 50% 0%;
-  background-size: 120%;
+  background-size: 184%;
   z-index: -1;
 
   @media (min-width: $tablet-width) {
@@ -12,7 +12,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: 750px;
+    height: 741px;
+    background-size: cover;
+    background-position: 50% -104px;
   }
 }
 
@@ -22,17 +24,15 @@
   background-position: 50% 31%;
 
   @media (min-width: $tablet-width) {
-    height: 645px;
-    background-color: #1d2631;
-    background-image: url("../img/phone-tablet.png"), url("../img/screen-tablet.png");
-    background-position: -9% 101%, 84% 52%;
+    height: 620px;
+    background-image: url("../img/phone-tablet.png");
+    background-position: 50% 103%;
   }
 
   @media (min-width: $desktop-width) {
-    height: 773px;
-    background-color: #1d2631;
-    background-image: url("../img/phone-desk.png"), url("../img/screen-desk.png");
-    background-position: 68% 100%, 69% 53%;
+    height: 741px;
+    background-image: url("../img/phone-desk.png");
+    background-position: 111% 100%;
   }
 }
 
@@ -56,7 +56,7 @@
 
 .promo__header-wrapper {
   height: 400px;
-  margin-bottom: 32px;
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     background-image: none;
@@ -65,9 +65,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 0;
-    margin-left: -109px;
-    margin-bottom: 56px;
+    margin-top: -9px;
+    margin-left: -60px;
+    margin-bottom: 30px;
   }
 }
 
@@ -78,9 +78,9 @@
   font-size: 24px;
   line-height: 120%;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
   padding-top: 24px;
-  padding-left: 18px;
+  width: 300px;
 
   br {
     display: none;
@@ -88,6 +88,9 @@
 
   @media (min-width: $tablet-width) {
     font-size: 40px;
+    padding-top: 7px;
+    margin-left: -71px;
+    padding-bottom: 5px;
 
     br {
       display: block;
@@ -96,6 +99,7 @@
 
   @media (min-width: $desktop-width) {
     font-size: 50px;
+    line-height: 68px;
   }
 }
 
@@ -118,35 +122,36 @@
 
   @media (min-width: $tablet-width) {
     background: transparent;
-    margin-left: -57px;
+    margin-left: -71px;
     width: 300px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 21px;
-    margin-left: -138px;
+    margin-left: -131px;
   }
 }
 
 .promo__platforms {
-  padding-top: 32px;
+  padding-top: 30px;
   display: flex;
   justify-content: center;
   align-items: baseline;
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 40px;
+    padding-top: 44px;
+    margin-left: -26px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 68px;
-    margin-left: -93px;
+    margin-left: -85px;
   }
 }
 
 .promo__platforms a {
-  padding-right: 30px;
+  padding-right: 35px;
 
   &:last-child {
     padding-right: 0;
@@ -168,12 +173,12 @@
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
-    margin-left: -57px;
-    margin-top: 13px;
+    margin-left: -68px;
+    margin-top: 11px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: -137px;
+    margin-left: -129px;
     margin-top: 29px;
   }
 }

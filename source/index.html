@@ -167,7 +167,7 @@
                 <td><span class="price__table-name price__table-name-hidden">Розовый фильтр</span>
                   <img src="img/price-yes.png" alt="yes" width="27" height="27">
                 </td>
-                <td><span class="price__table-name price__table-name-hidden">Розовый фильтр</span>
+                <td class="price__table-mobile-only"><span class="price__table-name price__table-name-hidden">Розовый фильтр</span>
                   <img src="img/price-yes.png" alt="yes" width="27" height="27">
                 </td>
                 <td><span class="price__table-name price__table-name-hidden">Розовый фильтр</span>
@@ -179,7 +179,7 @@
                 <td><span class="price__table-name price__table-name-hidden">Смайлики</span>
                   <img src="img/price-no.png" alt="no" width="27" height="27">
                 </td>
-                <td><span class="price__table-name price__table-name-hidden">Смайлики</span>
+                <td class="price__table-mobile-only"><span class="price__table-name price__table-name-hidden">Смайлики</span>
                   <img src="img/price-yes.png" alt="yes" width="27" height="27">
                 </td>
                 <td><span class="price__table-name price__table-name-hidden">Смайлики</span>
@@ -191,7 +191,7 @@
                 <td><span class="price__table-name price__table-name-hidden">Комментарии</span>
                   <img src="img/price-no.png" alt="no" width="27" height="27">
                 </td>
-                <td><span class="price__table-name price__table-name-hidden">Комментарии</span>
+                <td class="price__table-mobile-only"><span class="price__table-name price__table-name-hidden">Комментарии</span>
                   <img src="img/price-no.png" alt="no" width="27" height="27">
                 </td>
                 <td><span class="price__table-name price__table-name-hidden">Комментарии</span>
@@ -200,6 +200,22 @@
               </tr>
             </tbody>
           </table>
+          <div class="price__toggles">
+            <ul class="slider__toggles">
+              <li class="slider__toggle">
+                <input type="radio" id="one-toggle" name="price-toggle">
+                <label for="one-toggle"></label>
+              </li>
+              <li class="slider__toggle">
+                <input type="radio" id="two-toggle" name="price-toggle" checked>
+                <label for="two-toggle"></label>
+              </li>
+              <li class="slider__toggle">
+                <input type="radio" id="three-toggle" name="price-toggle">
+                <label for="three-toggle"></label>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -225,6 +241,7 @@
       </div>
     </section>
     <section class="contacts__map">
+      <img src="../img/map-mini.jpg" alt="ул. Большая Конюшенная, 19/8" width="320" height="200">
       <div class="contacts__map-marker">
         <img class="contacts__map-marker-marker" src="img/index-map-marker.png" alt="map-marker" width="36" height="36">
       </div>
