@@ -101,6 +101,7 @@
 
 .contacts__map {
   position: relative;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/map-middle.png");
@@ -120,7 +121,7 @@
 .contacts__map-marker {
   position: absolute;
   top: 85px;
-  left: 135px;
+  left: 283px;
 
   @media (min-width: $tablet-width) {
     top: 195px;

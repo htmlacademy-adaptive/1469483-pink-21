@@ -1,15 +1,12 @@
 .price {
   background-color: $bg-color-block;
   margin-bottom: 49px;
-  height: 45vh;
 
   @media (min-width: $tablet-width) {
-    height: 36vh;
     margin-bottom: 42px;
   }
 
   @media (min-width: $desktop-width) {
-    height: 49vh;
     margin-bottom: 61px;
   }
 }
@@ -31,21 +28,18 @@
   padding-bottom: 70px;
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 20px;
     margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 59px;
+    padding-bottom: 86px;
   }
 }
 
 .price__table tbody {
   background-color: #ffffff;
-}
-
-.price__table img {
-  display: block;
-  margin: 0 auto;
 }
 
 .price__table-header-wrapper {
@@ -121,6 +115,7 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 15px;
+  padding-bottom: 11px;
 
   @media (min-width: $tablet-width) {
     text-transform: none;
@@ -171,13 +166,16 @@
 
 @media (min-width: $mobile-width) {
   .price__table-mobile-only {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
     align-items: baseline;
+    padding-right: 18px;
 
     @media (min-width: $tablet-width) {
       align-items: center;
-      padding-top: 16px;
+      justify-content: center;
+      padding-right: 0;
     }
   }
 }
