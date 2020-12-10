@@ -399,7 +399,7 @@ img {
     .promo__bg-img {
       height: 741px;
       background-image: url("../img/phone-desk.png");
-      background-position: 111% 100%; } }
+      background-position: 50% 100%; } }
 
 .promo__wrapper {
   display: flex;
@@ -568,16 +568,18 @@ img {
     .about__list {
       flex-direction: row;
       justify-content: space-between;
-      margin: 0 auto;
+      height: auto;
       padding: 0;
-      height: auto; } }
+      margin-left: -32px; } }
 
 @media (min-width: 960px) {
   .about__list-item {
     position: relative;
     height: 200px;
     padding-top: 9px;
-    z-index: 1; } }
+    padding-right: 22px; }
+    .about__list-item:last-child {
+      padding-left: 0; } }
 
 .about__list-item--mood,
 .about__list-item--world,
@@ -588,52 +590,21 @@ img {
     .about__list-item--world,
     .about__list-item--friends {
       display: block;
-      position: relative; } }
+      position: relative;
+      width: 300px;
+      height: 301px;
+      overflow: hidden;
+      text-align: center; } }
 
-.about__list-item--mood {
-  overflow: hidden;
-  height: 301px;
-  padding-left: 24px; }
-
-.about__list-item--world {
-  overflow: hidden;
-  height: 301px;
-  padding-left: 33px; }
-
-.about__list-item--friends {
-  overflow: hidden;
-  height: 301px;
-  padding-left: 39px; }
-
-.about__list-item--mood::after {
-  content: "";
-  position: absolute;
-  top: 294px;
-  left: -24px;
-  width: 300px;
-  height: 17px;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 49.8%, rgba(0, 0, 0, 0) 93.23%);
-  opacity: 0.3;
-  filter: blur(4px); }
-
-.about__list-item--world::after {
-  content: "";
-  position: absolute;
-  top: 294px;
-  left: -12px;
-  width: 300px;
-  height: 13px;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 49.8%, rgba(0, 0, 0, 0) 93.23%);
-  opacity: 0.3;
-  filter: blur(4px); }
-
+.about__list-item--mood::after,
+.about__list-item--world::after,
 .about__list-item--friends::after {
   content: "";
   position: absolute;
-  top: 294px;
-  left: -16px;
+  top: 290px;
+  left: 0;
   width: 300px;
-  height: 13px;
+  height: 17px;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 49.8%, rgba(0, 0, 0, 0) 93.23%);
   opacity: 0.3;
   filter: blur(4px); }
@@ -2090,7 +2061,7 @@ img {
       height: 465px;
       background-color: #f2f2f2;
       background-image: url("../img/timer-round-desk.png"), url("../img/timer-hours-desk.png"), url("../img/timer-desk.png");
-      background-position: 17% 56%, 21% 54%, 15% 42%;
+      background-position: 24% 56%, 26% 54%, 23% 41%;
       margin-bottom: 55px; } }
 
 .effect__wrapper {
@@ -2111,7 +2082,7 @@ img {
     .effect__header,
     .effect__text,
     .effect__more {
-      padding-left: 348px; } }
+      padding-left: 340px; } }
 
 .effect__header {
   font-family: "Open Sans", "PT Sans", sans-serif;
@@ -2127,7 +2098,7 @@ img {
     .effect__header {
       line-height: 30px;
       padding-top: 145px;
-      padding-bottom: 29px; }
+      padding-bottom: 24px; }
       .effect__header br {
         display: none; } }
 
@@ -2146,7 +2117,7 @@ img {
     .effect__text {
       font-size: 18px;
       line-height: 30px;
-      padding-bottom: 29px; }
+      padding-bottom: 34px; }
       .effect__text br {
         display: block; } }
 
