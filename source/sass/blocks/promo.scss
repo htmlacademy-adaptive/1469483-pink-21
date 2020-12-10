@@ -6,6 +6,7 @@
   background-position: 50% 0%;
   background-size: 184%;
   z-index: -1;
+  margin-bottom: 44px;
 
   @media (min-width: $tablet-width) {
     height: 620px;
@@ -66,7 +67,7 @@
 
   @media (min-width: $desktop-width) {
     margin-top: -9px;
-    margin-left: -60px;
+    margin-left: -68px;
     margin-bottom: 30px;
   }
 }
@@ -128,7 +129,7 @@
 
   @media (min-width: $desktop-width) {
     font-size: 21px;
-    margin-left: -131px;
+    margin-left: -139px;
   }
 }
 
@@ -146,7 +147,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 68px;
-    margin-left: -85px;
+    margin-left: -94px;
   }
 }
 
@@ -178,7 +179,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: -129px;
+    margin-left: -138px;
     margin-top: 29px;
   }
 }

@@ -11,8 +11,8 @@
 .about__wrapper {
   @media (min-width: $tablet-width) {
     height: 480px;
-    background-image: url("../img/iphone-screen-tablet-about.png"), url("../img/iphone-tablet-about.png");
-    background-position: 8% 106%, 5% 5%;
+    background-image: url("../img/iphone-tablet-about.png");
+    background-position: 3% -8%;
     background-repeat: no-repeat;
     z-index: 1;
   }
@@ -53,7 +53,6 @@
     height: auto;
     padding: 0;
     margin-left: -32px;
-
   }
 }
 
@@ -61,7 +60,7 @@
   .about__list-item {
     position: relative;
     height: 200px;
-    padding-top: 9px;
+    padding-top: 12px;
     padding-right: 22px;
 
     &:last-child {
@@ -90,11 +89,11 @@
 .about__list-item--friends::after {
   content: "";
   position: absolute;
-  top: 290px;
+  top: 292px;
   left: 0;
   width: 300px;
   height: 17px;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 49.8%, rgba(0, 0, 0, 0) 93.23%);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 49.8%, rgba(0, 0, 0, 0) 100%);
   opacity: 0.3;
   filter: blur(4px);
 }
