@@ -9,9 +9,6 @@
 }
 
 .about__wrapper {
-  // display: flex;
-  // flex-direction: column;
-
   @media (min-width: $tablet-width) {
     height: 480px;
     background-image: url("../img/iphone-screen-tablet-about.png"), url("../img/iphone-tablet-about.png");
@@ -46,7 +43,6 @@
     align-items: flex-end;
     height: 450px;
     background-image: none;
-    z-index: -1;
     padding-top: 70px;
     margin-left: -46px;
   }
@@ -68,6 +64,7 @@
     z-index: 1;
   }
 }
+
 .about__list-item--mood,
 .about__list-item--world,
 .about__list-item--friends {
@@ -75,8 +72,10 @@
 
   @media (min-width: $desktop-width) {
     display: block;
+    position: relative;
   }
 }
+
 .about__list-item--mood {
   overflow: hidden;
   height: 301px;
@@ -88,17 +87,30 @@
   height: 301px;
   padding-left: 33px;
 }
+
 .about__list-item--friends {
   overflow: hidden;
   height: 301px;
   padding-left: 39px;
 }
 
-.about__list-item::after {
+.about__list-item--mood::after {
   content: "";
   position: absolute;
-  top: 311px;
-  left: -14px;
+  top: 294px;
+  left: -24px;
+  width: 300px;
+  height: 17px;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 49.8%, rgba(0, 0, 0, 0) 93.23%);
+  opacity: 0.3;
+  filter: blur(4px);
+}
+
+.about__list-item--world::after {
+  content: "";
+  position: absolute;
+  top: 294px;
+  left: -12px;
   width: 300px;
   height: 13px;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 49.8%, rgba(0, 0, 0, 0) 93.23%);
@@ -106,29 +118,17 @@
   filter: blur(4px);
 }
 
-// .about__list-item--world::after {
-//   content: "";
-//   position: absolute;
-//   top: 311px;
-//   left: -12px;
-//   width: 300px;
-//   height: 13px;
-//   background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 49.8%, rgba(0, 0, 0, 0) 93.23%);
-//   opacity: 0.3;
-//   filter: blur(4px);
-// }
-
-// .about__list-item--friends::after {
-//   content: "";
-//   position: absolute;
-//   top: 311px;
-//   left: -12px;
-//   width: 300px;
-//   height: 13px;
-//   background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 49.8%, rgba(0, 0, 0, 0) 93.23%);
-//   opacity: 0.3;
-//   filter: blur(4px);
-// }
+.about__list-item--friends::after {
+  content: "";
+  position: absolute;
+  top: 294px;
+  left: -16px;
+  width: 300px;
+  height: 13px;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 49.8%, rgba(0, 0, 0, 0) 93.23%);
+  opacity: 0.3;
+  filter: blur(4px);
+}
 
 .about__list-header {
   font-family: $main-font-family;
