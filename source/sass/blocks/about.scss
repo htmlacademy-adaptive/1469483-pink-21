@@ -50,9 +50,10 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 auto;
-    padding: 0;
     height: auto;
+    padding: 0;
+    margin-left: -32px;
+
   }
 }
 
@@ -61,7 +62,11 @@
     position: relative;
     height: 200px;
     padding-top: 9px;
-    z-index: 1;
+    padding-right: 22px;
+
+    &:last-child {
+      padding-left: 0;
+    }
   }
 }
 
@@ -73,58 +78,22 @@
   @media (min-width: $desktop-width) {
     display: block;
     position: relative;
+    width: 300px;
+    height: 301px;
+    overflow: hidden;
+    text-align: center;
   }
 }
 
-.about__list-item--mood {
-  overflow: hidden;
-  height: 301px;
-  padding-left: 24px;
-}
-
-.about__list-item--world {
-  overflow: hidden;
-  height: 301px;
-  padding-left: 33px;
-}
-
-.about__list-item--friends {
-  overflow: hidden;
-  height: 301px;
-  padding-left: 39px;
-}
-
-.about__list-item--mood::after {
-  content: "";
-  position: absolute;
-  top: 294px;
-  left: -24px;
-  width: 300px;
-  height: 17px;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 49.8%, rgba(0, 0, 0, 0) 93.23%);
-  opacity: 0.3;
-  filter: blur(4px);
-}
-
-.about__list-item--world::after {
-  content: "";
-  position: absolute;
-  top: 294px;
-  left: -12px;
-  width: 300px;
-  height: 13px;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 49.8%, rgba(0, 0, 0, 0) 93.23%);
-  opacity: 0.3;
-  filter: blur(4px);
-}
-
+.about__list-item--mood::after,
+.about__list-item--world::after,
 .about__list-item--friends::after {
   content: "";
   position: absolute;
-  top: 294px;
-  left: -16px;
+  top: 290px;
+  left: 0;
   width: 300px;
-  height: 13px;
+  height: 17px;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 49.8%, rgba(0, 0, 0, 0) 93.23%);
   opacity: 0.3;
   filter: blur(4px);
