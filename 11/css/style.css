@@ -256,7 +256,7 @@ img {
 .main-nav__menu-button {
   position: absolute;
   top: -48px;
-  right: 23px;
+  right: 6%;
   z-index: 2;
   display: block;
   width: 50px;
@@ -268,7 +268,7 @@ img {
   @media (min-width: 660px) {
     .main-nav__menu-button {
       top: -71px;
-      right: 24px; } }
+      right: 6%; } }
   @media (min-width: 960px) {
     .main-nav__menu-button {
       display: none; } }
@@ -296,7 +296,7 @@ img {
 
 .main-nav--open .main-nav__menu-button {
   top: -42px;
-  right: -9px; }
+  right: 6%; }
   .main-nav--open .main-nav__menu-button::before, .main-nav--open .main-nav__menu-button::after {
     content: "";
     position: absolute;
@@ -527,7 +527,8 @@ img {
   background-color: #f2f2f2; }
   @media (min-width: 960px) {
     .about {
-      margin-bottom: 0; } }
+      margin-bottom: 0;
+      padding-bottom: 107px; } }
 
 @media (min-width: 660px) {
   .about__wrapper {
@@ -547,7 +548,7 @@ img {
 .about__list {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   list-style: none;
   padding-top: 66px;
   margin: 0;
@@ -558,6 +559,7 @@ img {
   background-position: 50% 100%, 50% 109%; }
   @media (min-width: 660px) {
     .about__list {
+      align-items: flex-end;
       height: 450px;
       background-image: none;
       z-index: -1;
@@ -568,75 +570,46 @@ img {
       flex-direction: row;
       justify-content: space-between;
       margin: 0 auto;
-      padding: 0; } }
+      padding: 0;
+      height: auto; } }
 
 @media (min-width: 960px) {
   .about__list-item {
     position: relative;
     height: 200px;
     padding-top: 9px;
-    z-index: 1; }
-  .about__list-item--mood::before {
-    position: absolute;
-    top: -349px;
-    left: 5px;
-    content: "";
-    width: 240px;
-    height: 301px;
-    background-image: url("../img/phone-mood.png");
-    background-position: 50% -4%;
-    background-repeat: no-repeat;
-    z-index: -1; }
-  .about__list-item--world::before {
-    position: absolute;
-    top: -349px;
-    left: 13px;
-    content: "";
-    width: 240px;
-    height: 301px;
-    background-image: url("../img/phone-world.png");
-    background-position: 50% -4%;
-    background-repeat: no-repeat;
-    z-index: -1; }
-  .about__list-item--friends::before {
-    position: absolute;
-    top: -349px;
-    left: 20px;
-    content: "";
-    width: 240px;
-    height: 301px;
-    background-image: url("../img/phone-friends.png");
-    background-position: 50% -4%;
-    background-repeat: no-repeat;
-    z-index: -1; } }
+    z-index: 1; } }
 
-.about__list-item--mood::after {
+.about__list-item--mood,
+.about__list-item--world,
+.about__list-item--friends {
+  display: none; }
+  @media (min-width: 960px) {
+    .about__list-item--mood,
+    .about__list-item--world,
+    .about__list-item--friends {
+      display: block; } }
+
+.about__list-item--mood {
+  overflow: hidden;
+  height: 301px;
+  padding-left: 24px; }
+
+.about__list-item--world {
+  overflow: hidden;
+  height: 301px;
+  padding-left: 33px; }
+
+.about__list-item--friends {
+  overflow: hidden;
+  height: 301px;
+  padding-left: 39px; }
+
+.about__list-item::after {
   content: "";
   position: absolute;
-  top: -53px;
+  top: 311px;
   left: -14px;
-  width: 300px;
-  height: 13px;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 49.8%, rgba(0, 0, 0, 0) 93.23%);
-  opacity: 0.3;
-  filter: blur(4px); }
-
-.about__list-item--world::after {
-  content: "";
-  position: absolute;
-  top: -53px;
-  left: -12px;
-  width: 300px;
-  height: 13px;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 49.8%, rgba(0, 0, 0, 0) 93.23%);
-  opacity: 0.3;
-  filter: blur(4px); }
-
-.about__list-item--friends::after {
-  content: "";
-  position: absolute;
-  top: -53px;
-  left: -3px;
   width: 300px;
   height: 13px;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 49.8%, rgba(0, 0, 0, 0) 93.23%);
@@ -664,6 +637,7 @@ img {
       font-size: 30px;
       line-height: 30px;
       text-align: center;
+      padding-top: 57px;
       padding-bottom: 22px; }
       .about__list-header br {
         display: block; } }
@@ -2044,7 +2018,7 @@ img {
   text-align: center; }
 
 .features {
-  margin-bottom: 50px; }
+  margin-bottom: 44px; }
 
 .features-text {
   font-family: "Open Sans", "PT Sans", sans-serif;
@@ -2074,10 +2048,6 @@ img {
   @media (min-width: 960px) {
     .features-question {
       margin-top: 66px; } }
-
-@media (min-width: 960px) {
-  .features-answer {
-    padding-bottom: 100px; } }
 
 .effect {
   display: none; }
