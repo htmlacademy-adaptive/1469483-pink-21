@@ -578,31 +578,70 @@ img {
     z-index: 1; }
   .about__list-item--mood::before {
     position: absolute;
-    top: -347px;
-    left: 33px;
+    top: -349px;
+    left: 5px;
     content: "";
-    width: 186px;
-    height: 382px;
+    width: 240px;
+    height: 301px;
     background-image: url("../img/phone-mood.png");
+    background-position: 50% -4%;
+    background-repeat: no-repeat;
     z-index: -1; }
   .about__list-item--world::before {
     position: absolute;
-    top: -347px;
-    left: 41px;
+    top: -349px;
+    left: 13px;
     content: "";
-    width: 186px;
-    height: 382px;
+    width: 240px;
+    height: 301px;
     background-image: url("../img/phone-world.png");
+    background-position: 50% -4%;
+    background-repeat: no-repeat;
     z-index: -1; }
   .about__list-item--friends::before {
     position: absolute;
-    top: -347px;
-    left: 47px;
+    top: -349px;
+    left: 20px;
     content: "";
-    width: 186px;
-    height: 382px;
+    width: 240px;
+    height: 301px;
     background-image: url("../img/phone-friends.png");
+    background-position: 50% -4%;
+    background-repeat: no-repeat;
     z-index: -1; } }
+
+.about__list-item--mood::after {
+  content: "";
+  position: absolute;
+  top: -53px;
+  left: -14px;
+  width: 300px;
+  height: 13px;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 49.8%, rgba(0, 0, 0, 0) 93.23%);
+  opacity: 0.3;
+  filter: blur(4px); }
+
+.about__list-item--world::after {
+  content: "";
+  position: absolute;
+  top: -53px;
+  left: -12px;
+  width: 300px;
+  height: 13px;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 49.8%, rgba(0, 0, 0, 0) 93.23%);
+  opacity: 0.3;
+  filter: blur(4px); }
+
+.about__list-item--friends::after {
+  content: "";
+  position: absolute;
+  top: -53px;
+  left: -3px;
+  width: 300px;
+  height: 13px;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 49.8%, rgba(0, 0, 0, 0) 93.23%);
+  opacity: 0.3;
+  filter: blur(4px); }
 
 .about__list-header {
   font-family: "Open Sans", "PT Sans", sans-serif;
@@ -764,15 +803,12 @@ img {
 
 .price {
   background-color: #f2f2f2;
-  margin-bottom: 49px;
-  height: 45vh; }
+  margin-bottom: 49px; }
   @media (min-width: 660px) {
     .price {
-      height: 36vh;
       margin-bottom: 42px; } }
   @media (min-width: 960px) {
     .price {
-      height: 49vh;
       margin-bottom: 61px; } }
 
 .price__wrapper {
@@ -790,17 +826,15 @@ img {
   padding-bottom: 70px; }
   @media (min-width: 660px) {
     .price__table {
+      padding-bottom: 20px;
       margin: 0 auto; } }
   @media (min-width: 960px) {
     .price__table {
-      padding-top: 59px; } }
+      padding-top: 59px;
+      padding-bottom: 86px; } }
 
 .price__table tbody {
   background-color: #ffffff; }
-
-.price__table img {
-  display: block;
-  margin: 0 auto; }
 
 .price__table-header-wrapper {
   background-color: #283645;
@@ -865,7 +899,8 @@ img {
   color: #283645;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 15px; }
+  padding-top: 15px;
+  padding-bottom: 11px; }
   @media (min-width: 660px) {
     .price__table-name {
       text-transform: none;
@@ -908,13 +943,16 @@ img {
 
 @media (min-width: 320px) {
   .price__table-mobile-only {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    align-items: baseline; } }
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-right: 18px; } }
   @media (min-width: 320px) and (min-width: 660px) {
     .price__table-mobile-only {
       align-items: center;
-      padding-top: 16px; } }
+      justify-content: center;
+      padding-right: 0; } }
 
 .price__table-cell-hidden {
   border-style: hidden;
@@ -1014,7 +1052,8 @@ img {
       padding-top: 20px; } }
 
 .contacts__map {
-  position: relative; }
+  position: relative;
+  text-align: center; }
   @media (min-width: 660px) {
     .contacts__map {
       background-image: url("../img/map-middle.png");
@@ -1031,7 +1070,7 @@ img {
 .contacts__map-marker {
   position: absolute;
   top: 85px;
-  left: 135px; }
+  left: 283px; }
   @media (min-width: 660px) {
     .contacts__map-marker {
       top: 195px;
