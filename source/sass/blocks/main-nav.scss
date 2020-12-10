@@ -1,3 +1,98 @@
+.main-nav {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+  }
+}
+
+.main-nav__menu-button {
+  position: absolute;
+  top: -48px;
+  right: 6%;
+  z-index: 2;
+  display: block;
+  width: 50px;
+  height: 24px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+
+  @media (min-width: $tablet-width) {
+    top: -71px;
+    right: 6%;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav--closed .main-nav__menu-button::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 12px;
+  width: 50px;
+  height: 4px;
+  background-color: #ffffff;
+  border-radius: 3px;
+  box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+}
+
+.main-nav--closed .main-nav__menu-button:active::before {
+  background-color: fade(#ffffff, 30%);
+  box-shadow: 0 8px 0 0 fade(#ffffff, 30%), 0 16px 0 0 fade(#ffffff, 30%);
+}
+
+.main-nav--closed .main-nav__item {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.main-nav--open .main-nav__menu-button {
+  top: -42px;
+  right: 6%;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 13px;
+    width: 27px;
+    height: 3px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: red;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: -68px;
+    right: 24px;
+  }
+}
+
+.main-nav--nojs .main-nav__menu-button {
+  display: none;
+}
+
 .main-nav__list {
   display: flex;
   flex-direction: column;
@@ -8,16 +103,27 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+    margin-left: 13px;
+    margin-top: 38px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .main-nav__item {
-    padding-right: 30px;
+.main-nav__item {
+  width: 100%;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    &:last-child {
+      padding-right: 0;
+    }
+    padding-right: 72px;
+    width: auto;
   }
 }
 
 .main-nav__item a {
+  position: relative;
+  display: block;
   font-family: $main-font-family;
   font-style: normal;
   font-weight: bold;
@@ -25,9 +131,21 @@
   line-height: 32px;
   text-transform: uppercase;
   color: $light-on-dark-color;
+  padding-top: 18px;
+  padding-bottom: 13px;
+  background: #283645;
+  box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000000;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 16px;
+  }
 
   @media (min-width: $desktop-width) {
     text-transform: none;
+    box-shadow: none;
+    border: none;
+    padding: 0;
   }
 }

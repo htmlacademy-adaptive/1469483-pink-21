@@ -1,13 +1,47 @@
 .price {
   background-color: $bg-color-block;
+  margin-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 64px;
+  }
+}
+
+.price__wrapper {
+  overflow: hidden;
+
+  @media (min-width: $desktop-width) {
+    overflow: visible;
+  }
+}
+
+.price__table-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .price__table {
-  width: 100%;
+  display: block;
+  width: 900px;
+  padding-top: 27px;
+  padding-bottom: 70px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 20px;
+    margin: 0 auto;
+  }
 
   @media (min-width: $desktop-width) {
-    width: 80%;
-    margin: 0 auto;
+    margin: 0;
+    margin-left: -67px;
+    width: 100%;
+    padding-top: 56px;
+    padding-bottom: 94px;
   }
 }
 
@@ -15,22 +49,21 @@
   background-color: #ffffff;
 }
 
-.price__table img {
-  display: block;
-  margin: 0 auto;
-}
-
 .price__table-header-wrapper {
   background-color: #283645;
   color: $light-on-dark-color;
   width: 276px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 
   @media (min-width: $tablet-width) {
     width: 152px;
+    height: 80px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 233px;
+    width: 390px;
+    height: 100px;
   }
 }
 
@@ -45,29 +78,24 @@
   text-transform: uppercase;
   color: $light-on-dark-color;
   margin: 0;
-  padding-top: 19px;
-  padding-bottom: 63px;
+  padding-top: 14px;
+  padding-bottom: 23px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 44px;
+    padding-bottom: 0;
+    padding-top: 7px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
+    padding: 0;
   }
 }
 
-// .price__table-header--hit {
-//   position: absolute;
-//   content: "";
-//   left: 0;
-//   top: 0;
-//   width: 27px;
-//   height: 10px;
-//   background-image: url("../img/hit.png");
-//   background-repeat: no-repeat;
-//   transform: rotate(-45deg);
-// }
+.price__table-header--hit {
+  background-image: url("../img/hit.png");
+  background-repeat: no-repeat;
+}
 
 .price__table-cost {
   font-family: $main-font-family;
@@ -93,23 +121,25 @@
   text-transform: uppercase;
   color: $main-header-text-color;
   padding-left: 20px;
-  padding-top: 24px;
-  padding-bottom: 25px;
-  width: 280px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 11px;
 
   @media (min-width: $tablet-width) {
     text-transform: none;
     padding-left: 15px;
-    padding-top: 18px;
-    padding-bottom: 17px;
+    padding-top: 7px;
+    padding-bottom: 6px;
     width: 153px;
   }
 
   @media (min-width: $desktop-width) {
+    display: block;
     font-size: 18px;
-    padding-left: 22px;
-    padding-top: 23px;
-    padding-bottom: 23px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 13px;
+    padding-bottom: 13px;
     width: 234px;
   }
 }
@@ -121,16 +151,70 @@
 }
 
 .price__table-name-hidden--mobile {
-  @media (min-width: $mobile-width) {
-    display: none;
-  }
+  width: 0;
+  min-width: 0;
+  padding: 15px;
+  font-size: 0;
+  line-height: 0;
 
   @media (min-width: $tablet-width) {
+    width: 153px;
+    min-width: auto;
+    padding-top: 15px;
+    padding-right: 0;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 234px;
+    font-size: 18px;
+    padding-left: 22px;
+    padding-right: 0;
+    padding-top: 12px;
+    padding-bottom: 15px;
+  }
+}
+
+@media (min-width: $mobile-width) {
+  .price__table-mobile-only {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-right: 18px;
+
+    @media (min-width: $tablet-width) {
+      align-items: center;
+      justify-content: center;
+      padding-right: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price__table-mobile-only {
     display: block;
+    width: 233px;
+    text-align: center;
   }
 }
 
 .price__table-cell-hidden {
   border-style: hidden;
   background: $bg-color-block;
+}
+
+.price__toggles {
+  position: relative;
+
+  .slider__toggles {
+    top: -20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
