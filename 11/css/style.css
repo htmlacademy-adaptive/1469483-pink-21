@@ -886,17 +886,35 @@ img {
   .price__table-name-hidden {
     display: none; } }
 
-@media (max-width: 320px) {
-  .price__table-name-hidden--mobile {
-    width: 0;
-    min-width: 0;
-    padding: 15px;
-    font-size: 0;
-    line-height: 0; }
+.price__table-name-hidden--mobile {
+  width: 0;
+  min-width: 0;
+  padding: 15px;
+  font-size: 0;
+  line-height: 0; }
+  @media (min-width: 660px) {
+    .price__table-name-hidden--mobile {
+      width: 153px;
+      min-width: auto;
+      padding-top: 15px;
+      padding-right: 0;
+      padding-bottom: 15px;
+      padding-left: 15px;
+      font-size: 14px;
+      line-height: 30px; } }
+  @media (min-width: 960px) {
+    .price__table-name-hidden--mobile {
+      width: 234px; } }
+
+@media (min-width: 320px) {
   .price__table-mobile-only {
     display: grid;
     grid-template-columns: 3fr 1fr;
     align-items: baseline; } }
+  @media (min-width: 320px) and (min-width: 660px) {
+    .price__table-mobile-only {
+      align-items: center;
+      padding-top: 16px; } }
 
 .price__table-cell-hidden {
   border-style: hidden;
