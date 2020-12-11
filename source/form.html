@@ -10,13 +10,11 @@
 
 <body class="page__body">
   <header class="page-header">
-    <div class="page-header__wrapper wrapper">
       <a class="page-header__logo" href="#">
         <img src="img/index-pink-head.png" alt="PINK" width="74" height="23">
       </a>
-      <nav class="main-nav">
-        <button class="page-header__menu-button" type="button">
-        </button>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__menu-button" type="button"></button>
         <div>
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -61,7 +59,7 @@
             </p>
           </fieldset>
           <fieldset class="forms__progress">
-            <legend class="forms__progress-header">Ваши безбашенные
+            <legend class="forms__progress-header">Ваши безбашенные<br>
               достижения в путешествии</legend>
             <div class="forms__progress-wrapper">
               <ul class="forms__progress-list">
@@ -142,7 +140,7 @@
           </fieldset>
           <div class="forms__submit-items">
             <button class="forms__button" type="submit">Отправить форму</button>
-            <p class="forms__rules"><span>*</span> — обязательные поля</p>
+            <p class="forms__rules"><span class="forms__rules-star">*</span> — обязательные <span class="forms__rules-hidden">для заполнения</span> поля</p>
           </div>
         </form>
 
@@ -187,6 +185,7 @@
       </div>
     </div>
   </section>
+  <script src="js/menu.js"></script>
 </body>
 
 </html>
