@@ -1,3 +1,15 @@
+.forms {
+  margin-bottom: 56px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 87px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 72px;
+  }
+}
+
 .forms__wrapper {
   margin: 0 auto;
   width: 100%;
@@ -16,15 +28,16 @@
 
 .forms__header-wrapper {
   background-color: #283645;
-  height: 237px;
-  margin-bottom: 50px;
+  height: 171px;
+  margin-bottom: 44px;
 
   @media (min-width: $tablet-width) {
-    height: 440px;
+    height: 330px;
+    margin-bottom: 91px;
   }
 
   @media (min-width: $desktop-width) {
-    height: 394px;
+    height: 282px;
   }
 }
 
@@ -47,17 +60,19 @@
   text-align: center;
   color: $light-on-dark-color;
   margin: 0 auto;
-  padding-top: 70px;
+  padding-top: 28px;
   width: 240px;
 
   @media (min-width: $tablet-width) {
     font-size: 50px;
     line-height: 68px;
     width: 620px;
+    padding-top: 68px;
   }
 
   @media (min-width: $desktop-width) {
     width: 780px;
+    padding-top: 56px;
   }
 }
 
@@ -70,16 +85,17 @@
   text-align: center;
   color: $main-header-text-color;
   width: 280px;
-  padding-bottom: 50px;
   margin: 0 auto;
+  padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
-    width: 490px;
+    width: 530px;
+    padding-bottom: 73px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 756px;
+    width: 844px;
   }
 }
 
@@ -92,12 +108,9 @@
 }
 
 .forms__user-header,
-.forms__progress-header,
 .forms__contacts-header,
-.forms__platforms-header,
 .forms__emotion-header,
-.forms__rules,
-.forms__rules span {
+.forms__rules-star {
   font-family: $main-font-family;
   font-style: normal;
   font-weight: normal;
@@ -132,22 +145,24 @@
 
 .forms__user {
   box-sizing: border-box;
-  width: 300px;
+  width: 100%;
   border: none;
-  padding: 0;
   margin-top: 0;
   margin-right: auto;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   margin-left: auto;
 
   @media (min-width: $tablet-width) {
     width: 100%;
     order: -5;
+    padding: 0;
+    margin-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
     width: 434px;
-    padding-right: 74px;
+    padding-right: 0;
+    margin-left: -30px;
   }
 }
 
@@ -155,76 +170,139 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  margin: 0;
+  padding-bottom: 11px;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
 
   @media (min-width: $tablet-width) {
     flex-wrap: nowrap;
+    padding-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 48px;
   }
 }
 
 .forms__user-header {
-  padding-left: 20px;
-  padding-top: 13px;
+  padding-left: 21px;
+  padding-top: 7px;
   padding-right: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 6px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-top: 18px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
 }
 
 .forms__user-contains {
   width: 100%;
-  height: 59px;
+  height: 61px;
   border: 2px solid #e5e5e5;
   border-radius: 1px;
   padding-left: 20px;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    height: 64px;
+    margin-top: 11px;
+    margin-bottom: -7px;
+  }
+}
+
+.forms__progress-wrapper {
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    width: 917px;
+  }
 }
 
 .forms__progress {
   box-sizing: border-box;
   border: none;
-  margin: 0 auto;
-  margin-bottom: 50px;
+  margin-top: -49px;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     width: 620px;
     padding: 0 10px;
     border: 2px solid #e5e5e5;
     border-radius: 1px;
+    margin-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 920px;
-    padding: 0 20px;
+    width: 100%;
+    margin-left: -31px;
+    margin-bottom: 48px;
   }
 }
 
 .forms__progress-header {
-  padding-left: 20px;
-  padding-top: 50px;
-  padding-right: 20px;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: $forms-header-color;
+  text-align: center;
+  padding-top: 111px;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
+    padding-left: 30px;
+    padding-right: 30px;
     text-align: center;
+
+    br {
+      display: none;
+    }
   }
 }
 
 .forms__progress-item {
   position: relative;
   padding-left: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 52px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .forms__progress-list {
   list-style: none;
-  margin-top: 30px;
-  padding-left: 30px;
+  margin-top: 42px;
+  margin-bottom: 47px;
+  padding-left: 51px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 50px;
+    padding-left: 79px;
+    margin-top: 46px;
+    margin-bottom: 54px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 315px 295px auto;
     grid-template-rows: 1fr 1fr;
+    padding-left: 89px;
+    margin-bottom: 10px;
   }
 }
 
@@ -237,8 +315,8 @@
 .forms__progress-checkbox:checked + .forms__progress-input-names::after {
   content: "";
   position: absolute;
-  left: -30px;
-  top: -3px;
+  left: -38px;
+  top: -1px;
   width: 35px;
   height: 35px;
   background: #ffffff;
@@ -252,8 +330,8 @@
 .forms__progress-checkbox + .forms__progress-input-names::before {
   content: "";
   position: absolute;
-  left: -30px;
-  top: -3px;
+  left: -38px;
+  top: -1px;
   width: 35px;
   height: 35px;
   background: #ffffff;
@@ -267,13 +345,34 @@
   width: 100%;
   margin-top: 0;
   margin-right: 0;
-  margin-bottom: 50px;
+  margin-bottom: -65px;
   margin-left: 0;
 
   @media (min-width: $tablet-width) {
     border: 2px solid #e5e5e5;
     border-radius: 1px;
     order: -3;
+    padding: 0;
+    margin-bottom: 108px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -30px;
+  }
+}
+
+.forms__contacts-header {
+  padding-left: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -20px;
+    padding-left: 78px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 18px;
+    padding-top: 11px;
+    margin-top: 0;
   }
 }
 
@@ -295,16 +394,30 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .forms__contacts-wrapper {
+.forms__contacts-wrapper {
+  margin-top: 17px;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 18px;
+    margin-bottom: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 936px;
+    margin-bottom: 12px;
   }
 }
 
 .forms__contacts-item {
   position: relative;
   width: 100%;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -314,41 +427,74 @@
 
 .forms__contacts-item:first-child {
   margin-right: 50px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 16px;
+    margin-left: 58px;
+    margin-top: 8px;
+    margin-bottom: 0;
+  }
 }
 
 .forms__contacts-contains {
   width: 100%;
-  height: 59px;
+  height: 62px;
   border: 2px solid #e5e5e5;
   border-radius: 1px;
   padding-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    width: 500px;
+    margin-left: 59px;
+    margin-top: 11px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 371px;
+    margin: 0;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .forms__contacts-tel::after {
     content: "";
     position: absolute;
-    right: 1px;
-    top: 0;
+    right: 57px;
+    top: 13px;
     width: 59px;
     height: 59px;
     background-color: #e5e5e5;
     background-image: url("../img/phone-icon.png");
     background-repeat: no-repeat;
     background-position: 50% 50%;
+
+    @media (min-width: $desktop-width) {
+      top: 2px;
+    }
   }
 
   .forms__contacts-mail::after {
     content: "";
     position: absolute;
-    right: 1px;
-    top: 0;
+    right: 58px;
+    top: 12px;
     width: 59px;
     height: 59px;
     background-color: #e5e5e5;
     background-image: url("../img/mail-icon.png");
     background-repeat: no-repeat;
     background-position: 50% 50%;
+
+    @media (min-width: $desktop-width) {
+      top: 2px;
+    }
   }
 }
 
@@ -357,7 +503,7 @@
   border: none;
   margin-top: 0;
   margin-right: 0;
-  margin-bottom: 50px;
+  margin-bottom: 34px;
   margin-left: 0;
   width: 100%;
 
@@ -366,10 +512,12 @@
     border: 2px solid #e5e5e5;
     border-radius: 1px;
     order: -4;
+    margin-bottom: 53px;
   }
 
   @media (min-width: $desktop-width) {
     width: 431px;
+    margin-right: -28px;
   }
 }
 
@@ -377,40 +525,57 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    margin-left: 100px;
+    margin-left: 110px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 122px;
   }
 }
 
 .forms__platforms-header {
-  padding-top: 50px;
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $forms-header-color;
+  text-align: center;
+  padding-top: 120px;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
     text-align: center;
   }
 }
 
 .forms__platforms-list {
-  padding-left: 50px;
+  margin-top: 32px;
+  margin-right: auto;
+  margin-bottom: -10px;
+  margin-left: auto;
+  padding-left: 71px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 30px;
+    padding-top: 16px;
     padding-left: 0;
+    padding-bottom: 23px;
   }
 }
 
 .forms__platforms-item {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 45px;
 }
 
 .forms__platforms-radio:checked + .forms__platforms-input-names::after {
   content: "";
   position: absolute;
-  left: -45px;
-  top: 0;
+  left: -69px;
+  top: -3px;
   width: 37px;
   height: 37px;
   background: #ffffff;
@@ -419,6 +584,15 @@
   background-image: url("../../img/ellipse-small.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
+
+  @media (min-width: $tablet-width) {
+    left: -59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -4px;
+    left: -60px;
+  }
 }
 
 .forms__platforms-radio:checked + .forms__platforms-input-names::before {
@@ -428,13 +602,22 @@
 .forms__platforms-radio + .forms__platforms-input-names::before {
   content: "";
   position: absolute;
-  left: -45px;
-  top: 0;
+  left: -69px;
+  top: -3px;
   width: 37px;
   height: 37px;
   background: #ffffff;
   border: 2px solid #e5e5e5;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    left: -59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -3px;
+    left: -60px;
+  }
 }
 
 .forms__emotion {
@@ -445,35 +628,58 @@
   width: 100%;
   margin-top: 0;
   margin-right: 0;
-  margin-bottom: 50px;
+  margin-bottom: -11px;
   margin-left: 0;
 
   @media (min-width: $tablet-width) {
     border: 2px solid #e5e5e5;
     border-radius: 1px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -30px;
   }
 }
 
 .forms__emotion-header {
   text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 38px;
+  padding-right: 38px;
+  padding-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 3px;
+  }
 }
 
 .forms__emotion-discription {
   width: 276px;
-  height: 197px;
+  height: 200px;
   resize: none;
-  text-align: center;
-  padding-top: 20px;
+  padding-left: 19px;
+  padding-top: 13px;
   border: 2px solid #e5e5e5;
   border-radius: 1px;
 
   @media (min-width: $tablet-width) {
-    width: 496px;
-    height: 189px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    width: 500px;
+    height: 192px;
+    margin-top: 25px;
+    margin-bottom: 52px;
+    padding-left: 21px;
+    padding-top: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 816px;
+    height: 126px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 23px;
+    margin-bottom: 44px;
+    padding-left: 18px;
+    padding-top: 13px;
   }
 }
 
@@ -487,6 +693,11 @@
   @media (min-width: $tablet-width) {
     flex-wrap: nowrap;
     justify-content: space-between;
+    margin-top: 78px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -30px;
   }
 }
 
@@ -505,14 +716,39 @@
   cursor: pointer;
   display: block;
   width: 276px;
-  height: 59px;
+  height: 60px;
 
   @media (min-width: $tablet-width) {
-    width: 296px;
+    width: 300px;
   }
 }
 
 .forms__rules {
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
   color: $main-header-text-color;
   text-align: center;
+  margin: 0;
+  padding-top: 36px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 16px;
+    margin-right: -60px;
+  }
+}
+
+.forms__rules-hidden {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
 }
