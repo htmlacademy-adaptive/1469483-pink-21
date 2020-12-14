@@ -37,8 +37,10 @@
     <section class="catalog-content">
       <div class="catalog-content__wrapper">
         <h1 class="catalog-content__header">Фотографии<br> пользователей</h1>
-        <p class="catalog-content__info">Взгляните на фотографии, которые выкладывают пользователи!<br>
-          Видите, как не хватает ваших?</p>
+        <div class="catalog-content__info-wrapper wrapper">
+          <p class="catalog-content__info">Взгляните на фотографии, которые выкладывают пользователи!</p>
+          <p class="catalog-content__info">Видите, как не хватает ваших?</p>
+        </div>
         <div class="catalog-content__main">
           <div class="catalog-content__main-photo">
             <button class="catalog-content__main-photo-button" type="button">Панорама дня</button>
@@ -54,10 +56,9 @@
               <p class="catalog-content__item-likee catalog-content__item-likee--main">Нравится: 215</p>
             </div>
           </div>
-          <ul class="catalog-content__list">
+          <ul class="catalog-content__list wrapper">
             <li class="catalog-content__item">
-              <img class="catalog-content__item-img" src="img/levon-mobile.jpg" alt="Левон" width="280"
-                height="180">
+              <img class="catalog-content__item-img" src="img/levon-mobile.jpg" alt="Левон" width="280" height="180">
               <div class="catalog-content__item-wrapper">
                 <p class="catalog-content__item-name">Левон<span class="catalog-content__item-time">(5 часов
                     назад)</span>
@@ -67,8 +68,7 @@
               </div>
             </li>
             <li class="catalog-content__item">
-              <img class="catalog-content__item-img" src="img/anton-mobile.jpg" alt="Антон" width="280"
-                height="180">
+              <img class="catalog-content__item-img" src="img/anton-mobile.jpg" alt="Антон" width="280" height="180">
               <div class="catalog-content__item-wrapper">
                 <p class="catalog-content__item-name">Антон<span class="catalog-content__item-time">(12 часов
                     назад)</span></p>
@@ -77,8 +77,7 @@
               </div>
             </li>
             <li class="catalog-content__item">
-              <img class="catalog-content__item-img" src="img/boris-mobile.jpg" alt="Борис" width="280"
-                height="180">
+              <img class="catalog-content__item-img" src="img/boris-mobile.jpg" alt="Борис" width="280" height="180">
               <div class="catalog-content__item-wrapper">
                 <p class="catalog-content__item-name">Борис<span class="catalog-content__item-time">(20 часов
                     назад)</span></p>
@@ -87,8 +86,7 @@
               </div>
             </li>
             <li class="catalog-content__item">
-              <img class="catalog-content__item-img" src="img/sergey-mobile.jpg" alt="Сергей" width="280"
-                height="180">
+              <img class="catalog-content__item-img" src="img/sergey-mobile.jpg" alt="Сергей" width="280" height="180">
               <div class="catalog-content__item-wrapper">
                 <p class="catalog-content__item-name">Сергей<span class="catalog-content__item-time">(25 часов
                     назад)</span></p>
@@ -97,8 +95,7 @@
               </div>
             </li>
             <li class="catalog-content__item">
-              <img class="catalog-content__item-img" src="img/maxim-mobile.jpg" alt="Максим" width="280"
-                height="180">
+              <img class="catalog-content__item-img" src="img/maxim-mobile.jpg" alt="Максим" width="280" height="180">
               <div class="catalog-content__item-wrapper">
                 <p class="catalog-content__item-name">Максим<span class="catalog-content__item-time">(40 часов
                     назад)</span></p>
@@ -121,7 +118,7 @@
       </div>
     </section>
     <section class="catalog-filter">
-      <div class="catalog-filter__wrapper">
+      <div class="catalog-filter__wrapper wrapper">
         <p class="catalog-filter__description wrapper">Затмите их всех!<br>
           Выкладывайте все, что накопилось в телефоне!</p>
         <div class="catalog-filter__filter-items">
@@ -130,7 +127,9 @@
             <div class="catalog-filter__items-wrapper">
               <ul class="catalog-filter__items-list">
                 <li class="catalog-filter__item-button">
-                  <button class="catalog-filter__item-button-img catalog-filter__item-button-img--crop item-button__img--active" type="button">
+                  <button
+                    class="catalog-filter__item-button-img catalog-filter__item-button-img--crop item-button__img--active"
+                    type="button">
                     <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g opacity="">
                         <path
@@ -153,7 +152,8 @@
                   </button>
                 </li>
                 <li class="catalog-filter__item-button">
-                  <button class="catalog-filter__item-button-img catalog-filter__item-button-img--contrast" type="button">
+                  <button class="catalog-filter__item-button-img catalog-filter__item-button-img--contrast"
+                    type="button">
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g opacity="">
                         <path
