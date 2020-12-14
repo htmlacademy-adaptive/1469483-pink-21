@@ -175,8 +175,8 @@
     flex-direction: row;
     align-items: baseline;
     justify-content: space-between;
-    width: 620px;
     margin: 0 auto;
+    padding: 0;
 
     &::before {
       position: absolute;
@@ -194,7 +194,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 940px;
     justify-content: space-between;
   }
 }
