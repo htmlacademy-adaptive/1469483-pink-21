@@ -182,7 +182,7 @@
       position: absolute;
       content: "";
       bottom: 26px;
-      left: 11px;
+      left: 0;
       height: 9px;
       width: 620px;
       background-color: #c4c4c4;
@@ -312,6 +312,10 @@
     @media (min-width: $desktop-width) {
       right: 62px;
       top: 26px;
+
+      &::before {
+        left: 0;
+      }
     }
   }
 }
