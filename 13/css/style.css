@@ -1207,6 +1207,17 @@ img {
       height: 284px;
       padding-top: 60px; } }
 
+.catalog-content__info-wrapper {
+  margin-right: auto;
+  margin-bottom: 50px;
+  margin-left: auto; }
+  @media (min-width: 660px) {
+    .catalog-content__info-wrapper {
+      margin-bottom: 77px; } }
+  @media (min-width: 960px) {
+    .catalog-content__info-wrapper {
+      margin-bottom: 89px; } }
+
 .catalog-content__info {
   font-family: "Open Sans", "PT Sans", sans-serif;
   font-style: normal;
@@ -1215,23 +1226,11 @@ img {
   line-height: 30px;
   text-align: center;
   color: #283645;
-  width: 280px;
-  margin-top: 0;
-  margin-right: auto;
-  margin-bottom: 50px;
-  margin-left: auto; }
+  margin: 0; }
   @media (min-width: 660px) {
     .catalog-content__info {
       font-size: 18px;
-      line-height: 30px;
-      width: 570px;
-      margin-bottom: 77px; }
-      .catalog-content__info br {
-        display: none; } }
-  @media (min-width: 960px) {
-    .catalog-content__info {
-      width: 642px;
-      margin-bottom: 89px; } }
+      line-height: 30px; } }
 
 .catalog-content__item-wrapper-main {
   background-color: #f2f2f2;
