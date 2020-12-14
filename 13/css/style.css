@@ -1331,8 +1331,8 @@ img {
       flex-direction: row;
       align-items: baseline;
       justify-content: space-between;
-      width: 620px;
-      margin: 0 auto; }
+      margin: 0 auto;
+      padding: 0; }
       .catalog-content__list::before {
         position: absolute;
         content: "";
@@ -1346,7 +1346,6 @@ img {
         display: none; } }
   @media (min-width: 960px) {
     .catalog-content__list {
-      width: 940px;
       justify-content: space-between; } }
 
 .catalog-content__item {
