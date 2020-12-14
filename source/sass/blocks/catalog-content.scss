@@ -323,6 +323,10 @@
     right: 56px;
     top: 25px;
 
+    &::before {
+      left: 128px;
+    }
+
     @media (min-width: $desktop-width) {
       right: 62px;
       top: 26px;
