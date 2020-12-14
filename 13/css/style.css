@@ -1451,7 +1451,9 @@ img {
     position: absolute;
     content: "";
     right: 56px;
-    top: 25px; } }
+    top: 25px; }
+    .catalog-content__item-likee--main::before {
+      left: 128px; } }
   @media (min-width: 660px) and (min-width: 960px) {
     .catalog-content__item-likee--main {
       right: 62px;
