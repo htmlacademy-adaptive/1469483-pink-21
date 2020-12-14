@@ -5,6 +5,10 @@
   @media (min-width: $tablet-width) {
     margin-top: 36px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 98px;
+  }
 }
 
 .page-footer__wrapper {
@@ -50,7 +54,7 @@
   content: "";
   width: 27px;
   height: 34px;
-  background-image: url("../../img/html-academy.png");
+  background-image: url("../img/html-academy.png");
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
