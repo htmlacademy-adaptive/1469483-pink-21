@@ -13,8 +13,8 @@
     <a class="page-header__logo" href="#">
       <img src="img/index-pink-head.png" alt="PINK" width="74" height="23">
     </a>
-    <nav class="main-nav">
-      <button class="page-header__menu-button" type="button"></button>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <button class="main-nav__menu-button" type="button"></button>
       <div>
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -37,100 +37,104 @@
     <section class="catalog-content">
       <div class="catalog-content__wrapper">
         <h1 class="catalog-content__header">Фотографии<br> пользователей</h1>
-        <p class="catalog-content__info">Взгляните на фотографии, которые выкладывают пользователи!<br>
-          Видите, как не хватает ваших?</p>
+        <div class="catalog-content__info-wrapper wrapper">
+          <p class="catalog-content__info">Взгляните на фотографии, которые выкладывают пользователи!</p>
+          <p class="catalog-content__info">Видите, как не хватает ваших?</p>
+        </div>
         <div class="catalog-content__main">
-          <div class="catalog-content__main-photo catalog-content__content-item">
+          <div class="catalog-content__main-photo">
             <button class="catalog-content__main-photo-button" type="button">Панорама дня</button>
             <img class="catalog-content-item__img-main" src="img/catalog-panorama.jpg" alt="Анна" width="320"
               height="137">
             <div class="catalog-content__item-wrapper-main">
               <p class="catalog-content__item-name">Анна<span class="catalog-content__item-time">(5 минут назад)</span>
               </p>
-              <p class="catalog-content__item-review">Прыгать или нет? Напишите в
-                комментарии свой совет и
-                смотрите прямую трансляцию в
+              <p class="catalog-content__item-review">Прыгать или нет? Напишите в<br>
+                комментарии свой совет и<br>
+                смотрите прямую трансляцию в<br>
                 перископе, задавайте свои вопросы!</p>
-              <p class="catalog-content__item-likee">Нравится: 215</p>
+              <p class="catalog-content__item-likee catalog-content__item-likee--main">Нравится: 215</p>
             </div>
           </div>
-          <ul class="catalog-content__list wrapper">
-            <li class="catalog-content__item catalog-content__content-item">
-              <img class="catalog-content__item-img" src="https://via.placeholder.com/150x150" alt="Левон" width="280"
-                height="180">
-              <div class="catalog-content__item-wrapper">
-                <p class="catalog-content__item-name">Левон<span class="catalog-content__item-time">(5 часов
-                    назад)</span>
-                </p>
-                <p class="catalog-content__item-review">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                <p class="catalog-content__item-likee">Нравится: 356</p>
-              </div>
-            </li>
-            <li class="catalog-content__item catalog-content__content-item">
-              <img class="catalog-item__img" src="https://via.placeholder.com/150x150" alt="Антон" width="280"
-                height="180">
-              <div class="catalog-content__item-wrapper">
-                <p class="catalog-content__item-name">Антон<span class="catalog-content__item-time">(12 часов
-                    назад)</span></p>
-                <p class="catalog-content__item-review">Соседи будут рады!</p>
-                <p class="catalog-content__item-likee">Нравится: 666</p>
-              </div>
-            </li>
-            <li class="catalog-content__item catalog-content__content-item">
-              <img class="catalog-item__img" src="https://via.placeholder.com/150x150" alt="Борис" width="280"
-                height="180">
-              <div class="catalog-content__item-wrapper">
-                <p class="catalog-content__item-name">Борис<span class="catalog-content__item-time">(20 часов
-                    назад)</span></p>
-                <p class="catalog-content__item-review">Здесь могла быть ваша цитата о высоком и вечном.</p>
-                <p class="catalog-content__item-likee">Нравится: 215</p>
-              </div>
-            </li>
-            <li class="catalog-content__item catalog-content__content-item">
-              <img class="catalog-item__img" src="https://via.placeholder.com/150x150" alt="Сергей" width="280"
-                height="180">
-              <div class="catalog-content__item-wrapper">
-                <p class="catalog-content__item-name">Сергей<span class="catalog-content__item-time">(25 часов
-                    назад)</span></p>
-                <p class="catalog-content__item-review">Самая кубанская в мире!</p>
-                <p class="catalog-content__item-likee">Нравится: 4</p>
-              </div>
-            </li>
-            <li class="catalog-content__item catalog-content__content-item">
-              <img class="catalog-item__img" src="https://via.placeholder.com/150x150" alt="Максим" width="280"
-                height="180">
-              <div class="catalog-content__item-wrapper">
-                <p class="catalog-content__item-name">Максим<span class="catalog-content__item-time">(40 часов
-                    назад)</span></p>
-                <p class="catalog-content__item-review">Где снег-то?</p>
-                <p class="catalog-content__item-likee">Нравится: 150</p>
-              </div>
-            </li>
-            <li class="catalog-content__item catalog-content__content-item">
-              <img class="catalog-content-item__img" src="https://via.placeholder.com/150x150" alt="Надежда" width="280"
-                height="180">
-              <div class="catalog-content__item-wrapper">
-                <p class="catalog-content__item-name">Надежда<span class="catalog-content__item-time">(45 часов
-                    назад)</span></p>
-                <p class="catalog-content__item-review">Всем GM и взаимные лайки!</p>
-                <p class="catalog-content__item-likee">Нравится: 2560</p>
-              </div>
-            </li>
-          </ul>
+          <div class="wrapper">
+            <ul class="catalog-content__list">
+              <li class="catalog-content__item">
+                <img class="catalog-content__item-img" src="img/levon-mobile.jpg" alt="Левон" width="280" height="180">
+                <div class="catalog-content__item-wrapper">
+                  <p class="catalog-content__item-name">Левон<span class="catalog-content__item-time">(5 часов
+                      назад)</span>
+                  </p>
+                  <p class="catalog-content__item-review">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                  <p class="catalog-content__item-likee">Нравится: 356</p>
+                </div>
+              </li>
+              <li class="catalog-content__item">
+                <img class="catalog-content__item-img" src="img/anton-mobile.jpg" alt="Антон" width="280" height="180">
+                <div class="catalog-content__item-wrapper">
+                  <p class="catalog-content__item-name">Антон<span class="catalog-content__item-time">(12 часов
+                      назад)</span></p>
+                  <p class="catalog-content__item-review">Соседи будут рады!</p>
+                  <p class="catalog-content__item-likee">Нравится: 666</p>
+                </div>
+              </li>
+              <li class="catalog-content__item">
+                <img class="catalog-content__item-img" src="img/boris-mobile.jpg" alt="Борис" width="280" height="180">
+                <div class="catalog-content__item-wrapper">
+                  <p class="catalog-content__item-name">Борис<span class="catalog-content__item-time">(20 часов
+                      назад)</span></p>
+                  <p class="catalog-content__item-review">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                  <p class="catalog-content__item-likee">Нравится: 215</p>
+                </div>
+              </li>
+              <li class="catalog-content__item">
+                <img class="catalog-content__item-img" src="img/sergey-mobile.jpg" alt="Сергей" width="280"
+                  height="180">
+                <div class="catalog-content__item-wrapper">
+                  <p class="catalog-content__item-name">Сергей<span class="catalog-content__item-time">(25 часов
+                      назад)</span></p>
+                  <p class="catalog-content__item-review">Самая кубанская в мире!</p>
+                  <p class="catalog-content__item-likee">Нравится: 4</p>
+                </div>
+              </li>
+              <li class="catalog-content__item">
+                <img class="catalog-content__item-img" src="img/maxim-mobile.jpg" alt="Максим" width="280" height="180">
+                <div class="catalog-content__item-wrapper">
+                  <p class="catalog-content__item-name">Максим<span class="catalog-content__item-time">(40 часов
+                      назад)</span></p>
+                  <p class="catalog-content__item-review">Где снег-то?</p>
+                  <p class="catalog-content__item-likee">Нравится: 150</p>
+                </div>
+              </li>
+              <li class="catalog-content__item">
+                <img class="catalog-content__item-img" src="img/nadezhda-mobile.jpg" alt="Надежда" width="280"
+                  height="180">
+                <div class="catalog-content__item-wrapper">
+                  <p class="catalog-content__item-name">Надежда<span class="catalog-content__item-time">(45 часов
+                      назад)</span></p>
+                  <p class="catalog-content__item-review">Всем GM и взаимные лайки!</p>
+                  <p class="catalog-content__item-likee">Нравится: 2560</p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
+    <section class="catalog-filter__header-description wrapper">
+      <h2 class="catalog-filter__description">Затмите их всех!<br>
+        Выкладывайте все, что накопилось в телефоне!</h2>
+    </section>
     <section class="catalog-filter">
-      <div class="catalog-filter__wrapper">
-        <p class="catalog-filter__description wrapper">Затмите их всех!<br>
-          Выкладывайте все, что накопилось в телефоне!</p>
+      <div class="wrapper">
         <div class="catalog-filter__filter-items">
           <img class="catalog-filter__filter-items-img" src="img/photo-filter.jpg" alt="photo" width="280" height="374">
           <div class="catalog-filter__items">
             <div class="catalog-filter__items-wrapper">
               <ul class="catalog-filter__items-list">
                 <li class="catalog-filter__item-button">
-                  <button class="catalog-filter__item-button-img catalog-filter__item-button-img--crop item-button__img--active" type="button">
+                  <button
+                    class="catalog-filter__item-button-img catalog-filter__item-button-img--crop item-button__img--active"
+                    type="button">
                     <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g opacity="">
                         <path
@@ -153,7 +157,8 @@
                   </button>
                 </li>
                 <li class="catalog-filter__item-button">
-                  <button class="catalog-filter__item-button-img catalog-filter__item-button-img--contrast" type="button">
+                  <button class="catalog-filter__item-button-img catalog-filter__item-button-img--contrast"
+                    type="button">
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g opacity="">
                         <path
@@ -191,19 +196,22 @@
       </div>
     </section>
   </main>
-  <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <a class="page-footer__logo" href="#">
-        <img src="img/index-logo-footer.png" alt="Pink">
-      </a>
-      <div class="page-footer__socials">
-        <a class="socials__item socials__item--twitter" href="#"></a>
-        <a class="socials__item socials__item-item--fb" href="#"></a>
-        <a class="socials__item socials__item--youtube" href="#"></a>
+  <footer class="page-footer wrapper">
+    <div class="wrapper">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo" href="#">
+          <img src="img/index-logo-footer.png" alt="Pink">
+        </a>
+        <div class="page-footer__socials">
+          <a class="socials__item socials__item--twitter" href="#"></a>
+          <a class="socials__item socials__item-item--fb" href="#"></a>
+          <a class="socials__item socials__item--youtube" href="#"></a>
+        </div>
+        <a class="page-footer__develop" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
       </div>
-      <a class="page-footer__develop" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
     </div>
   </footer>
+  <script src="js/menu.js"></script>
 </body>
 
 </html>
