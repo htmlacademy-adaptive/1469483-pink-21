@@ -186,7 +186,7 @@ img {
   src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff"); }
 
 .wrapper {
-  padding: 0 20px;
+  padding: 0 10px;
   margin: 0 auto; }
 
 @media (min-width: 660px) {
@@ -195,7 +195,7 @@ img {
 
 @media (min-width: 960px) {
   .wrapper {
-    max-width: 980px; } }
+    max-width: 960px; } }
 
 .page__body {
   background-color: #ffffff;
