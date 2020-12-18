@@ -1,14 +1,10 @@
 .main-nav {
   position: relative;
-
-  @media (min-width: $desktop-width) {
-    width: 700px;
-  }
 }
 
 .main-nav__menu-button {
   position: absolute;
-  top: -44px;
+  top: -43px;
   right: 5%;
   z-index: 2;
   display: block;
@@ -20,8 +16,8 @@
   outline: none;
 
   @media (min-width: $tablet-width) {
-    top: -67px;
-    right: 2%;
+    top: -44px;
+    right: 15px;
   }
 
   @media (min-width: $desktop-width) {
@@ -32,7 +28,7 @@
 .main-nav--closed .main-nav__menu-button::before {
   content: "";
   position: absolute;
-  top: 2px;
+  top: 0;
   left: 5px;
   width: 50px;
   height: 4px;
@@ -55,8 +51,8 @@
 }
 
 .main-nav--open .main-nav__menu-button {
-  top: -42px;
-  right: 6%;
+  top: -45px;
+  right: 5%;
 
   &::before,
   &::after {
@@ -84,8 +80,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    top: -68px;
-    right: 24px;
+    top: -46px;
+    right: 13px;
   }
 }
 
@@ -103,8 +99,7 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
-    margin-left: 13px;
-    margin-top: 38px;
+    margin-top: 45px;
   }
 }
 
@@ -116,7 +111,7 @@
     &:last-child {
       padding-right: 0;
     }
-    padding-right: 72px;
+    padding-right: 80px;
     width: auto;
   }
 }
@@ -143,9 +138,15 @@
   }
 
   @media (min-width: $desktop-width) {
+    font-weight: normal;
+    line-height: 18px;
     text-transform: none;
     box-shadow: none;
     border: none;
     padding: 0;
+
+    span {
+      text-transform: uppercase;
+    }
   }
 }

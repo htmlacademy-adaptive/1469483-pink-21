@@ -1,13 +1,9 @@
 .page-footer {
-  margin-top: 39px;
+  margin-top: 37px;
   margin-bottom: 50px;
 
-  @media (min-width: $tablet-width) {
-    margin-top: 36px;
-  }
-
   @media (min-width: $desktop-width) {
-    margin-top: 98px;
+    margin-top: 65px;
   }
 }
 
@@ -17,48 +13,47 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 
 .page-footer__develop {
   position: relative;
+  display: block;
   font-family: $main-font-family;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   color: $main-header-text-color;
-  text-align: center;
-  margin-left: -39px;
+  margin-left: 85px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 17px;
-    width: 100px;
-    height: 34px;
-    margin-left: 30px;
-    margin-right: 34px;
+    margin-right: 52px;
+    margin-top: 17px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 18px;
+    margin-right: 40px;
   }
 }
 
 .page-footer__develop::after {
   position: absolute;
   top: -9px;
-  right: 86px;
+  right: 85px;
   content: "";
   width: 27px;
   height: 34px;
-  background-image: url("../img/html-academy.png");
+  background-image: url("../img/html-academy.svg");
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    left: 107px;
-    top: 10px;
+    left: 103px;
+    top: -7px;
   }
 
   @media (min-width: $desktop-width) {
@@ -69,24 +64,18 @@
 .page-footer__logo {
   display: block;
   margin: 0 auto;
-  padding-bottom: 38px;
+  padding-bottom: 37px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 0;
-    margin-right: 14px;
+    margin: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 10px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 33px;
-
-    img {
-      display: none;
-    }
-    width: 147px;
-    height: 40px;
-    background-image: url("../img/index-logo-footer-desk.png");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+    padding-left: 0;
   }
 }
 
@@ -94,4 +83,17 @@
   display: flex;
   margin: 0 auto;
   padding-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 2px;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: 79px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 240px;
+    margin-top: 5px;
+  }
 }
