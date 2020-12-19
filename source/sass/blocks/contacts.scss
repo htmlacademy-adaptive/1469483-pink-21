@@ -147,6 +147,8 @@
     width: 100%;
     height: 200px;
     z-index: 2;
+    top: 0;
+    left: 0;
 
     @media (min-width: $tablet-width) {
       height: 374px;

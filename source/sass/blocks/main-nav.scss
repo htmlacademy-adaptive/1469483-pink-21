@@ -175,7 +175,9 @@
   }
 }
 
-.main-nav__item--active a {
-  border-bottom: 2px solid;
-  padding-bottom: 19px;
+@media (min-width: $desktop-width) {
+  .main-nav__item--active a {
+    border-bottom: 2px solid;
+    padding-bottom: 19px;
+  }
 }
