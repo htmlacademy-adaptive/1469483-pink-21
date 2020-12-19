@@ -436,17 +436,25 @@ img {
         top: 96px;
         left: -11px;
         content: "";
-        width: 660px;
+        width: 640px;
         height: 545px;
         background-image: url("../img/index-phone-tablet.png");
         background-repeat: no-repeat;
         z-index: 1; } }
+    @media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 660px) and (min-resolution: 2dppx) {
+      .promo__items::before {
+        background-image: url("../img/index-phone-tablet@2x.png");
+        background-size: 659px; } }
     @media (min-width: 660px) and (min-width: 960px) {
       .promo__items::before {
         width: 100%;
         height: 645px;
         left: 15px;
         background-image: url("../img/phone-desk.png"); } }
+  @media (min-width: 660px) and (min-width: 960px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 660px) and (min-width: 960px) and (min-resolution: 2dppx) {
+    .promo__items::before {
+      background-image: url("../img/phone-desk@2x.png");
+      background-size: 1050px; } }
   @media (min-width: 960px) {
     .promo__items {
       padding-top: 93px;
@@ -474,8 +482,7 @@ img {
   text-align: center;
   margin: 0 auto;
   padding-top: 24px;
-  padding-bottom: 29px;
-  width: 300px; }
+  padding-bottom: 29px; }
   .promo__header br {
     display: none; }
   @media (min-width: 660px) {
@@ -596,9 +603,13 @@ img {
   margin: 0;
   width: 100%;
   min-height: 769px;
-  background-image: url("../img/index-about-iphone-screen.png"), url("../img/index-about-iphone.png");
+  background-image: url("../img/index-about-phone.png");
   background-repeat: no-repeat;
-  background-position: 50% 101%, 50% 110%; }
+  background-position: 50% 110%; }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    .about__list {
+      background-image: url("../img/index-about-phone@2x.png");
+      background-size: 165px; } }
   @media (min-width: 660px) {
     .about__list {
       align-items: flex-end;
@@ -608,6 +619,10 @@ img {
       background-position: 5% -10%;
       padding-top: 77px;
       margin-left: -10px; } }
+  @media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 660px) and (min-resolution: 2dppx) {
+    .about__list {
+      background-image: url("../img/about-phone-tablet@2x.png");
+      background-size: 270px; } }
   @media (min-width: 960px) {
     .about__list {
       background-image: none;
@@ -1140,7 +1155,8 @@ img {
 .contacts__map {
   position: relative;
   text-align: center;
-  margin: 0 auto; }
+  margin: 0 auto;
+  min-height: 200px; }
   .contacts__map .contacts__map-map {
     width: 100%;
     z-index: 1; }
@@ -1229,7 +1245,7 @@ img {
 .page-footer__develop::after {
   position: absolute;
   top: -9px;
-  right: 85px;
+  left: 95px;
   content: "";
   width: 27px;
   height: 34px;
@@ -2595,7 +2611,7 @@ img {
   left: 10px;
   width: 238px;
   height: 276px;
-  background-image: url("../img/timer-tablet.png");
+  background-image: url("../img/timer-tablet.svg");
   background-repeat: no-repeat; }
   @media (min-width: 960px) {
     .effect__wrapper::after {
@@ -2603,7 +2619,7 @@ img {
       left: 0;
       width: 303px;
       height: 345px;
-      background-image: url("../img/timer-desk.png"); } }
+      background-image: url("../img/timer-desk.svg"); } }
 
 .effect__header {
   font-family: "Open Sans", "PT Sans", sans-serif;
