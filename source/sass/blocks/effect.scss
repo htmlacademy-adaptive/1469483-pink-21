@@ -31,7 +31,7 @@
   left: 10px;
   width: 238px;
   height: 276px;
-  background-image: url("../img/timer-tablet.png");
+  background-image: url("../img/timer-tablet.svg");
   background-repeat: no-repeat;
 
   @media (min-width: $desktop-width) {
@@ -39,7 +39,7 @@
     left: 0;
     width: 303px;
     height: 345px;
-    background-image: url("../img/timer-desk.png");
+    background-image: url("../img/timer-desk.svg");
   }
 }
 

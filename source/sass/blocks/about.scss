@@ -35,9 +35,14 @@
   margin: 0;
   width: 100%;
   min-height: 769px;
-  background-image: url("../img/index-about-iphone-screen.png"), url("../img/index-about-iphone.png");
+  background-image: url("../img/index-about-phone.png");
   background-repeat: no-repeat;
-  background-position: 50% 101%, 50% 110%;
+  background-position: 50% 110%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index-about-phone@2x.png");
+    background-size: 165px;
+  }
 
   @media (min-width: $tablet-width) {
     align-items: flex-end;
@@ -47,6 +52,11 @@
     background-position: 5% -10%;
     padding-top: 77px;
     margin-left: -10px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/about-phone-tablet@2x.png");
+      background-size: 270px;
+    }
   }
 
   @media (min-width: $desktop-width) {
