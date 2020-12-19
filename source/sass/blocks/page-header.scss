@@ -29,11 +29,20 @@
   margin-top: 0;
   margin-right: 0;
   margin-bottom: 0;
-  margin-left: 0;
+  margin-left: 10px;
 
   img {
     width: 74px;
     height: 23px;
+
+    &:hover {
+      background: #d22856;
+    }
+
+    &:active {
+      background: #ffffff;
+      opacity: 0.3;
+    }
 
     @media (min-width: $tablet-width) {
       width: 145px;
@@ -52,5 +61,6 @@
 
   @media (min-width: $desktop-width) {
     width: 147px;
+    margin-left: 0;
   }
 }

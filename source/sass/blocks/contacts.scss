@@ -115,9 +115,19 @@
   }
 }
 
+.contacts__mail:hover {
+  text-decoration: underline;
+  color: #283645;
+}
+
+.contacts__mail:active {
+  opacity: 0.3;
+}
+
 .contacts__map {
   position: relative;
   text-align: center;
+  margin: 0 auto;
 
   .contacts__map-map {
     width: 100%;

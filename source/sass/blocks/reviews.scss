@@ -126,18 +126,28 @@
 .reviews__slider-button--left,
 .reviews__slider-button--right {
   border: none;
+  outline: none;
   background: transparent;
   cursor: pointer;
+  opacity: 0.5;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .reviews__slider-button--left {
   position: absolute;
   top: 27px;
-  left: -15px;
+  left: -6px;
 }
 
 .reviews__slider-button--right {
   position: absolute;
   top: 27px;
-  right: -17px;
+  right: -6px;
 }

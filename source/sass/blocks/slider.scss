@@ -44,8 +44,16 @@
   user-select: none;
   width: 6px;
   height: 6px;
-  background-color: #bfc3c7;
+  background: #bfc3c7;
   border-radius: 50%;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .slider__toggle input {
@@ -59,8 +67,9 @@
   content: "";
   width: 14px;
   height: 14px;
-  background-color: #ffffff;
-  border: 3px solid black;
+  background: #ffffff;
+  border: 3px solid #283645;
+  opacity: 1;
   border-radius: 50%;
   cursor: pointer;
 }

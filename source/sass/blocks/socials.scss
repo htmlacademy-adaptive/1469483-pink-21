@@ -6,6 +6,14 @@
   border-radius: 50%;
   margin-right: 14px;
 
+  &:hover {
+    border: 3px solid #283645;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+
   &:last-child {
     margin-right: 0;
   }

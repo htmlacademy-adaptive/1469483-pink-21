@@ -38,5 +38,9 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
+
+    br {
+      display: none;
+    }
   }
 }
