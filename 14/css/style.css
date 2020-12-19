@@ -390,9 +390,10 @@ img {
       .main-nav__item a span {
         text-transform: uppercase; } }
 
-.main-nav__item--active a {
-  border-bottom: 2px solid;
-  padding-bottom: 19px; }
+@media (min-width: 960px) {
+  .main-nav__item--active a {
+    border-bottom: 2px solid;
+    padding-bottom: 19px; } }
 
 .promo {
   min-height: 668px;
@@ -437,7 +438,7 @@ img {
         content: "";
         width: 660px;
         height: 545px;
-        background-image: url("../../img/index-phone-tablet.png");
+        background-image: url("../img/index-phone-tablet.png");
         background-repeat: no-repeat;
         z-index: 1; } }
     @media (min-width: 660px) and (min-width: 960px) {
@@ -445,7 +446,7 @@ img {
         width: 100%;
         height: 645px;
         left: 15px;
-        background-image: url("../../img/phone-desk.png"); } }
+        background-image: url("../img/phone-desk.png"); } }
   @media (min-width: 960px) {
     .promo__items {
       padding-top: 93px;
@@ -1153,7 +1154,9 @@ img {
     position: absolute;
     width: 100%;
     height: 200px;
-    z-index: 2; }
+    z-index: 2;
+    top: 0;
+    left: 0; }
     @media (min-width: 660px) {
       .contacts__map iframe {
         height: 374px; } }
