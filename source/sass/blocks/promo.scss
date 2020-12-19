@@ -1,79 +1,101 @@
 .promo {
-  height: 668px;
+  min-height: 668px;
   background-color: #1d2631;
-  background-image: url("../img/header-bg.jpg");
+  background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 0%;
-  background-size: 184%;
-  z-index: -1;
-  margin-bottom: 44px;
+  background-position: 50% -32%;
+  background-size: 100% 69%;
+  margin-bottom: 1px;
 
   @media (min-width: $tablet-width) {
-    height: 620px;
-  }
-
-  @media (min-width: $desktop-width) {
-    height: 741px;
-    background-size: cover;
-    background-position: 50% -104px;
-  }
-}
-
-.promo__bg-img {
-  background-image: url("../img/index-phone.png");
-  background-repeat: no-repeat;
-  background-position: 50% 31%;
-
-  @media (min-width: $tablet-width) {
-    height: 620px;
-    background-image: url("../img/phone-tablet.png");
-    background-position: 50% 103%;
-  }
-
-  @media (min-width: $desktop-width) {
-    height: 741px;
-    background-image: url("../img/phone-desk.png");
+    margin-bottom: 47px;
+    min-height: 640px;
+    background-image: url("../img/back-tablet.jpg");
     background-position: 50% 100%;
-  }
-}
+    background-size: cover;
 
-.promo__wrapper {
-  display: flex;
-  flex-direction: column;
-  color: $light-on-dark-color;
-  margin-bottom: 50px;
-
-  @media (min-width: $tablet-width) {
-    align-items: baseline;
-    width: 500px;
-    padding-top: 50px;
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
-    width: 700px;
-    padding-top: 100px;
+    min-height: 742px;
+    margin-bottom: 63px;
+    background-image: url("../img/back-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.jpg");
+    }
+  }
+}
+
+.promo__items {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10px;
+    padding-top: 108px;
+
+    &::before {
+      position: absolute;
+      top: 96px;
+      left: -11px;
+      content: "";
+      width: 640px;
+      height: 545px;
+      background-image: url("../img/index-phone-tablet.png");
+      background-repeat: no-repeat;
+      z-index: 1;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index-phone-tablet@2x.png");
+        background-size: 659px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 100%;
+        height: 645px;
+        left: 15px;
+        background-image: url("../img/phone-desk.png");
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/phone-desk@2x.png");
+          background-size: 1050px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 93px;
+    padding-left: 0;
   }
 }
 
 .promo__header-wrapper {
-  height: 400px;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
 
-  @media (min-width: $tablet-width) {
-    background-image: none;
-    height: auto;
-    margin-top: 38px;
+  img {
+    width: auto;
+    height: 286px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -9px;
-    margin-left: -68px;
     margin-bottom: 30px;
   }
 }
 
 .promo__header {
   font-family: $main-font-family;
+  color: $light-on-dark-color;
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
@@ -81,7 +103,7 @@
   text-align: center;
   margin: 0 auto;
   padding-top: 24px;
-  width: 300px;
+  padding-bottom: 29px;
 
   br {
     display: none;
@@ -90,7 +112,6 @@
   @media (min-width: $tablet-width) {
     font-size: 40px;
     padding-top: 7px;
-    margin-left: -71px;
     padding-bottom: 5px;
 
     br {
@@ -102,6 +123,13 @@
     font-size: 50px;
     line-height: 68px;
   }
+}
+
+.promo__wrapper {
+  display: flex;
+  flex-direction: column;
+  color: $light-on-dark-color;
+  z-index: 2;
 }
 
 .promo__download-button {
@@ -120,16 +148,24 @@
   height: 55px;
   outline: none;
   margin: 0 auto;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #ffffff;
+    color: #d22856;
+  }
+
+  &:active {
+    color: #f2bfcc;
+  }
 
   @media (min-width: $tablet-width) {
     background: transparent;
-    margin-left: -71px;
     width: 300px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 21px;
-    margin-left: -139px;
   }
 }
 
@@ -137,17 +173,16 @@
   padding-top: 30px;
   display: flex;
   justify-content: center;
-  align-items: baseline;
+  align-items: center;
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     padding-top: 44px;
-    margin-left: -26px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 68px;
-    margin-left: -94px;
+    align-items: baseline;
   }
 }
 
@@ -174,12 +209,10 @@
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
-    margin-left: -68px;
     margin-top: 11px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: -138px;
     margin-top: 29px;
   }
 }

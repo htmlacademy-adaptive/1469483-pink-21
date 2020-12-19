@@ -1,14 +1,10 @@
 .main-nav {
   position: relative;
-
-  @media (min-width: $desktop-width) {
-    width: 700px;
-  }
 }
 
 .main-nav__menu-button {
   position: absolute;
-  top: -44px;
+  top: -43px;
   right: 5%;
   z-index: 2;
   display: block;
@@ -20,8 +16,8 @@
   outline: none;
 
   @media (min-width: $tablet-width) {
-    top: -67px;
-    right: 2%;
+    top: -44px;
+    right: 15px;
   }
 
   @media (min-width: $desktop-width) {
@@ -32,7 +28,7 @@
 .main-nav--closed .main-nav__menu-button::before {
   content: "";
   position: absolute;
-  top: 2px;
+  top: 0;
   left: 5px;
   width: 50px;
   height: 4px;
@@ -41,9 +37,16 @@
   box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
 }
 
+.main-nav--closed .main-nav__menu-button:hover::before {
+  background-color: #d22856;
+  box-shadow: 0 8px 0 0 #d22856, 0 16px 0 0 #d22856;
+  opacity: 1;
+}
+
 .main-nav--closed .main-nav__menu-button:active::before {
-  background-color: fade(#ffffff, 30%);
-  box-shadow: 0 8px 0 0 fade(#ffffff, 30%), 0 16px 0 0 fade(#ffffff, 30%);
+  background-color: #d22856;
+  box-shadow: 0 8px 0 0 #d22856, 0 16px 0 0 #d22856;
+  opacity: 0.3;
 }
 
 .main-nav--closed .main-nav__item {
@@ -55,8 +58,8 @@
 }
 
 .main-nav--open .main-nav__menu-button {
-  top: -42px;
-  right: 6%;
+  top: -45px;
+  right: 5%;
 
   &::before,
   &::after {
@@ -78,14 +81,21 @@
     transform: rotate(-45deg);
   }
 
+  &:hover::before,
+  &:hover::after {
+    background-color: #d22856;
+    opacity: 1;
+  }
+
   &:active::before,
   &:active::after {
-    background-color: red;
+    background: #d22856;
+    opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {
-    top: -68px;
-    right: 24px;
+    top: -46px;
+    right: 13px;
   }
 }
 
@@ -103,8 +113,7 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
-    margin-left: 13px;
-    margin-top: 38px;
+    margin-top: 45px;
   }
 }
 
@@ -116,7 +125,7 @@
     &:last-child {
       padding-right: 0;
     }
-    padding-right: 72px;
+    padding-right: 80px;
     width: auto;
   }
 }
@@ -138,14 +147,37 @@
   border-top: 1px solid #485461;
   border-bottom: 1px solid #000000;
 
+  &:hover {
+    color: #d22856;
+  }
+
+  &:active {
+    color: #ffffff;
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 16px;
   }
 
   @media (min-width: $desktop-width) {
+    font-weight: normal;
+    line-height: 18px;
     text-transform: none;
     box-shadow: none;
     border: none;
     padding: 0;
+    padding-bottom: 21px;
+
+    span {
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__item--active a {
+    border-bottom: 2px solid;
+    padding-bottom: 19px;
   }
 }

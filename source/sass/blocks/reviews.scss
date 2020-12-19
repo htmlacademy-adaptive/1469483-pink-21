@@ -1,8 +1,8 @@
 .reviews {
-  margin-bottom: 152px;
+  margin-bottom: 98px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 130px;
+    margin-bottom: 100px;
   }
 
   @media (min-width: $desktop-width) {
@@ -10,7 +10,7 @@
     background-repeat: no-repeat;
     background-position: 50% 6%;
     padding-top: 210px;
-    margin-bottom: 132px;
+    margin-bottom: 30px;
   }
 }
 
@@ -99,6 +99,17 @@
 .reviews__toggles {
   position: relative;
 
+  .slider__toggles {
+    left: 40%;
+    top: -46px;
+
+    @media (min-width: $tablet-width) {
+      left: 292px;
+      top: -42px;
+    }
+  }
+
+
   @media (min-width: $desktop-width) {
     display: none;
   }
@@ -115,18 +126,28 @@
 .reviews__slider-button--left,
 .reviews__slider-button--right {
   border: none;
+  outline: none;
   background: transparent;
   cursor: pointer;
+  opacity: 0.5;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .reviews__slider-button--left {
   position: absolute;
   top: 27px;
-  left: -15px;
+  left: -6px;
 }
 
 .reviews__slider-button--right {
   position: absolute;
   top: 27px;
-  right: -17px;
+  right: -6px;
 }
