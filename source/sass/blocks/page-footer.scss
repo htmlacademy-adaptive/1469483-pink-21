@@ -26,7 +26,8 @@
   font-size: 14px;
   line-height: 18px;
   color: $main-header-text-color;
-  margin-left: 85px;
+  margin-left: auto;
+  margin-right: 127px;
 
   @media (min-width: $tablet-width) {
     margin-right: 52px;
@@ -44,7 +45,7 @@
 .page-footer__develop::after {
   position: absolute;
   top: -9px;
-  left: 95px;
+  left: 103px;
   content: "";
   width: 27px;
   height: 34px;

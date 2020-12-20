@@ -176,8 +176,13 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-nav__item--active a {
-    border-bottom: 2px solid;
-    padding-bottom: 19px;
+  .main-nav__item--active a::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 8px;
+    left: 0;
+    height: 2px;
+    background: #ffffff;
   }
 }
