@@ -279,9 +279,9 @@
   }
 }
 
-.forms__progress-wrapper {
-  width: 100%;
-}
+// .forms__progress-wrapper {
+//   width: 100%;
+// }
 
 .forms__progress {
   box-sizing: border-box;
@@ -318,8 +318,8 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: 25px;
+    padding-right: 25px;
     text-align: center;
 
     br {
@@ -596,8 +596,9 @@
 
   @media (min-width: $desktop-width) {
     width: 431px;
-    margin-right: 2px;
+    margin-right: 0;
     margin-top: 5px;
+    margin-left: 0;
     margin-bottom: 50px;
   }
 }
