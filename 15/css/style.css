@@ -2054,7 +2054,7 @@ img {
   padding: 0;
   margin-top: 0;
   margin-right: auto;
-  margin-bottom: 18px;
+  margin-bottom: 0;
   margin-left: auto;
   width: 100%; }
   @media (min-width: 660px) {
@@ -2123,15 +2123,12 @@ img {
       margin-top: 11px;
       margin-bottom: -7px; } }
 
-.forms__progress-wrapper {
-  width: 100%; }
-
 .forms__progress {
   box-sizing: border-box;
   border: none;
   margin-left: 0;
   margin-right: 0;
-  margin-top: -49px;
+  margin-top: 0;
   margin-bottom: 33px;
   padding: 0; }
   @media (min-width: 660px) {
@@ -2154,12 +2151,12 @@ img {
   text-transform: uppercase;
   color: #d22856;
   text-align: center;
-  padding-top: 112px; }
+  padding-top: 81px; }
   @media (min-width: 660px) {
     .forms__progress-header {
       padding-top: 0;
-      padding-left: 35px;
-      padding-right: 35px;
+      padding-left: 25px;
+      padding-right: 25px;
       text-align: center; }
       .forms__progress-header br {
         display: none; } }
@@ -2178,8 +2175,8 @@ img {
   padding-left: 49px; }
   @media (min-width: 660px) {
     .forms__progress-list {
-      padding-left: 77px;
-      margin-top: 47px;
+      padding-left: 87px;
+      margin-top: 48px;
       margin-bottom: 53px; } }
   @media (min-width: 960px) {
     .forms__progress-list {
@@ -2238,13 +2235,13 @@ img {
       border-radius: 1px;
       order: -3;
       padding: 0;
-      margin-bottom: 108px;
+      margin-bottom: 58px;
       width: 620px; } }
   @media (min-width: 960px) {
     .forms__contacts {
       margin-left: 0;
       width: 940px;
-      margin-bottom: 105px; } }
+      margin-bottom: 56px; } }
 
 .forms__contacts-header {
   padding-left: 22px; }
@@ -2391,8 +2388,9 @@ img {
   @media (min-width: 960px) {
     .forms__platforms {
       width: 431px;
-      margin-right: 2px;
+      margin-right: 0;
       margin-top: 5px;
+      margin-left: 0;
       margin-bottom: 50px; } }
 
 .forms__platforms-wrapper {
