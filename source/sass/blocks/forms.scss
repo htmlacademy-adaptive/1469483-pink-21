@@ -292,6 +292,7 @@
   margin-top: 0;
   margin-bottom: 33px;
   padding: 0;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     border: 2px solid #e5e5e5;
@@ -317,7 +318,6 @@
   text-align: center;
   padding-top: 81px;
   width: 218px;
-  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
@@ -589,6 +589,7 @@
   margin-left: auto;
   padding: 0;
   width: 100%;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     border: 2px solid #e5e5e5;
@@ -630,7 +631,6 @@
   text-align: center;
   padding-top: 117px;
   width: 178px;
-  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
