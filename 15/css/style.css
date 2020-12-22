@@ -2063,9 +2063,10 @@ img {
       margin-bottom: 60px; } }
   @media (min-width: 960px) {
     .forms__user {
-      width: 434px;
-      padding-right: 0;
+      width: 54%;
+      padding-right: 35px;
       margin-left: 0;
+      margin-right: 0;
       margin-bottom: 0; } }
 
 .forms__user-items-wrapper {
@@ -2387,7 +2388,7 @@ img {
       margin-bottom: 53px; } }
   @media (min-width: 960px) {
     .forms__platforms {
-      width: 431px;
+      width: 46%;
       margin-right: 0;
       margin-top: 5px;
       margin-left: 0;
