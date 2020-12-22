@@ -316,12 +316,12 @@
   color: $forms-header-color;
   text-align: center;
   padding-top: 81px;
+  width: 218px;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
-    padding-left: 25px;
-    padding-right: 25px;
     text-align: center;
+    width: 438px;
 
     br {
       display: none;
@@ -627,12 +627,12 @@
   color: $forms-header-color;
   text-align: center;
   padding-top: 117px;
+  width: 178px;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
-    padding-left: 25px;
-    padding-right: 25px;
     text-align: center;
+    width: 363px;
 
     br {
       display: none;
