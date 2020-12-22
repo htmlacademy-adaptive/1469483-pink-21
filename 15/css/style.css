@@ -2131,7 +2131,8 @@ img {
   margin-right: 0;
   margin-top: 0;
   margin-bottom: 33px;
-  padding: 0; }
+  padding: 0;
+  overflow: hidden; }
   @media (min-width: 660px) {
     .forms__progress {
       border: 2px solid #e5e5e5;
@@ -2153,8 +2154,7 @@ img {
   color: #d22856;
   text-align: center;
   padding-top: 81px;
-  width: 218px;
-  overflow: hidden; }
+  width: 218px; }
   @media (min-width: 660px) {
     .forms__progress-header {
       padding-top: 0;
@@ -2381,7 +2381,8 @@ img {
   margin-bottom: 34px;
   margin-left: auto;
   padding: 0;
-  width: 100%; }
+  width: 100%;
+  overflow: hidden; }
   @media (min-width: 660px) {
     .forms__platforms {
       border: 2px solid #e5e5e5;
@@ -2416,8 +2417,7 @@ img {
   color: #d22856;
   text-align: center;
   padding-top: 117px;
-  width: 178px;
-  overflow: hidden; }
+  width: 178px; }
   @media (min-width: 660px) {
     .forms__platforms-header {
       padding-top: 0;
