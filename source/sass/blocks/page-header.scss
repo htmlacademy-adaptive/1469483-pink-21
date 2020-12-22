@@ -14,6 +14,10 @@
 }
 
 .page-header__wrapper {
+  @media (min-width: $tablet-width) {
+    min-height: 110px;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
