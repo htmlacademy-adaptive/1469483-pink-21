@@ -2,7 +2,7 @@
   margin-bottom: 56px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 87px;
+    margin-bottom: 85px;
   }
 
   @media (min-width: $desktop-width) {
@@ -10,44 +10,63 @@
   }
 }
 
-.forms__wrapper {
-  margin: 0 auto;
-  width: 100%;
-  padding: 0;
+// .forms__wrapper {
+//   margin: 0 auto;
+//   padding: 0;
 
-  @media (min-width: $tablet-width) {
-    max-width: 640px;
-    padding: 0 10px;
-  }
+//   @media (min-width: $tablet-width) {
+//     max-width: 620px;
+//   }
 
-  @media (min-width: $desktop-width) {
-    max-width: 920px;
-    padding: 0 20px;
-  }
-}
+//   @media (min-width: $desktop-width) {
+//     max-width: 940px;
+//   }
+// }
 
 .forms__header-wrapper {
   background-color: #283645;
-  height: 171px;
+  background-image: url("../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 22%;
+  background-size: cover;
   margin-bottom: 44px;
+  min-height: 171px;
 
   @media (min-width: $tablet-width) {
-    height: 330px;
     margin-bottom: 91px;
+    background-image: url("../img/back-tablet.jpg");
+    background-position: 50% 20%;
+    background-size: cover;
+    min-height: 351px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
-    height: 282px;
+    background-image: url("../img/back-desktop.jpg");
+    min-height: 284px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.jpg");
+    }
   }
 }
 
 .forms__form-wrapper {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+  }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
     flex-wrap: wrap;
+    width: 940px;
   }
 }
 
@@ -61,18 +80,23 @@
   color: $light-on-dark-color;
   margin: 0 auto;
   padding-top: 28px;
-  width: 240px;
 
   @media (min-width: $tablet-width) {
     font-size: 50px;
     line-height: 68px;
-    width: 620px;
-    padding-top: 68px;
+    padding-top: 88px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 780px;
-    padding-top: 56px;
+    padding-top: 59px;
+
+    br {
+      display: none;
+    }
+
+    .forms__header--br {
+      display: inline;
+    }
   }
 }
 
@@ -84,18 +108,39 @@
   line-height: 30px;
   text-align: center;
   color: $main-header-text-color;
-  width: 280px;
   margin: 0 auto;
   padding-bottom: 22px;
 
+  .forms__text--br,
+  .forms__text--br-desk {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 18px;
-    width: 530px;
-    padding-bottom: 73px;
+    padding-bottom: 67px;
+
+    br {
+      display: none;
+    }
+
+    .forms__text--br {
+      display: inline;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    width: 844px;
+    br {
+      display: none;
+    }
+
+    .forms__text--br {
+      display: none;
+    }
+
+    .forms__text--br-desk {
+      display: inline;
+    }
   }
 }
 
@@ -136,7 +181,6 @@
 .forms__progress,
 .forms__platforms {
   background-color: $bg-color-block;
-  width: 100%;
 
   @media (min-width: $tablet-width) {
     background-color: transparent;
@@ -145,24 +189,25 @@
 
 .forms__user {
   box-sizing: border-box;
-  width: 100%;
   border: none;
+  padding: 0;
   margin-top: 0;
   margin-right: auto;
-  margin-bottom: 10px;
+  margin-bottom: 0;
   margin-left: auto;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
     order: -5;
-    padding: 0;
     margin-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 434px;
-    padding-right: 0;
-    margin-left: -30px;
+    width: 54%;
+    padding-right: 35px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -171,7 +216,10 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   margin: 0;
-  padding-bottom: 11px;
+  padding-bottom: 5px;
+  padding-left: 22px;
+  padding-top: 6px;
+  padding-right: 20px;
 
   &:last-child {
     padding-bottom: 0;
@@ -179,11 +227,13 @@
 
   @media (min-width: $tablet-width) {
     flex-wrap: nowrap;
-    padding-bottom: 54px;
+    padding-bottom: 48px;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 48px;
+    padding-bottom: 42px;
   }
 }
 
@@ -195,13 +245,14 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 0;
-    padding-top: 18px;
-    padding-right: 20px;
+    padding-top: 16px;
+    padding-right: 17px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 30px;
     padding-bottom: 0;
+    padding-right: 20px;
   }
 }
 
@@ -212,6 +263,15 @@
   border-radius: 1px;
   padding-left: 20px;
   margin: 0 auto;
+  outline: none;
+
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:active {
+    border-color: #d22856;
+  }
 
   @media (min-width: $desktop-width) {
     height: 64px;
@@ -220,35 +280,30 @@
   }
 }
 
-.forms__progress-wrapper {
-  width: 100%;
-
-  @media (min-width: $desktop-width) {
-    width: 917px;
-  }
-}
+// .forms__progress-wrapper {
+//   width: 100%;
+// }
 
 .forms__progress {
   box-sizing: border-box;
   border: none;
-  margin-top: -49px;
-  margin-right: auto;
-  margin-bottom: 10px;
-  margin-left: auto;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 33px;
   padding: 0;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
-    width: 620px;
-    padding: 0 10px;
     border: 2px solid #e5e5e5;
     border-radius: 1px;
-    margin-bottom: 50px;
+    margin-bottom: 52px;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    margin-left: -31px;
-    margin-bottom: 48px;
+    margin-left: 0;
+    margin-bottom: 51px;
   }
 }
 
@@ -261,13 +316,14 @@
   text-transform: uppercase;
   color: $forms-header-color;
   text-align: center;
-  padding-top: 111px;
+  padding-top: 81px;
+  width: 218px;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
-    padding-left: 30px;
-    padding-right: 30px;
     text-align: center;
+    line-height: 30px;
+    width: 438px;
 
     br {
       display: none;
@@ -287,22 +343,23 @@
 
 .forms__progress-list {
   list-style: none;
-  margin-top: 42px;
+  margin-top: 43px;
   margin-bottom: 47px;
-  padding-left: 51px;
+  padding-left: 49px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 79px;
-    margin-top: 46px;
-    margin-bottom: 54px;
+    padding-left: 87px;
+    margin-top: 48px;
+    margin-bottom: 53px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 315px 295px auto;
     grid-template-rows: 1fr 1fr;
-    padding-left: 89px;
-    margin-bottom: 10px;
+    padding-left: 77px;
+    margin-top: 49px;
+    margin-bottom: 7px;
   }
 }
 
@@ -315,8 +372,8 @@
 .forms__progress-checkbox:checked + .forms__progress-input-names::after {
   content: "";
   position: absolute;
-  left: -38px;
-  top: -1px;
+  left: -37px;
+  top: -2px;
   width: 35px;
   height: 35px;
   background: #ffffff;
@@ -325,52 +382,61 @@
   background-image: url("../img/check.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  cursor: pointer;
+
+  @media (min-width: $desktop-width) {
+    top: -3px;
+  }
 }
 
 .forms__progress-checkbox + .forms__progress-input-names::before {
   content: "";
   position: absolute;
-  left: -38px;
-  top: -1px;
+  left: -37px;
+  top: -2px;
   width: 35px;
   height: 35px;
   background: #ffffff;
   border: 2px solid #e5e5e5;
   border-radius: 1px;
+  cursor: pointer;
+
+  @media (min-width: $desktop-width) {
+    top: -3px;
+  }
 }
 
 .forms__contacts {
   box-sizing: border-box;
   border: none;
-  width: 100%;
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: -65px;
-  margin-left: 0;
+  margin-bottom: -53px;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     border: 2px solid #e5e5e5;
     border-radius: 1px;
     order: -3;
     padding: 0;
-    margin-bottom: 108px;
+    margin-bottom: 58px;
+    width: 620px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: -30px;
+    margin-left: 0;
+    width: 940px;
+    margin-bottom: 56px;
   }
 }
 
 .forms__contacts-header {
-  padding-left: 24px;
+  padding-left: 22px;
 
   @media (min-width: $tablet-width) {
-    margin-top: -20px;
-    padding-left: 78px;
+    padding-left: 18px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 18px;
+    padding-left: 20px;
     padding-top: 11px;
     margin-top: 0;
   }
@@ -389,28 +455,35 @@
     text-transform: uppercase;
     color: #d22856;
     text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 32px;
+    padding-right: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 35px;
+    padding-right: 35px;
   }
 }
 
 .forms__contacts-wrapper {
-  margin-top: 17px;
-  margin-right: auto;
-  margin-bottom: 0;
-  margin-left: auto;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 9px;
 
   @media (min-width: $tablet-width) {
     margin-top: 18px;
     margin-bottom: 27px;
+    padding-left: 48px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    width: 936px;
-    margin-bottom: 12px;
+    width: 915px;
+    margin-top: 20px;
+    margin-bottom: 14px;
+    padding-left: 0;
   }
 }
 
@@ -426,15 +499,15 @@
 }
 
 .forms__contacts-item:first-child {
-  margin-right: 50px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 16px;
-    margin-left: 58px;
+    margin-right: 30px;
+    margin-left: 48px;
     margin-top: 8px;
     margin-bottom: 0;
   }
@@ -445,20 +518,29 @@
   height: 62px;
   border: 2px solid #e5e5e5;
   border-radius: 1px;
-  padding-left: 20px;
+  padding-left: 18px;
   margin-top: 5px;
   margin-bottom: 18px;
+  outline: none;
+
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:active {
+    border-color: #d22856;
+  }
 
   @media (min-width: $tablet-width) {
     width: 500px;
-    margin-left: 59px;
     margin-top: 11px;
-    margin-bottom: 30px;
+    margin-bottom: 11px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 371px;
+    width: 375px;
     margin: 0;
+    padding-left: 21px;
   }
 }
 
@@ -466,10 +548,10 @@
   .forms__contacts-tel::after {
     content: "";
     position: absolute;
-    right: 57px;
+    right: 41px;
     top: 13px;
-    width: 59px;
-    height: 59px;
+    width: 58px;
+    height: 58px;
     background-color: #e5e5e5;
     background-image: url("../img/phone-icon.png");
     background-repeat: no-repeat;
@@ -483,10 +565,10 @@
   .forms__contacts-mail::after {
     content: "";
     position: absolute;
-    right: 58px;
-    top: 12px;
-    width: 59px;
-    height: 59px;
+    right: 41px;
+    top: 13px;
+    width: 58px;
+    height: 58px;
     background-color: #e5e5e5;
     background-image: url("../img/mail-icon.png");
     background-repeat: no-repeat;
@@ -502,13 +584,14 @@
   box-sizing: border-box;
   border: none;
   margin-top: 0;
-  margin-right: 0;
+  margin-right: auto;
   margin-bottom: 34px;
-  margin-left: 0;
+  margin-left: auto;
+  padding: 0;
   width: 100%;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
-    padding: 0 10px;
     border: 2px solid #e5e5e5;
     border-radius: 1px;
     order: -4;
@@ -516,20 +599,24 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 431px;
-    margin-right: -28px;
+    width: 46%;
+    margin-right: 0;
+    margin-top: 5px;
+    margin-left: 0;
+    margin-bottom: 50px;
   }
 }
 
 .forms__platforms-wrapper {
   margin: 0 auto;
+  padding-left: 10px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 110px;
+    margin-left: 99px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 122px;
+    margin-left: 111px;
   }
 }
 
@@ -542,33 +629,40 @@
   text-transform: uppercase;
   color: $forms-header-color;
   text-align: center;
-  padding-top: 120px;
+  padding-top: 117px;
+  width: 178px;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
-    padding-left: 25px;
-    padding-right: 25px;
+    line-height: 30px;
     text-align: center;
+    width: 363px;
+
+    br {
+      display: none;
+    }
   }
 }
 
 .forms__platforms-list {
-  margin-top: 32px;
-  margin-right: auto;
-  margin-bottom: -10px;
-  margin-left: auto;
+  margin: 0;
+  padding-top: 38px;
   padding-left: 71px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 16px;
+    padding-top: 48px;
     padding-left: 0;
-    padding-bottom: 23px;
+    padding-bottom: 13px;
   }
 }
 
 .forms__platforms-item {
   position: relative;
   margin-bottom: 45px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 46px;
+  }
 }
 
 .forms__platforms-radio:checked + .forms__platforms-input-names::after {
@@ -584,14 +678,15 @@
   background-image: url("../img/ellipse-small.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     left: -59px;
   }
 
   @media (min-width: $desktop-width) {
-    top: -4px;
-    left: -60px;
+    top: -3px;
+    left: -59px;
   }
 }
 
@@ -609,6 +704,7 @@
   background: #ffffff;
   border: 2px solid #e5e5e5;
   border-radius: 50%;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     left: -59px;
@@ -616,8 +712,26 @@
 
   @media (min-width: $desktop-width) {
     top: -3px;
-    left: -60px;
+    left: -59px;
   }
+}
+
+.forms__platforms-input-names:hover::after,
+.forms__platforms-radio:checked + .forms__platforms-input-names:hover::after,
+.forms__platforms-input-names:hover::before,
+.forms__progress-input-names:hover::after,
+.forms__progress-checkbox:checked + .forms__progress-input-names:hover::after,
+.forms__progress-input-names:hover::before {
+  border-color: #283645;
+}
+
+.forms__platforms-input-names:active::after,
+.forms__platforms-radio:checked + .forms__platforms-input-names:active::after,
+.forms__platforms-input-names:active::before,
+.forms__progress-input-names:active::after,
+.forms__progress-checkbox:checked + .forms__progress-input-names:active::after,
+.forms__progress-input-names:active::before {
+  border-color: #d22856;
 }
 
 .forms__emotion {
@@ -625,31 +739,30 @@
   border: none;
   display: flex;
   justify-content: center;
-  width: 100%;
-  margin-top: 0;
-  margin-right: 0;
+  padding: 0;
   margin-bottom: -11px;
-  margin-left: 0;
 
   @media (min-width: $tablet-width) {
     border: 2px solid #e5e5e5;
     border-radius: 1px;
     padding: 0;
+    width: 620px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: -30px;
+    margin-left: 0;
   }
 }
 
 .forms__emotion-header {
   text-align: center;
-  padding-left: 38px;
-  padding-right: 38px;
-  padding-bottom: 5px;
+  padding-bottom: 8px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 3px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 35px;
+    padding-right: 35px;
   }
 }
 
@@ -665,18 +778,18 @@
   @media (min-width: $tablet-width) {
     width: 500px;
     height: 192px;
-    margin-top: 25px;
-    margin-bottom: 52px;
+    margin-top: 30px;
+    margin-bottom: 49px;
     padding-left: 21px;
     padding-top: 14px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 816px;
+    width: 817px;
     height: 126px;
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-top: 23px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 28px;
     margin-bottom: 44px;
     padding-left: 18px;
     padding-top: 13px;
@@ -684,20 +797,35 @@
 }
 
 .forms__submit-items {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 50px;
-  width: 100%;
+  margin-top: 57px;
 
   @media (min-width: $tablet-width) {
-    flex-wrap: nowrap;
-    justify-content: space-between;
     margin-top: 78px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: -30px;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 75px;
+  }
+}
+
+.forms__submit-items-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 276px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    width: 940px;
   }
 }
 
@@ -716,7 +844,16 @@
   cursor: pointer;
   display: block;
   width: 276px;
-  height: 60px;
+  height: 62px;
+
+  &:hover {
+    background: #1c9b5e;
+    border: 2px solid #1c9b5e;
+  }
+
+  &:active {
+    color: #60b98e;
+  }
 
   @media (min-width: $tablet-width) {
     width: 300px;
@@ -741,7 +878,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 16px;
-    margin-right: -60px;
+    margin-right: 0;
   }
 }
 
