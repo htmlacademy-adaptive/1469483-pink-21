@@ -2153,14 +2153,14 @@ img {
   color: #d22856;
   text-align: center;
   padding-top: 81px;
-  width: 218px; }
+  width: 218px;
+  overflow: hidden; }
   @media (min-width: 660px) {
     .forms__progress-header {
       padding-top: 0;
       text-align: center;
       line-height: 30px;
-      width: 438px;
-      overflow: hidden; }
+      width: 438px; }
       .forms__progress-header br {
         display: none; } }
 
@@ -2416,14 +2416,14 @@ img {
   color: #d22856;
   text-align: center;
   padding-top: 117px;
-  width: 178px; }
+  width: 178px;
+  overflow: hidden; }
   @media (min-width: 660px) {
     .forms__platforms-header {
       padding-top: 0;
       line-height: 30px;
       text-align: center;
-      width: 363px;
-      overflow: hidden; }
+      width: 363px; }
       .forms__platforms-header br {
         display: none; } }
 
