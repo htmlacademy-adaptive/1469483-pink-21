@@ -317,13 +317,13 @@
   text-align: center;
   padding-top: 81px;
   width: 218px;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
     text-align: center;
     line-height: 30px;
     width: 438px;
-    overflow: hidden;
 
     br {
       display: none;
@@ -630,13 +630,13 @@
   text-align: center;
   padding-top: 117px;
   width: 178px;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
     line-height: 30px;
     text-align: center;
     width: 363px;
-    overflow: hidden;
 
     br {
       display: none;
