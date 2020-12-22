@@ -2158,7 +2158,9 @@ img {
     .forms__progress-header {
       padding-top: 0;
       text-align: center;
-      width: 438px; }
+      line-height: 30px;
+      width: 438px;
+      overflow: hidden; }
       .forms__progress-header br {
         display: none; } }
 
@@ -2418,8 +2420,10 @@ img {
   @media (min-width: 660px) {
     .forms__platforms-header {
       padding-top: 0;
+      line-height: 30px;
       text-align: center;
-      width: 363px; }
+      width: 363px;
+      overflow: hidden; }
       .forms__platforms-header br {
         display: none; } }
 
