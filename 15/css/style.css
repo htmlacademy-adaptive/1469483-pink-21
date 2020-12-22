@@ -2152,13 +2152,13 @@ img {
   text-transform: uppercase;
   color: #d22856;
   text-align: center;
-  padding-top: 81px; }
+  padding-top: 81px;
+  width: 218px; }
   @media (min-width: 660px) {
     .forms__progress-header {
       padding-top: 0;
-      padding-left: 25px;
-      padding-right: 25px;
-      text-align: center; }
+      text-align: center;
+      width: 438px; }
       .forms__progress-header br {
         display: none; } }
 
@@ -2413,13 +2413,13 @@ img {
   text-transform: uppercase;
   color: #d22856;
   text-align: center;
-  padding-top: 117px; }
+  padding-top: 117px;
+  width: 178px; }
   @media (min-width: 660px) {
     .forms__platforms-header {
       padding-top: 0;
-      padding-left: 25px;
-      padding-right: 25px;
-      text-align: center; }
+      text-align: center;
+      width: 363px; }
       .forms__platforms-header br {
         display: none; } }
 
