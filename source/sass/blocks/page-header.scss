@@ -1,24 +1,54 @@
 .page-header {
-  background: #283645;
   color: $light-on-dark-color;
   width: 100%;
-  min-height: 66px;
+  background: #283645;
+  min-height: 668px;
+  background-image: url("../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: 100% 63%;
 
   @media (min-width: $tablet-width) {
-    min-height: 80px;
+    margin-bottom: 47px;
+    min-height: 727px;
+    background-image: url("../img/back-tablet.jpg");
+    background-position: 50% 0;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 110px;
+    min-height: 853px;
+    margin-bottom: 63px;
+    background-image: url("../img/back-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.jpg");
+    }
   }
 }
 
 .page-header__wrapper {
+  height: 66px;
+  background-color: rgba(0, 0, 0, 0.3);
+
   @media (min-width: $tablet-width) {
-    min-height: 110px;
+    height: 109px;
   }
 
   @media (min-width: $desktop-width) {
+    height: 110px;
+  }
+}
+
+.page-header__items {
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    overflow: hidden;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -30,10 +60,10 @@
   width: 74px;
   padding-top: 20px;
   padding-bottom: 20px;
-  margin-top: 0;
+  margin-top: 1px;
   margin-right: 0;
   margin-bottom: 0;
-  margin-left: 10px;
+  margin-left: 20px;
 
   img {
     width: 74px;
@@ -66,5 +96,59 @@
   @media (min-width: $desktop-width) {
     width: 147px;
     margin-left: 0;
+  }
+}
+
+.page-header__logo-mobile {
+  fill: #ffffff;
+
+  &:hover {
+    fill: #d22856;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__logo-tablet {
+  display: none;
+  fill: #ffffff;
+
+  &:hover {
+    fill: #d22856;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.page-header__logo-desktop {
+  display: none;
+  fill: #ffffff;
+
+  &:hover {
+    fill: #d22856;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }

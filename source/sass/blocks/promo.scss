@@ -1,49 +1,34 @@
 .promo {
-  min-height: 668px;
-  background-color: #1d2631;
-  background-image: url("../img/back-mobile.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% -32%;
-  background-size: 100% 69%;
   margin-bottom: 1px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 47px;
-    min-height: 640px;
-    background-image: url("../img/back-tablet.jpg");
-    background-position: 50% 100%;
-    background-size: cover;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/back-tablet@2x.jpg");
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    min-height: 742px;
-    margin-bottom: 63px;
-    background-image: url("../img/back-desktop.jpg");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/back-desktop@2x.jpg");
-    }
-  }
 }
 
 .promo__items {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
 
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 10px;
-    padding-top: 108px;
+  &::before {
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    width: 320px;
+    height: 286px;
+    background-image: url("../img/index-phone.png");
+    background-repeat: no-repeat;
+    z-index: 1;
 
-    &::before {
-      position: absolute;
-      top: 96px;
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-phone@2x.png");
+      background-size: 319px;
+    }
+
+    @media (min-width: $tablet-width) {
+      top: 73px;
       left: -11px;
+      transform: translateX(0);
       content: "";
       width: 640px;
       height: 545px;
@@ -60,6 +45,7 @@
         width: 100%;
         height: 645px;
         left: 15px;
+        top: 98px;
         background-image: url("../img/phone-desk.png");
 
         @media (min-resolution: 2dppx) {
@@ -70,6 +56,12 @@
     }
   }
 
+  @media (min-width: $tablet-width) {
+    align-items: flex-start;
+    padding-left: 10px;
+    padding-top: 86px;
+  }
+
   @media (min-width: $desktop-width) {
     padding-top: 93px;
     padding-left: 0;
@@ -77,6 +69,7 @@
 }
 
 .promo__header-wrapper {
+  height: 398px;
   margin-bottom: 26px;
 
   img {
@@ -88,8 +81,15 @@
     }
   }
 
+  @media (min-width: $tablet-width) {
+    height: auto;
+    padding-left: 54px;
+    margin-bottom: 25px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 30px;
+    padding-left: 30px;
   }
 }
 
@@ -130,6 +130,11 @@
   flex-direction: column;
   color: $light-on-dark-color;
   z-index: 2;
+  padding-left: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
 }
 
 .promo__download-button {

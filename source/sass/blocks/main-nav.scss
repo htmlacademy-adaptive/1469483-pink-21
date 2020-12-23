@@ -1,11 +1,15 @@
 .main-nav {
   position: relative;
+  min-height: 66px;
+  z-index: 3;
 }
+
+
 
 .main-nav__menu-button {
   position: absolute;
-  top: -43px;
-  right: 5%;
+  top: -44px;
+  right: 8%;
   z-index: 2;
   display: block;
   width: 50px;
@@ -16,8 +20,8 @@
   outline: none;
 
   @media (min-width: $tablet-width) {
-    top: -44px;
-    right: 15px;
+    top: -43px;
+    right: 26px;
   }
 
   @media (min-width: $desktop-width) {
@@ -168,6 +172,7 @@
     border: none;
     padding: 0;
     padding-bottom: 21px;
+    background: inherit;
 
     span {
       text-transform: uppercase;
