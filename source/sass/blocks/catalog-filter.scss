@@ -21,6 +21,7 @@
 
   @media (min-width: $desktop-width) {
     box-sizing: border-box;
+    justify-content: flex-start;
   }
 }
 
@@ -33,12 +34,13 @@
     width: 300px;
     height: 400px;
     padding-top: 0;
-    margin-left: -67px;
+    margin-left: 0;
     margin-top: 13px;
+    margin-right: 69px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: -228px;
+    margin-left: 70px;
     margin-top: 9px;
   }
 }
@@ -54,9 +56,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 0;
+    margin-left: 98px;
     margin-top: -203px;
-    padding-left: 197px;
   }
 }
 
@@ -72,9 +73,9 @@
   @media (min-width: $tablet-width) {
     flex-wrap: nowrap;
     width: 100%;
-    margin-left: 87px;
+    margin-left: -26px;
     margin-top: 93px;
-    margin-bottom: 31px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -107,7 +108,7 @@
 
   @media (min-width: $tablet-width) {
     padding-right: 20px;
-    padding-bottom: 28px;
+    padding-bottom: 29px;
   }
 
   @media (min-width: $desktop-width) {
@@ -160,15 +161,64 @@
   fill: #283645;
   opacity: 0.3;
 
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 1;
+    fill: #d22856;
+  }
+
   @media (min-width: $tablet-width) {
     fill: #d22856;
     opacity: 1;
   }
 }
 
+.catalog-filter__item-button-img--crop svg {
+  width: 44px;
+  height: 44px;
+
+  @media (min-width: $tablet-width) {
+    width: 22px;
+    height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 44px;
+    height: 44px;
+  }
+}
+
 .catalog-filter__item-button-img--fill svg {
   width: 48px;
   height: 43px;
+
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 48px;
+    height: 43px;
+  }
+}
+
+.catalog-filter__item-button-img--contrast svg {
+  width: 32px;
+  height: 32px;
+
+  @media (min-width: $tablet-width) {
+    width: 16px;
+    height: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 .item-button__img--active svg {
@@ -184,13 +234,13 @@
   padding-bottom: 28px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 103px;
+    margin-left: -33px;
   }
 
   @media (min-width: $desktop-width) {
     flex-wrap: nowrap;
     justify-content: space-around;
-    margin-left: 145px;
+    margin-left: 6px;
     width: auto;
   }
 }
@@ -243,6 +293,7 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 56px;
+    margin-top: -30px;
   }
 }
 
