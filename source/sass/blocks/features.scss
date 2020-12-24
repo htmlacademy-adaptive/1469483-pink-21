@@ -1,12 +1,13 @@
 .features {
-  margin-bottom: 50px;
+  position: relative;
+  margin-bottom: 7px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 29px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 45px;
+    margin-bottom: 44px;
   }
 }
 

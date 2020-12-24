@@ -1,9 +1,5 @@
 .reviews {
-  margin-bottom: 98px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 100px;
-  }
+  position: relative;
 
   @media (min-width: $desktop-width) {
     background-image: url("../img/quotes.png");
@@ -108,7 +104,6 @@
       top: -42px;
     }
   }
-
 
   @media (min-width: $desktop-width) {
     display: none;
