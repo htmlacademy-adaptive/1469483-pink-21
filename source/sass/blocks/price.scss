@@ -1,13 +1,30 @@
 .price {
+  position: relative;
   background-color: $bg-color-block;
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 42px;
+    margin-bottom: 45px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 64px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../img/bg-triangle-white-price.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/bg-triangle-white-desk.svg");
+      left: -16%;
+    }
   }
 }
 
@@ -38,11 +55,11 @@
 .price__table {
   display: block;
   width: 900px;
-  padding-top: 80px;
+  padding-top: 95px;
   padding-bottom: 70px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 56px;
+    padding-top: 75px;
     padding-bottom: 20px;
     margin: 0 auto;
   }
