@@ -128,7 +128,7 @@
   position: relative;
   text-align: center;
   margin: 0 auto;
-  min-height: 200px;
+  height: 200px;
 
   @media (min-width: $tablet-width) {
     height: 374px;
@@ -163,6 +163,7 @@
 .contacts__map-map {
   width: 100%;
   z-index: 1;
+  height: 200px;
 
   @media (min-width: $tablet-width) {
     height: 374px;
