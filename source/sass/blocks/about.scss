@@ -1,24 +1,39 @@
 .about {
+  position: relative;
   margin-bottom: 41px;
   background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      position: absolute;
+      content: "";
+      top: -51px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url("../img/about-phone-tablet.png");
+      background-repeat: no-repeat;
+      background-position: 5% -10%;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/about-phone-tablet@2x.png");
+        background-size: 270px;
+      }
+    }
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
     padding-bottom: 389px;
-  }
-}
-
-.about__wrapper {
-  @media (min-width: $tablet-width) {
-    height: 480px;
-    background-image: url("../img/iphone-tablet-about.png");
-    background-position: 3% -8%;
+    background-color: transparent;
+    background-image: url("../img/grey-background.svg");
+    background-position: 50% 0;
+    background-size: 100%;
     background-repeat: no-repeat;
-    z-index: 1;
-  }
 
-  @media (min-width: $desktop-width) {
-    background-image: none;
+    &::before {
+      content: none;
+    }
   }
 }
 
@@ -31,10 +46,10 @@
   flex-direction: column;
   align-items: center;
   list-style: none;
-  padding-top: 66px;
+  padding-top: 30px;
   margin: 0;
   width: 100%;
-  min-height: 769px;
+  min-height: 735px;
   background-image: url("../img/index-about-phone.png");
   background-repeat: no-repeat;
   background-position: 50% 110%;
@@ -46,17 +61,10 @@
 
   @media (min-width: $tablet-width) {
     align-items: flex-end;
-    min-height: 488px;
-    background-image: url("../img/about-phone-tablet.png");
-    background-repeat: no-repeat;
-    background-position: 5% -10%;
-    padding-top: 77px;
+    min-height: 434px;
+    padding-top: 24px;
     margin-left: -10px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/about-phone-tablet@2x.png");
-      background-size: 270px;
-    }
+    background-image: none;
   }
 
   @media (min-width: $desktop-width) {

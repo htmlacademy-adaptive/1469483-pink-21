@@ -130,6 +130,36 @@
   margin: 0 auto;
   min-height: 200px;
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: -29px;
+    left: -45%;
+    right: 0;
+    bottom: 0;
+    background-image: url("../img/bg-triangle-white-footer.svg");
+    background-repeat: no-repeat;
+    z-index: 3;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 374px;
+
+    &::before {
+      left: 5%;
+      top: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 502px;
+
+    &::before {
+      left: 28%;
+      top: 0;
+    }
+  }
+
   .contacts__map-map {
     width: 100%;
     z-index: 1;

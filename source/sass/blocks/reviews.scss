@@ -1,8 +1,27 @@
 .reviews {
+  position: relative;
   margin-bottom: 98px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -7%;
+    right: 0;
+    bottom: -164px;
+    transform: rotate(180deg);
+    background-image: url("../img/bg-triangle-white.svg");
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 100px;
+
+    &::after {
+      bottom: -143px;
+      left: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -108,7 +127,6 @@
       top: -42px;
     }
   }
-
 
   @media (min-width: $desktop-width) {
     display: none;

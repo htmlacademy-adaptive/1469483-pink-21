@@ -1,12 +1,37 @@
 .features {
+  position: relative;
   margin-bottom: 50px;
+  padding-bottom: 35px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -96px;
+    transform: rotate(180deg);
+    background-image: url("../img/bg-triangle-white.svg");
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 29px;
+    padding-bottom: 54px;
+
+    &::after {
+      bottom: -70px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 45px;
+    padding-bottom: 0;
+
+    &::after {
+      content: none;
+    }
   }
 }
 

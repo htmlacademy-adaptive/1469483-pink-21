@@ -4,7 +4,10 @@
   z-index: 3;
 }
 
-
+.main-nav--open .main-nav__list {
+  position: static;
+  height: 252px;
+}
 
 .main-nav__menu-button {
   position: absolute;
@@ -107,6 +110,15 @@
   display: none;
 }
 
+// .main-nav--nojs .main-nav__list {
+//   position: static;
+//   display: block;
+// }
+
+// .main-nav--nojs .main-nav__item {
+//   display: block;
+// }
+
 .main-nav__list {
   display: flex;
   flex-direction: column;
@@ -156,8 +168,7 @@
   }
 
   &:active {
-    color: #ffffff;
-    opacity: 0.3;
+    color: #522f49;
   }
 
   @media (min-width: $tablet-width) {
