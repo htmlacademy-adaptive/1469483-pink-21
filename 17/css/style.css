@@ -1323,11 +1323,11 @@ img {
   background-image: url("../img/bg-triangle-white-footer.svg");
   background-repeat: no-repeat;
   background-position: 50% 0;
+  background-size: 100% auto;
   z-index: 3; }
   @media (min-width: 960px) {
     .contacts__map::after {
       background-image: url("../img/bg-triangle-white-footer-desk.svg");
-      background-position: 50% -42%;
       top: 0;
       left: 0; } }
 
