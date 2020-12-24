@@ -9,7 +9,7 @@
   @media (min-width: $desktop-width) {
     background-color: #f2f2f2;
     margin-bottom: 55px;
-    min-height: 463px;
+    min-height: 493px;
   }
 }
 
@@ -21,6 +21,7 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 370px;
+    padding-top: 29px;
   }
 }
 
@@ -35,7 +36,7 @@
   background-repeat: no-repeat;
 
   @media (min-width: $desktop-width) {
-    top: 51px;
+    top: 79px;
     left: 0;
     width: 303px;
     height: 345px;
@@ -88,7 +89,7 @@
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 30px;
-    padding-bottom: 31px;
+    padding-bottom: 34px;
 
     br {
       display: none;
