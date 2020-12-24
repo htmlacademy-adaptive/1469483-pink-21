@@ -1,58 +1,7 @@
 .page-header {
   color: $light-on-dark-color;
   width: 100%;
-  background: #283645;
-  min-height: 668px;
-  background-image: url("../img/back-mobile.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-  background-size: 100% 63%;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 47px;
-    min-height: 727px;
-    background-image: url("../img/back-tablet.jpg");
-    background-position: 50% 0;
-    background-size: cover;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/back-tablet@2x.jpg");
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    min-height: 853px;
-    margin-bottom: 63px;
-    background-image: url("../img/back-desktop.jpg");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/back-desktop@2x.jpg");
-    }
-  }
-}
-
-.page-header__wrapper {
-  height: 66px;
-  background-color: rgba(0, 0, 0, 0.3);
-
-  @media (min-width: $tablet-width) {
-    height: 109px;
-  }
-
-  @media (min-width: $desktop-width) {
-    height: 110px;
-  }
-}
-
-.page-header__items {
-  @media (min-width: $desktop-width) {
-    width: 940px;
-    overflow: hidden;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
+  position: relative;
 }
 
 .page-header__logo {
