@@ -283,7 +283,7 @@ img {
   z-index: 3;
   background-color: rgba(0, 0, 0, 0.3); }
 
-@media (min-width: 660px) {
+@media (min-width: 960px) {
   .main-nav__wrapper {
     max-width: 940px;
     overflow: hidden;
