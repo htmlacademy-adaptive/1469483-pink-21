@@ -96,32 +96,31 @@
           </div>
         </div>
         <div class="catalog-content__main">
+          <div class="catalog-content__main-photo">
+            <button class="catalog-content__main-photo-button" type="button">Панорама дня</button>
+            <picture>
+              <source type="image/webp" media="(min-width: 960px)"
+                srcset="img/panorama-desktop.webp 1x, img/panorama-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)"
+                srcset="img/panorama-tablet.webp 1x, img/panorama-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/catalog-panorama.webp 1x, img/catalog-panorama@2x.webp 2x">
+
+              <source media="(min-width: 960px)" srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+              <img class="catalog-content-item__img-main" src="img/catalog-panorama.jpg"
+                srcset="img/catalog-panorama@2x.jpg" alt="Анна" width="320" height="137">
+            </picture>
+          </div>
           <div class="wrapper">
-            <div class="catalog-content__main-photo">
-              <button class="catalog-content__main-photo-button" type="button">Панорама дня</button>
-              <picture>
-                <source type="image/webp" media="(min-width: 960px)"
-                  srcset="img/panorama-desktop.webp 1x, img/panorama-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 660px)"
-                  srcset="img/panorama-tablet.webp 1x, img/panorama-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/catalog-panorama.webp 1x, img/catalog-panorama@2x.webp 2x">
-
-                <source media="(min-width: 960px)" srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-                <img class="catalog-content-item__img-main" src="img/catalog-panorama.jpg"
-                  srcset="img/catalog-panorama@2x.jpg" alt="Анна" width="320" height="137">
-              </picture>
-
-              <div class="catalog-content__item-wrapper-main">
-                <p class="catalog-content__item-name">Анна<span class="catalog-content__item-time">(5 минут
-                    назад)</span>
-                </p>
-                <p class="catalog-content__item-review">Прыгать или нет? Напишите в<br>
-                  комментарии свой совет и<br>
-                  смотрите прямую трансляцию в<br>
-                  перископе, задавайте свои вопросы!</p>
-                <p class="catalog-content__item-likee catalog-content__item-likee--main">Нравится: 215</p>
-              </div>
+            <div class="catalog-content__item-wrapper-main">
+              <p class="catalog-content__item-name">Анна<span class="catalog-content__item-time">(5 минут
+                  назад)</span>
+              </p>
+              <p class="catalog-content__item-review">Прыгать или нет? Напишите в<br>
+                комментарии свой совет и<br>
+                смотрите прямую трансляцию в<br>
+                перископе, задавайте свои вопросы!</p>
+              <p class="catalog-content__item-likee catalog-content__item-likee--main">Нравится: 215</p>
             </div>
           </div>
           <div class="wrapper">

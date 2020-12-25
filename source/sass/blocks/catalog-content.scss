@@ -148,6 +148,16 @@
 
 .catalog-content__main-photo {
   position: relative;
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 960px;
+  }
 }
 
 .catalog-content-item__img-main {
@@ -194,7 +204,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    top: 9%;
+    top: 11%;
     right: 21px;
   }
 
