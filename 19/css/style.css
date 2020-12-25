@@ -1732,18 +1732,7 @@ img {
       align-items: baseline;
       justify-content: space-between;
       margin: 0 auto;
-      padding: 0 10px; }
-      .catalog-content__list::before {
-        position: absolute;
-        content: "";
-        bottom: 26px;
-        left: 10px;
-        height: 9px;
-        width: 97%;
-        background-color: #c4c4c4; } }
-    @media (min-width: 660px) and (min-width: 960px) {
-      .catalog-content__list::before {
-        display: none; } }
+      padding: 0 10px; } }
   @media (min-width: 960px) {
     .catalog-content__list {
       justify-content: space-between;
