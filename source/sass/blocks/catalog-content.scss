@@ -241,20 +241,6 @@
     justify-content: space-between;
     margin: 0 auto;
     padding: 0 10px;
-
-    &::before {
-      position: absolute;
-      content: "";
-      bottom: 26px;
-      left: 10px;
-      height: 9px;
-      width: 97%;
-      background-color: #c4c4c4;
-
-      @media (min-width: $desktop-width) {
-        display: none;
-      }
-    }
   }
 
   @media (min-width: $desktop-width) {
