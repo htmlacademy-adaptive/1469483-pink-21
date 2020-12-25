@@ -34,6 +34,11 @@
   border: none;
   outline: none;
 
+  @media (min-width: $tablet-width) {
+    top: 65%;
+    right: 23px;
+  }
+
   @media (min-width: $desktop-width) {
     display: none;
   }
@@ -138,7 +143,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    top: 43px;
+    top: 53px;
   }
 }
 
@@ -183,7 +188,7 @@
   @media (min-width: $desktop-width) {
     width: auto;
     flex-direction: row;
-    margin-top: 15px;
+    margin-top: 18px;
   }
 }
 
