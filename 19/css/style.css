@@ -1653,7 +1653,17 @@ img {
       padding-left: 13px; } }
 
 .catalog-content__main-photo {
-  position: relative; }
+  position: relative;
+  width: 320px;
+  margin: 0 auto; }
+  @media (min-width: 660px) {
+    .catalog-content__main-photo {
+      width: 660px; } }
+  @media (min-width: 960px) {
+    .catalog-content__main-photo {
+      min-width: 960px;
+      width: auto;
+      padding: 0 10px; } }
 
 .catalog-content-item__img-main {
   display: block;
@@ -1692,7 +1702,7 @@ img {
     opacity: 1; }
   @media (min-width: 660px) {
     .catalog-content__main-photo-button {
-      top: 9%;
+      top: 11%;
       right: 21px; } }
   @media (min-width: 960px) {
     .catalog-content__main-photo-button {
