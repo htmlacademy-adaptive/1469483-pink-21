@@ -156,7 +156,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 960px;
+    min-width: 960px;
+    width: auto;
+    padding: 0 10px;
   }
 }
 
