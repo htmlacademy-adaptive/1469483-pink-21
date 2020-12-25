@@ -6,6 +6,10 @@
   min-height: 66px;
   z-index: 3;
   background-color: rgba(0, 0, 0, 0.3);
+
+  @media (min-width: $tablet-width) {
+    min-height: 110px;
+  }
 }
 
 .main-nav__wrapper {
@@ -35,7 +39,7 @@
   outline: none;
 
   @media (min-width: $tablet-width) {
-    top: 65%;
+    top: 51%;
     right: 23px;
   }
 

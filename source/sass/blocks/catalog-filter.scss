@@ -4,6 +4,7 @@
   @media (min-width: $desktop-width) {
     max-width: 940px;
     margin: 0 auto;
+    margin-bottom: 95px;
   }
 }
 
@@ -282,6 +283,26 @@
   color: #d22856;
   border-color: #d22856;
   opacity: 1;
+
+  &:hover {
+    background: #d22856;
+    color: #ffffff;
+  }
+
+  &:active {
+    color: #e06889;
+  }
+}
+
+.catalog-filter__button--cancel {
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:active {
+    background-color: #283645;
+    color: #cbcfd1;
+  }
 }
 
 .catalog-filter__scale-wrapper {
