@@ -9,35 +9,78 @@
 </head>
 
 <body class="page__body">
+  <svg style="display: none;">
+
+    <style>
+      svg {
+        fill: #D22856;
+      }
+
+      svg:hover {
+        fill: #283645;
+      }
+
+      svg:active {
+        fill: #283645;
+        opacity: 0.3;
+      }
+    </style>
+
+    <symbol id="htmlacademy" viewBox="0 0 27 34">
+      <path
+        d="M13.6 0h-.1L0 1.4V26l13.5 8L27 26V1.4L13.6 0zm11.6 25l-11.7 7-11.7-7V15l11.7 6.8v1.3l-8-4.7v1.2l8 4.8v1.3l-8-4.8v1.2l8 4.9 8.1-4.9V17l3.6-2.1V25zm0-11.5L22 15.3l-1.5 1-7-4.3v1.2l6 3.6-.2.1-.8.5-5-3v1.3l3.9 2.3-1 .6-3-1.7v1.2l2 1.2-2 1.1-11.6-6.8 11.6-7 11.8 6.9zm0-1.3L13.4 5.3l-11.6 7V3l11.7-1.2L25.2 3v9.2z" />
+    </symbol>
+  </svg>
+
   <header class="page-header">
-    <div class="wrapper">
-      <div class="page-header__wrapper">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <div class="main-nav__wrapper">
         <a class="page-header__logo" href="#">
-          <picture>
-            <source media="(min-width: 960px)" srcset="img/logotype-white-desktop.svg">
-            <source media="(min-width: 660px)" srcset="img/logotype-white-tablet.svg">
-            <img src="img/index-pink-head.svg" alt="PINK" width="74" height="23">
-          </picture>
+          <svg class="page-header__logo-mobile" viewBox="0 0 74 23" role="img" aria-label="PINK">
+            <path
+              d="M0 1.5A1.3 1.3 0 011.3.3h7c5.1 0 8.5 2.7 8.5 7v.2c0 4.8-4 7.3-8.8 7.3H2.5v6.8A1.3 1.3 0 011.3 23 1.3 1.3 0 010 21.6v-20zm8 11c3.8 0 6.2-2 6.2-5 0-3.2-2.4-4.9-6-4.9H2.7v9.9H8zM21.6 1.4A1.3 1.3 0 0122.9 0 1.3 1.3 0 0124 1.4v20.2A1.3 1.3 0 0123 23a1.3 1.3 0 01-1.3-1.4V1.4zM30.7 1.4A1.3 1.3 0 0131.9.2h.4a1.5 1.5 0 011.3.7l13.6 17.4v-17A1.2 1.2 0 0148.4.2a1.2 1.2 0 011.2 1.3v20.3a1.1 1.1 0 01-1.1 1.1h-.2A1.7 1.7 0 0147 22L33.1 4.2v17.5a1.3 1.3 0 01-1.2 1.2 1.2 1.2 0 01-1.2-1.2V1.4zM56 1.4A1.3 1.3 0 0157.1 0a1.3 1.3 0 011.3 1.4v12.3L71.2.6c.3-.3.6-.5 1-.5a1.3 1.3 0 011.2 1.3 1.3 1.3 0 01-.4.9l-8 7.9 8.7 10.5c.2.2.3.6.3 1a1.3 1.3 0 01-1.3 1.2 1.2 1.2 0 01-1-.6L63.3 12l-4.8 4.8v4.9a1.3 1.3 0 01-1.3 1.3 1.3 1.3 0 01-1.3-1.3V1.4z" />
+          </svg>
+
+          <svg class="page-header__logo-tablet" viewBox="0 0 145 40" role="img" aria-label="PINK">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M53.9 6.6l5 21.1a1.4 1.4 0 01-.7 1.7l-.7.2h-4A11.6 11.6 0 0142 39.9c-5.9 0-10.8-4.5-11.5-10.3h-2A11.8 11.8 0 0117 40c-6 0-11-4.6-11.6-10.5h-4A1.4 1.4 0 01.4 29a1.4 1.4 0 01-.2-1.3L5 6.6A8 8 0 0113.5 0c.4 0 .7.2 1 .4a1.5 1.5 0 010 2.1c-.3.3-.6.5-1 .5C8.8 3 8 6.7 8 7L3.3 26.7h2C6.2 20.8 11 16.3 17 16.3c6 0 10.8 4.5 11.6 10.3h2c.7-5.7 5.6-10.2 11.4-10.2 6 0 10.8 4.5 11.5 10.2h2.1L51 7c0-.4-.8-4.1-5.5-4.1-.4 0-.7-.2-1-.5a1.5 1.5 0 010-2c.3-.3.6-.5 1-.5A8 8 0 0154 6.6zm-28.2 23a9.1 9.1 0 000-3 8.9 8.9 0 00-8.7-7.4 8.9 8.9 0 00-8.7 10.3 8.9 8.9 0 008.7 7.6c4.4 0 8-3.3 8.7-7.5zm25 0V28c0-4.8-3.9-8.8-8.7-8.8a8.8 8.8 0 00-8.6 10.3A8.7 8.7 0 0042 37c4.4 0 8-3.2 8.6-7.4z" />
+            <path
+              d="M71 18.5a1.3 1.3 0 011.3-1.2h7c5.1 0 8.5 2.7 8.5 7v.2c0 4.8-4 7.3-8.8 7.3h-5.5v6.8a1.3 1.3 0 01-1.2 1.4 1.3 1.3 0 01-1.3-1.4v-20zm8 11c3.8 0 6.2-2 6.2-5 0-3.2-2.4-4.9-6-4.9h-5.6v9.9H79zM92.6 18.4a1.3 1.3 0 011.3-1.4 1.3 1.3 0 011.2 1.4v20.2A1.3 1.3 0 0194 40a1.3 1.3 0 01-1.3-1.4V18.4zM101.7 18.4a1.3 1.3 0 011.2-1.2h.4a1.5 1.5 0 011.3.7l13.6 17.4v-17a1.2 1.2 0 011.2-1.2 1.2 1.2 0 011.2 1.3v20.3a1.2 1.2 0 01-.3.8 1.1 1.1 0 01-.8.3h-.2a1.7 1.7 0 01-1.3-.8l-13.9-17.8v17.5a1.3 1.3 0 01-1.2 1.2 1.2 1.2 0 01-1.2-1.2V18.4zM127 18.4a1.3 1.3 0 011.2-1.4 1.3 1.3 0 011.3 1.4v12.3l12.7-13.1c.3-.3.6-.5 1-.5a1.3 1.3 0 011.2 1.3 1.3 1.3 0 01-.4.9l-8 7.9 8.7 10.5c.2.2.3.6.3 1a1.3 1.3 0 01-.4.8 1.3 1.3 0 01-1 .4 1.2 1.2 0 01-1-.6L134.4 29l-4.8 4.8v4.9a1.3 1.3 0 01-.8 1.2 1.3 1.3 0 01-1.8-1.2V18.4z" />
+          </svg>
+
+          <svg class="page-header__logo-desktop" viewBox="0 0 147 40" role="img" aria-label="PINK">
+            <path
+              d="M72.2 18.4c0-.3.1-.6.4-.9.2-.2.5-.3.9-.3h7.2c5 0 8.4 2.6 8.4 7 0 4.9-4 7.4-8.9 7.4h-5.4v6.7a1.2 1.2 0 01-.4 1 1.3 1.3 0 01-1.4.3 1.3 1.3 0 01-.7-.8l-.1-.5V18.4zm8.1 10.9c3.8 0 6.3-2 6.3-5 0-3.2-2.5-4.8-6-4.8h-5.8v9.7h5.5zM94 18.3a1.2 1.2 0 01.4-1 1.3 1.3 0 011.4-.3 1.3 1.3 0 01.7.8v20.5a1.2 1.2 0 01-.3 1 1.3 1.3 0 01-.9.4 1.3 1.3 0 01-1-.4 1.3 1.3 0 01-.3-1v-20zM103.2 18.3c0-.3.1-.6.4-.9.2-.2.5-.3.9-.3h.3a1.6 1.6 0 011.3.7L120 35V18.2c0-.3 0-.6.3-.8a1.3 1.3 0 011.8 0c.2.2.4.5.4.8v20.1a1 1 0 01-.4.9 1.1 1.1 0 01-.8.3h-.1a1.7 1.7 0 01-1.4-.8l-14-17.6v17.2c0 .3-.2.7-.4.9l-.8.4c-.4 0-.7-.2-1-.4-.1-.2-.3-.5-.3-.9v-20zM128.7 18.3a1.2 1.2 0 01.4-1 1.3 1.3 0 011-.4 1.3 1.3 0 01.9.4 1.3 1.3 0 01.3 1v12.1l12.9-13c.3-.2.6-.4 1-.4.3 0 .6.1.9.4.2.2.3.5.3.8a1.3 1.3 0 01-.4 1l-8 7.7 8.6 10.5c.3.2.4.6.4.9a1.3 1.3 0 01-.4 1 1.3 1.3 0 01-1 .3 1.3 1.3 0 01-1-.6l-8.4-10.4-4.9 4.8v4.9a1.2 1.2 0 01-.8 1.1 1.3 1.3 0 01-1.7-.6V18.3z" />
+            <path
+              d="M99 9.7c-1 0-2-.3-2.6-1-.7-.7-1.1-1.6-1.1-2.5 0 1-.4 1.8-1 2.5-.8.7-1.7 1-2.6 1 1 0 1.8.4 2.5 1.1.7.7 1 1.6 1 2.5.1-1 .5-1.8 1.2-2.5.6-.7 1.6-1 2.5-1z"
+              fill="#D22856" />
+            <path
+              d="M43.3 19h.7A2.5 2.5 0 0042 18a2 2 0 01-2-1.4l-2 .8h.2c.5 0 1 .2 1.4.6.4.4.6.9.6 1.4v.3a9 9 0 013.2-.5z" />
+            <path
+              d="M60.7 27.6l-5.2-21C55.2 4.2 53 0 47 0c-.4 0-.8.2-1 .4a1.5 1.5 0 000 2.1c.2.3.6.5 1 .5 4.9 0 5.6 3.6 5.7 4l4.7 19.5h-2a11.7 11.7 0 00-5.4-8.4 2.5 2.5 0 00-1.5 2.3v.2a9.1 9.1 0 014 7.4l-.1 1.5c-.4 2-1.4 4-3 5.4a9.1 9.1 0 01-11.9 0 8.8 8.8 0 01-3.1-7 9 9 0 011-3.9 2 2 0 01-1.4-.6 2 2 0 01-.6-1.3l-.1-.5c-1 1.5-1.6 3.2-1.8 5h-2c-.2-3-1.6-5.7-3.8-7.6a12.2 12.2 0 00-16.1 0c-2.3 2-3.7 4.6-4 7.5h-2L8.1 7.1C8.2 6.6 9 3 14 3c.4 0 .8-.2 1-.5a1.5 1.5 0 000-2c-.2-.3-.6-.5-1-.5-6 0-8.3 4.2-8.6 6.6L0 27.6A1.4 1.4 0 00.3 29a1.4 1.4 0 001.2.5h4c0 .7.2 1.3.4 1.9v-.4c0-.5.3-1 .7-1.4a2 2 0 011.9-.5 8.8 8.8 0 013-8 9.1 9.1 0 0111.9 0 8.8 8.8 0 013.2 7c0 2.3-1 4.6-2.7 6.2a9.2 9.2 0 01-11.8 1 2 2 0 01-1.3.4l-.6.2-.2.6c0 .2 0 .5-.2.8a12.2 12.2 0 0015.7-.2c2.2-2 3.6-4.6 4-7.5h1.8a12.2 12.2 0 0020 7.5c2.2-2 3.6-4.6 4-7.5h4a1.4 1.4 0 001.2-.6 1.4 1.4 0 00.2-1.3z" />
+            <path
+              d="M51 16a4.6 4.6 0 01-4.3-2.8c-.2-.6-.3-1.1-.3-1.7 0 1.2-.5 2.3-1.3 3.1-.9.9-2 1.3-3.2 1.3 1.2 0 2.3.5 3.2 1.3.8.9 1.3 2 1.3 3.2 0-1.2.5-2.3 1.3-3.2.9-.8 2-1.3 3.2-1.3zM38 19.4c-.7 0-1.4-.3-1.9-.8s-.8-1.2-.8-2c0 .8-.3 1.5-.8 2s-1.2.8-2 .8c.8 0 1.5.3 2 .8s.8 1.2.8 1.9c0-.7.3-1.4.8-2 .5-.4 1.2-.7 2-.7zM10.8 33.6c-.7 0-1.4-.3-2-.8-.5-.5-.8-1.2-.8-1.9 0 .7-.2 1.4-.8 2-.5.5-1.2.7-2 .7.8 0 1.5.3 2 .8.6.5.8 1.2.8 2 0-.8.3-1.4.8-2 .6-.5 1.3-.8 2-.8z"
+              fill="#D22856" />
+          </svg>
         </a>
-        <nav class="main-nav main-nav--closed main-nav--nojs">
-          <button class="main-nav__menu-button" type="button"></button>
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item main-nav__item--active">
-              <a href="#">Фотографии</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="form.html">Конкурс</a>
-            </li>
-            <li class="main-nav__item">
-              <a href=""><span>Html</span> Academy</a>
-            </li>
-          </ul>
-        </nav>
+
+        <button class="main-nav__menu-button" type="button"></button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item main-nav__item--active">
+            <a href="#">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="https://htmlacademy.ru/"><span>Html</span> Academy</a>
+          </li>
+        </ul>
       </div>
-    </div>
+    </nav>
   </header>
   <main class="page-main">
     <section class="catalog-content">
@@ -56,12 +99,19 @@
           <div class="catalog-content__main-photo">
             <button class="catalog-content__main-photo-button" type="button">Панорама дня</button>
             <picture>
+              <source type="image/webp" media="(min-width: 960px)"
+                srcset="img/panorama-desktop.webp 1x, img/panorama-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)"
+                srcset="img/panorama-tablet.webp 1x, img/panorama-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/catalog-panorama.webp 1x, img/catalog-panorama@2x.webp 2x">
+
               <source media="(min-width: 960px)" srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.jpg 2x">
               <img class="catalog-content-item__img-main" src="img/catalog-panorama.jpg"
                 srcset="img/catalog-panorama@2x.jpg" alt="Анна" width="320" height="137">
             </picture>
-            <div class="wrapper">
+          </div>
+          <div class="wrapper">
             <div class="catalog-content__item-wrapper-main">
               <p class="catalog-content__item-name">Анна<span class="catalog-content__item-time">(5 минут
                   назад)</span>
@@ -72,98 +122,132 @@
                 перископе, задавайте свои вопросы!</p>
               <p class="catalog-content__item-likee catalog-content__item-likee--main">Нравится: 215</p>
             </div>
+            <ul class="catalog-content__list">
+              <li class="catalog-content__item">
+                <picture>
+                  <source type="image/webp" media="(min-width: 960px)"
+                    srcset="img/levon-desktop.webp 1x, img/levon-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)"
+                    srcset="img/levon-tablet.webp 1x, img/levon-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/levon-mobile.webp 1x, img/levon-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 960px)" srcset="img/levon-desktop.jpg 1x, img/levon-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/levon-tablet.jpg 1x, img/levon-tablet@2x.jpg 2x">
+                  <img class="catalog-content__item-img" src="img/levon-mobile.jpg" srcset="img/levon-mobile@2x.jpg"
+                    alt="Левон" width="280" height="180">
+                </picture>
+                <div class="catalog-content__item-wrapper">
+                  <p class="catalog-content__item-name">Левон<span class="catalog-content__item-time">(5 часов
+                      назад)</span>
+                  </p>
+                  <p class="catalog-content__item-review">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                  <p class="catalog-content__item-likee">Нравится: 356</p>
+                </div>
+              </li>
+              <li class="catalog-content__item">
+                <picture>
+                  <source type="image/webp" media="(min-width: 960px)"
+                    srcset="img/anton-desktop.webp 1x, img/anton-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)"
+                    srcset="img/anton-tablet.webp 1x, img/anton-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/anton-mobile.webp 1x, img/anton-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 960px)" srcset="img/anton-desktop.jpg 1x, img/anton-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/anton-tablet.jpg 1x, img/anton-tablet@2x.jpg 2x">
+                  <img class="catalog-content__item-img" src="img/anton-mobile.jpg" srcset="img/anton-mobile@2x.jpg"
+                    alt="Антон" width="280" height="180">
+                </picture>
+                <div class="catalog-content__item-wrapper">
+                  <p class="catalog-content__item-name">Антон<span class="catalog-content__item-time">(12 часов
+                      назад)</span></p>
+                  <p class="catalog-content__item-review">Соседи будут рады!</p>
+                  <p class="catalog-content__item-likee">Нравится: 666</p>
+                </div>
+              </li>
+              <li class="catalog-content__item">
+                <picture>
+                  <source type="image/webp" media="(min-width: 960px)"
+                    srcset="img/boris-desktop.webp 1x, img/boris-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)"
+                    srcset="img/boris-tablet.webp 1x, img/boris-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/boris-mobile.webp 1x, img/boris-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 960px)" srcset="img/boris-desktop.jpg 1x, img/boris-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/boris-tablet.jpg 1x, img/boris-tablet@2x.jpg 2x">
+                  <img class="catalog-content__item-img" src="img/boris-mobile.jpg" srcset="img/boris-mobile@2x.jpg"
+                    alt="Борис" width="280" height="180">
+                </picture>
+                <div class="catalog-content__item-wrapper">
+                  <p class="catalog-content__item-name">Борис<span class="catalog-content__item-time">(20 часов
+                      назад)</span></p>
+                  <p class="catalog-content__item-review">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                  <p class="catalog-content__item-likee">Нравится: 215</p>
+                </div>
+              </li>
+              <li class="catalog-content__item">
+                <picture>
+                  <source type="image/webp" media="(min-width: 960px)"
+                    srcset="img/sergey-desktop.webp 1x, img/sergey-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)"
+                    srcset="img/sergey-tablet.webp 1x, img/sergey-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/sergey-mobile.webp 1x, img/sergey-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 960px)" srcset="img/sergey-desktop.jpg 1x, img/sergey-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/sergey-tablet.jpg 1x, img/sergey-tablet@2x.jpg 2x">
+                  <img class="catalog-content__item-img" src="img/sergey-mobile.jpg" srcset="img/sergey-mobile@2x.jpg"
+                    alt="Сергей" width="280" height="180">
+                </picture>
+                <div class="catalog-content__item-wrapper">
+                  <p class="catalog-content__item-name">Сергей<span class="catalog-content__item-time">(25 часов
+                      назад)</span></p>
+                  <p class="catalog-content__item-review">Самая кубанская в мире!</p>
+                  <p class="catalog-content__item-likee">Нравится: 4</p>
+                </div>
+              </li>
+              <li class="catalog-content__item">
+                <picture>
+                  <source type="image/webp" media="(min-width: 960px)"
+                    srcset="img/maxim-desktop.webp 1x, img/maxim-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)"
+                    srcset="img/maxim-tablet.webp 1x, img/maxim-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/maxim-mobile.webp 1x, img/maxim-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 960px)" srcset="img/maxim-desktop.jpg 1x, img/maxim-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/maxim-tablet.jpg 1x, img/maxim-tablet@2x.jpg 2x">
+                  <img class="catalog-content__item-img" src="img/maxim-mobile.jpg" srcset="img/maxim-mobile.jpg"
+                    alt="Максим" width="280" height="180">
+                </picture>
+                <div class="catalog-content__item-wrapper">
+                  <p class="catalog-content__item-name">Максим<span class="catalog-content__item-time">(40 часов
+                      назад)</span></p>
+                  <p class="catalog-content__item-review">Где снег-то?</p>
+                  <p class="catalog-content__item-likee">Нравится: 150</p>
+                </div>
+              </li>
+              <li class="catalog-content__item">
+                <picture>
+                  <source type="image/webp" media="(min-width: 960px)"
+                    srcset="img/nadezhda-desktop.webp 1x, img/nadezhda-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)"
+                    srcset="img/nadezhda-tablet.webp 1x, img/nadezhda-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/nadezhda-mobile.webp 1x, img/nadezhda-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 960px)"
+                    srcset="img/nadezhda-desktop.jpg 1x, img/nadezhda-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/nadezhda-tablet.jpg 1x, img/nadezhda-tablet@2x.jpg 2x">
+                  <img class="catalog-content__item-img" src="img/nadezhda-mobile.jpg" alt="Надежда" width="280"
+                    height="180">
+                </picture>
+                <div class="catalog-content__item-wrapper">
+                  <p class="catalog-content__item-name">Надежда<span class="catalog-content__item-time">(45 часов
+                      назад)</span></p>
+                  <p class="catalog-content__item-review">Всем GM и взаимные лайки!</p>
+                  <p class="catalog-content__item-likee">Нравится: 2560</p>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="wrapper">
-          <ul class="catalog-content__list">
-            <li class="catalog-content__item">
-              <picture>
-                <source media="(min-width: 960px)" srcset="img/levon-desktop.jpg 1x, img/levon-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/levon-tablet.jpg 1x, img/levon-tablet@2x.jpg 2x">
-                <img class="catalog-content__item-img" src="img/levon-mobile.jpg" srcset="img/levon-mobile@2x.jpg"
-                  alt="Левон" width="280" height="180">
-              </picture>
-              <div class="catalog-content__item-wrapper">
-                <p class="catalog-content__item-name">Левон<span class="catalog-content__item-time">(5 часов
-                    назад)</span>
-                </p>
-                <p class="catalog-content__item-review">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                <p class="catalog-content__item-likee">Нравится: 356</p>
-              </div>
-            </li>
-            <li class="catalog-content__item">
-              <picture>
-                <source media="(min-width: 960px)" srcset="img/anton-desktop.jpg 1x, img/anton-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/anton-tablet.jpg 1x, img/anton-tablet@2x.jpg 2x">
-                <img class="catalog-content__item-img" src="img/anton-mobile.jpg" srcset="img/anton-mobile@2x.jpg"
-                  alt="Антон" width="280" height="180">
-              </picture>
-              <div class="catalog-content__item-wrapper">
-                <p class="catalog-content__item-name">Антон<span class="catalog-content__item-time">(12 часов
-                    назад)</span></p>
-                <p class="catalog-content__item-review">Соседи будут рады!</p>
-                <p class="catalog-content__item-likee">Нравится: 666</p>
-              </div>
-            </li>
-            <li class="catalog-content__item">
-              <picture>
-                <source media="(min-width: 960px)" srcset="img/boris-desktop.jpg 1x, img/boris-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/boris-tablet.jpg 1x, img/boris-tablet@2x.jpg 2x">
-                <img class="catalog-content__item-img" src="img/boris-mobile.jpg" srcset="img/boris-mobile@2x.jpg"
-                  alt="Борис" width="280" height="180">
-              </picture>
-              <div class="catalog-content__item-wrapper">
-                <p class="catalog-content__item-name">Борис<span class="catalog-content__item-time">(20 часов
-                    назад)</span></p>
-                <p class="catalog-content__item-review">Здесь могла быть ваша цитата о высоком и вечном.</p>
-                <p class="catalog-content__item-likee">Нравится: 215</p>
-              </div>
-            </li>
-            <li class="catalog-content__item">
-              <picture>
-                <source media="(min-width: 960px)" srcset="img/sergey-desktop.jpg 1x, img/sergey-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/sergey-tablet.jpg 1x, img/sergey-tablet@2x.jpg 2x">
-                <img class="catalog-content__item-img" src="img/sergey-mobile.jpg" srcset="img/sergey-mobile@2x.jpg"
-                  alt="Сергей" width="280" height="180">
-              </picture>
-              <div class="catalog-content__item-wrapper">
-                <p class="catalog-content__item-name">Сергей<span class="catalog-content__item-time">(25 часов
-                    назад)</span></p>
-                <p class="catalog-content__item-review">Самая кубанская в мире!</p>
-                <p class="catalog-content__item-likee">Нравится: 4</p>
-              </div>
-            </li>
-            <li class="catalog-content__item">
-              <picture>
-                <source media="(min-width: 960px)" srcset="img/maxim-desktop.jpg 1x, img/maxim-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/maxim-tablet.jpg 1x, img/maxim-tablet@2x.jpg 2x">
-                <img class="catalog-content__item-img" src="img/maxim-mobile.jpg" srcset="img/maxim-mobile.jpg"
-                  alt="Максим" width="280" height="180">
-              </picture>
-              <div class="catalog-content__item-wrapper">
-                <p class="catalog-content__item-name">Максим<span class="catalog-content__item-time">(40 часов
-                    назад)</span></p>
-                <p class="catalog-content__item-review">Где снег-то?</p>
-                <p class="catalog-content__item-likee">Нравится: 150</p>
-              </div>
-            </li>
-            <li class="catalog-content__item">
-              <picture>
-                <source media="(min-width: 960px)" srcset="img/nadezhda-desktop.jpg 1x, img/nadezhda-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/nadezhda-tablet.jpg 1x, img/nadezhda-tablet@2x.jpg 2x">
-                <img class="catalog-content__item-img" src="img/nadezhda-mobile.jpg" alt="Надежда" width="280"
-                  height="180">
-              </picture>
-              <div class="catalog-content__item-wrapper">
-                <p class="catalog-content__item-name">Надежда<span class="catalog-content__item-time">(45 часов
-                    назад)</span></p>
-                <p class="catalog-content__item-review">Всем GM и взаимные лайки!</p>
-                <p class="catalog-content__item-likee">Нравится: 2560</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
       </div>
     </section>
     <section class="catalog-filter__header-description wrapper">
@@ -174,6 +258,12 @@
       <div class="wrapper">
         <div class="catalog-filter__filter-items">
           <picture>
+            <source type="image/webp" media="(min-width: 960px)"
+              srcset="img/photo-filter-desktop.webp 1x, img/photo-filter-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)"
+              srcset="img/photo-filter-tablet.webp 1x, img/photo-filter-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/photo-filter.webp 1x, img/photo-filter@2x.webp 2x">
+
             <source media="(min-width: 960px)"
               srcset="img/photo-filter-desktop.jpg 1x, img/photo-filter-desktop@2x.jpg 2x">
             <source media="(min-width: 660px)"
@@ -242,7 +332,7 @@
             </div>
             <div class="catalog-filter__items-buttons">
               <button class="catalog-filter__button catalog-filter__button--active" type="button">Запостить</button>
-              <button class="catalog-filter__button" type="button">Отмена</button>
+              <button class="catalog-filter__button catalog-filter__button--cancel" type="button">Отмена</button>
             </div>
           </div>
         </div>
@@ -250,19 +340,48 @@
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__wrapper wrapper">
-      <a class="page-footer__logo" href="#">
-        <picture>
-          <source media="(min-width: 960px)" srcset="img/logotype-blue-desktop.svg">
-          <img src="img/logo-footer.svg" alt="Pink">
-        </picture>
-      </a>
-      <div class="page-footer__socials">
-        <a class="socials__item socials__item--twitter" href="#"></a>
-        <a class="socials__item socials__item-item--fb" href="#"></a>
-        <a class="socials__item socials__item--youtube" href="#"></a>
+    <div class="wrapper">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo" href="#">
+          <svg class="page-footer__logo-mini" width="145" height="40" fill="none" xmlns="http://www.w3.org/2000/svg"
+            role="img" aria-label="PINK">
+            <g class="page-footer__logo-pink">
+              <path
+                d="M71 18.5a1.3 1.3 0 011.3-1.2h7c5.1 0 8.5 2.7 8.5 7v.2c0 4.8-4 7.3-8.8 7.3h-5.5v6.8a1.3 1.3 0 01-1.2 1.4 1.3 1.3 0 01-1.3-1.4v-20zm8 11c3.8 0 6.2-2 6.2-5 0-3.2-2.4-4.9-6-4.9h-5.6v9.9H79zM92.6 18.4a1.3 1.3 0 011.3-1.4 1.3 1.3 0 011.2 1.4v20.2A1.3 1.3 0 0194 40a1.3 1.3 0 01-1.3-1.4V18.4zM101.7 18.4a1.3 1.3 0 011.2-1.2h.4a1.5 1.5 0 011.3.7l13.6 17.4v-17a1.2 1.2 0 011.2-1.2 1.2 1.2 0 011.2 1.3v20.3a1.2 1.2 0 01-.3.8 1.1 1.1 0 01-.8.3h-.2a1.7 1.7 0 01-1.3-.8l-13.9-17.8v17.5a1.3 1.3 0 01-1.2 1.2 1.2 1.2 0 01-1.2-1.2V18.4zM127 18.4a1.3 1.3 0 011.2-1.4 1.3 1.3 0 011.3 1.4v12.3l12.7-13.1c.3-.3.6-.5 1-.5a1.3 1.3 0 011.2 1.3 1.3 1.3 0 01-.4.9l-8 7.9 8.7 10.5c.2.2.3.6.3 1a1.3 1.3 0 01-.4.8 1.3 1.3 0 01-1 .4 1.2 1.2 0 01-1-.6L134.4 29l-4.8 4.8v4.9a1.3 1.3 0 01-.8 1.2 1.3 1.3 0 01-1.8-1.2V18.4z" />
+            </g>
+            <g>
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M53.9 6.6l5 21.1a1.4 1.4 0 01-.7 1.7l-.7.2h-4A11.6 11.6 0 0142 39.9c-5.9 0-10.8-4.5-11.5-10.3h-2A11.8 11.8 0 0117 40c-6 0-11-4.6-11.6-10.5h-4A1.4 1.4 0 01.4 29a1.4 1.4 0 01-.2-1.3L5 6.6A8 8 0 0113.5 0c.4 0 .7.2 1 .4a1.5 1.5 0 010 2.1c-.3.3-.6.5-1 .5C8.8 3 8 6.7 8 7L3.3 26.7h2C6.2 20.8 11 16.3 17 16.3c6 0 10.8 4.5 11.6 10.3h2c.7-5.7 5.6-10.2 11.4-10.2 6 0 10.8 4.5 11.5 10.2h2.1L51 7c0-.4-.8-4.1-5.5-4.1-.4 0-.7-.2-1-.5a1.5 1.5 0 010-2c.3-.3.6-.5 1-.5A8 8 0 0154 6.6zm-28.2 23a9.1 9.1 0 000-3 8.9 8.9 0 00-8.7-7.4 8.9 8.9 0 00-8.7 10.3 8.9 8.9 0 008.7 7.6c4.4 0 8-3.3 8.7-7.5zm25 0V28c0-4.8-3.9-8.8-8.7-8.8a8.8 8.8 0 00-8.6 10.3A8.7 8.7 0 0042 37c4.4 0 8-3.2 8.6-7.4z"
+                fill="#D22856" />
+            </g>
+          </svg>
+          <svg class="page-footer__logo-maxi" width="147" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g class="page-footer__logo-pink">
+              <path
+                d="M72.2 18.4c0-.3.1-.6.4-.9.2-.2.5-.3.9-.3h7.2c5 0 8.4 2.6 8.4 7 0 4.9-4 7.4-8.9 7.4h-5.4v6.7a1.2 1.2 0 01-.4 1 1.3 1.3 0 01-1.4.3 1.3 1.3 0 01-.7-.8l-.1-.5V18.4zm8.1 10.9c3.8 0 6.3-2 6.3-5 0-3.2-2.5-4.8-6-4.8h-5.8v9.7h5.5zM94 18.3a1.2 1.2 0 01.4-1 1.3 1.3 0 011.4-.3 1.3 1.3 0 01.7.8v20.5a1.2 1.2 0 01-.3 1 1.3 1.3 0 01-.9.4 1.3 1.3 0 01-1-.4 1.3 1.3 0 01-.3-1v-20zM103.2 18.3c0-.3.1-.6.4-.9.2-.2.5-.3.9-.3h.3a1.6 1.6 0 011.3.7L120 35V18.2c0-.3 0-.6.3-.8a1.3 1.3 0 011.8 0c.2.2.4.5.4.8v20.1a1 1 0 01-.4.9 1.1 1.1 0 01-.8.3h-.1a1.7 1.7 0 01-1.4-.8l-14-17.6v17.2c0 .3-.2.7-.4.9l-.8.4c-.4 0-.7-.2-1-.4-.1-.2-.3-.5-.3-.9v-20zM128.7 18.3a1.2 1.2 0 01.4-1 1.3 1.3 0 011-.4 1.3 1.3 0 01.9.4 1.3 1.3 0 01.3 1v12.1l12.9-13c.3-.2.6-.4 1-.4.3 0 .6.1.9.4.2.2.3.5.3.8a1.3 1.3 0 01-.4 1l-8 7.7 8.6 10.5c.3.2.4.6.4.9a1.3 1.3 0 01-.4 1 1.3 1.3 0 01-1.5.1l-.5-.4-8.4-10.4-4.9 4.8v4.9a1.2 1.2 0 01-.8 1.1 1.3 1.3 0 01-1.4-.2 1.2 1.2 0 01-.3-1v-20z" />
+            </g>
+            <path
+              d="M99 9.7c-1 0-2-.3-2.6-1-.7-.7-1.1-1.6-1.1-2.5 0 1-.4 1.8-1 2.5-.8.7-1.7 1-2.6 1 1 0 1.8.4 2.5 1.1.7.7 1 1.6 1 2.5.1-1 .5-1.8 1.2-2.5.6-.7 1.6-1 2.5-1zM43.3 19h.7A2.5 2.5 0 0042 18a2 2 0 01-2-1.4l-2 .8h.2c.5 0 1 .2 1.4.6.4.4.6.9.6 1.4v.3a9 9 0 013.2-.5z"
+              fill="#D22856" />
+            <path
+              d="M60.7 27.6l-5.2-21C55.2 4.2 53 0 47 0c-.4 0-.8.2-1 .4a1.5 1.5 0 000 2.1c.2.3.6.5 1 .5 4.9 0 5.6 3.6 5.7 4l4.7 19.5h-2a11.7 11.7 0 00-5.4-8.4 2.5 2.5 0 00-1.5 2.3v.2a9.1 9.1 0 014 7.4l-.1 1.5c-.4 2-1.4 4-3 5.4a9.1 9.1 0 01-11.9 0 8.8 8.8 0 01-3.1-7 9 9 0 011-3.9 2 2 0 01-1.4-.6 2 2 0 01-.6-1.3l-.1-.5c-1 1.5-1.6 3.2-1.8 5h-2c-.2-3-1.6-5.7-3.8-7.6a12.2 12.2 0 00-16.1 0c-2.3 2-3.7 4.6-4 7.5h-2L8.1 7.1C8.2 6.6 9 3 14 3c.4 0 .8-.2 1-.5a1.5 1.5 0 000-2c-.2-.3-.6-.5-1-.5-6 0-8.3 4.2-8.6 6.6L0 27.6A1.4 1.4 0 00.3 29a1.4 1.4 0 001.2.5h4c0 .7.2 1.3.4 1.9v-.4c0-.5.3-1 .7-1.4a2 2 0 011.9-.5 8.5 8.5 0 010-2.5c.4-2 1.4-4 3-5.4a9.1 9.1 0 0111.9 0 8.8 8.8 0 013.2 6.9 8.8 8.8 0 01-5 8A9.2 9.2 0 0112 35a2 2 0 01-1.3.5l-.6.2-.2.6c0 .2 0 .5-.2.8a12.2 12.2 0 0015.7-.2c2.2-2 3.6-4.6 4-7.5h1.8a12.2 12.2 0 0020 7.5c2.2-2 3.6-4.6 4-7.5h4a1.4 1.4 0 001.2-.6 1.4 1.4 0 00.2-1.3z"
+              fill="#D22856" />
+            <path
+              d="M51 16a4.6 4.6 0 01-3.3-1.4 4.4 4.4 0 01-1.3-3.1c0 1.2-.5 2.3-1.3 3.1-.9.8-2 1.3-3.2 1.3 1.2 0 2.3.5 3.2 1.3.8.9 1.3 2 1.3 3.2 0-1.2.5-2.3 1.3-3.2.9-.8 2-1.3 3.2-1.3zM38 19.4c-.7 0-1.4-.3-1.9-.8s-.8-1.2-.8-2c0 .8-.3 1.5-.8 2s-1.2.8-2 .8c.8 0 1.5.3 2 .8s.8 1.2.8 1.9c0-.7.3-1.4.8-2 .5-.4 1.2-.7 2-.7zM10.8 33.6c-.7 0-1.4-.3-2-.8-.5-.5-.8-1.2-.8-1.9 0 .7-.2 1.4-.8 2-.5.5-1.2.7-2 .7.8 0 1.5.3 2 .8.6.5.8 1.2.8 2 0-.8.3-1.4.8-2 .6-.5 1.3-.8 2-.8z"
+              fill="#283645" />
+          </svg>
+        </a>
+        <div class="page-footer__socials">
+          <a class="socials__item socials__item--twitter" href="#"></a>
+          <a class="socials__item socials__item-item--fb" href="#"></a>
+          <a class="socials__item socials__item--youtube" href="#"></a>
+        </div>
+        <a class="page-footer__develop" href="https://htmlacademy.ru/intensive/adaptive">Разработано
+          <svg width="27" height="34">
+            <use xlink:href="#htmlacademy"></use>
+          </svg>
+        </a>
       </div>
-      <a class="page-footer__develop" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
     </div>
   </footer>
   <script src="js/menu.js"></script>
