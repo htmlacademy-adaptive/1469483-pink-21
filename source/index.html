@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -110,6 +110,7 @@
       </div>
     </section>
     <section class="features">
+      <h2 class="visually-hidden">features</h2>
       <p class="features-text features-question">Устали от серости<br> мегаполиса?</p>
       <p class="features-text features-answer"> Нам есть, что вам<br> предложить!</p>
     </section>
@@ -184,16 +185,16 @@
           <div class="reviews__toggles">
             <ul class="slider__toggles">
               <li class="slider__toggle">
-                <input type="radio" id="one-toggle" name="toggle" checked>
-                <label for="one-toggle"></label>
+                <input type="radio" id="toggle-one" name="toggle" checked>
+                <label for="toggle-one"></label>
               </li>
               <li class="slider__toggle">
-                <input type="radio" id="two-toggle" name="toggle">
-                <label for="two-toggle"></label>
+                <input type="radio" id="toggle-two" name="toggle">
+                <label for="toggle-two"></label>
               </li>
               <li class="slider__toggle">
-                <input type="radio" id="three-toggle" name="toggle">
-                <label for="three-toggle"></label>
+                <input type="radio" id="toggle-three" name="toggle">
+                <label for="toggle-three"></label>
               </li>
             </ul>
           </div>
@@ -209,6 +210,7 @@
       </div>
     </section>
     <section class="price">
+      <h2 class="visually-hidden">price</h2>
       <div class="price__wrapper">
         <div class="wrapper">
           <div class="price__table-wrapper">
@@ -337,9 +339,10 @@
       </div>
     </section>
     <section class="contacts__map">
+      <h2 class="visually-hidden">map</h2>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003183!2d30.320858716220208!3d59.93871916905405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1608289685264!5m2!1sru!2sru"
-        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+        width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false"
         tabindex="0"></iframe>
       <picture>
         <source type="image/webp" media="(min-width: 960px)" srcset="img/map-desk.webp 1x, img/map-desk@2x.webp 2x">
@@ -402,7 +405,7 @@
       </div>
     </div>
   </footer>
-  <script src="js/menu.js"></script>
+  <script src="js/menu.min.js"></script>
 </body>
 
 </html>
