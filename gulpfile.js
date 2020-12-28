@@ -96,9 +96,9 @@ exports.copy = copy;
 
 // Del
 
-const del = () => {
-  return del("build");
-};
+// const del = () => {
+//   return del("build");
+// };
 
 exports.del = del
 
