@@ -26,7 +26,7 @@ exports.htmlmini = htmlmini;
 
 // JS mini
 
-const jsmimi = () => {
+const jsmini = () => {
   return gulp.src("source/js/menu.js")
     .pipe(jsmin())
     .pipe(rename("menu.min.js"))
@@ -34,7 +34,7 @@ const jsmimi = () => {
     .pipe(sync.stream());
 }
 
-exports.jsmini = jsmimi;
+exports.jsmini = jsmini;
 
 // Styles
 
@@ -45,8 +45,8 @@ function styles() {
     .pipe(sass())
     .pipe(postcss([
       autoprefixer(),
-      cssmin()
     ]))
+    .pipe(cssmin())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
@@ -96,11 +96,11 @@ exports.copy = copy;
 
 // Del
 
-// const del = () => {
-//   return del("build");
-// };
+const clean = () => {
+  return del("build");
+};
 
-exports.del = del
+exports.clean = clean
 
 // Server
 
@@ -129,7 +129,7 @@ const reload = done => {
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series(styles));
-  gulp.watch("source/js/menu.js", gulp.series(jsmimi));
+  gulp.watch("source/js/menu.js", gulp.series(jsmini));
   gulp.watch("source/*.html", gulp.series(htmlmini, reload));
 }
 
@@ -140,7 +140,7 @@ const build = gulp.series(
   gulp.parallel(
     styles,
     htmlmini,
-    jsmimi,
+    jsmini,
     copy,
     images,
     createWebp
@@ -155,7 +155,7 @@ exports.default = gulp.series(
   gulp.parallel(
     styles,
     htmlmini,
-    jsmimi,
+    jsmini,
     copy,
     createWebp
   ),
