@@ -136,7 +136,7 @@ const watcher = () => {
 // Build
 
 const build = gulp.series(
-  del,
+  clean,
   gulp.parallel(
     styles,
     htmlmini,
@@ -151,7 +151,7 @@ exports.build = build;
 // Default
 
 exports.default = gulp.series(
-  del,
+  clean,
   gulp.parallel(
     styles,
     htmlmini,
