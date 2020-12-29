@@ -26,10 +26,10 @@
   font-size: 14px;
   line-height: 18px;
   color: $main-header-text-color;
-  margin-left: auto;
-  margin-right: 127px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
+    margin-left: auto;
     margin-right: 52px;
     margin-top: 18px;
     padding: 0;
