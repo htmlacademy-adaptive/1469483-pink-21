@@ -61,7 +61,7 @@
       left: -11px;
       transform: translateX(0);
       content: "";
-      width: 640px;
+      max-width: 640px;
       height: 545px;
       background-image: url("../img/index-phone-tablet.png");
       background-repeat: no-repeat;
@@ -73,7 +73,7 @@
       }
 
       @media (min-width: $desktop-width) {
-        width: 100%;
+        max-width: 940px;
         height: 645px;
         left: 0;
         right: 0;
@@ -142,6 +142,10 @@
     display: none;
   }
 
+  .promo__header--br-mobil {
+    display: block;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 40px;
     padding-top: 7px;
@@ -180,11 +184,11 @@
   text-align: center;
   border: 3px solid #ffffff;
   border-radius: 29px;
-  background: #1d2631;
+  background-color: #1d2631;
   color: $light-on-dark-color;
   width: 280px;
   height: 55px;
-  outline: none;
+  padding-top: 15px;
   margin: 0 auto;
   cursor: pointer;
 
@@ -193,6 +197,7 @@
     color: #d22856;
   }
 
+  &:focus,
   &:active {
     color: #f2bfcc;
   }

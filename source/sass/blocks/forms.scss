@@ -256,12 +256,12 @@
   border-radius: 1px;
   padding-left: 20px;
   margin: 0 auto;
-  outline: none;
 
   &:hover {
     border-color: #283645;
   }
 
+  &:focus,
   &:active {
     border-color: #d22856;
   }
@@ -273,9 +273,10 @@
   }
 }
 
-// .forms__progress-wrapper {
-//   width: 100%;
-// }
+.forms__user-contains::placeholder,
+.forms__contacts-contains::placeholder {
+  color: #283645;
+}
 
 .forms__progress {
   box-sizing: border-box;
@@ -506,12 +507,12 @@
   padding-left: 18px;
   margin-top: 5px;
   margin-bottom: 18px;
-  outline: none;
 
   &:hover {
     border-color: #283645;
   }
 
+  &:focus,
   &:active {
     border-color: #d22856;
   }
@@ -679,6 +680,10 @@
   display: none;
 }
 
+.forms__platforms-radio:focus + .forms__platforms-input-names::before {
+  outline: red;
+}
+
 .forms__platforms-radio + .forms__platforms-input-names::before {
   content: "";
   position: absolute;
@@ -760,6 +765,15 @@
   border: 2px solid #e5e5e5;
   border-radius: 1px;
 
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:focus,
+  &:active {
+    border-color: #d22856;
+  }
+
   @media (min-width: $tablet-width) {
     width: 500px;
     height: 192px;
@@ -838,6 +852,12 @@
 
   &:active {
     color: #60b98e;
+  }
+
+  &:disabled {
+    background: #e5e5e5;
+    border: 2px solid #e5e5e5;
+    color: #ffffff;
   }
 
   @media (min-width: $tablet-width) {

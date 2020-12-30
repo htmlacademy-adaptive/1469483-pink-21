@@ -1,7 +1,5 @@
 .about {
   position: relative;
-  margin-bottom: 41px;
-  padding-top: 78px;
   background-color: #f2f2f2;
 
   &::before {
@@ -21,8 +19,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 76px;
-
     &::after {
       position: absolute;
       content: "";
@@ -44,7 +40,6 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
     padding-bottom: 358px;
-    padding-top: 0;
     background-color: transparent;
     background-image: url("../img/grey-background.svg");
     background-position: 50% 0;
@@ -54,6 +49,19 @@
     &::after {
       content: none;
     }
+  }
+}
+
+.about__wrapper {
+  margin-bottom: 41px;
+  padding-top: 78px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
   }
 }
 
@@ -111,9 +119,9 @@
   }
 }
 
-.about__list-item--mood,
-.about__list-item--world,
-.about__list-item--friends {
+.about__list-item-mood,
+.about__list-item-world,
+.about__list-item-friends {
   display: none;
 
   @media (min-width: $desktop-width) {
@@ -126,9 +134,9 @@
   }
 }
 
-.about__list-item--mood::after,
-.about__list-item--world::after,
-.about__list-item--friends::after {
+.about__list-item-mood::after,
+.about__list-item-world::after,
+.about__list-item-friends::after {
   content: "";
   position: absolute;
   top: 292px;
