@@ -4,16 +4,22 @@
   @media (min-width: $desktop-width) {
     background-image: url("../img/quotes.png");
     background-repeat: no-repeat;
-    background-position: 50% 6%;
-    padding-top: 210px;
-    margin-bottom: 30px;
+    background-position: 50% 23%;
   }
 }
 
 .reviews__wrapper {
+  margin-bottom: -35px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 88px;
+    margin-bottom: -32px;
+  }
+
   @media (min-width: $desktop-width) {
     position: relative;
-    margin-top: -82px;
+    padding-top: 184px;
+    margin-bottom: 20px;
   }
 }
 
@@ -118,10 +124,9 @@
   }
 }
 
-.reviews__slider-button--left,
-.reviews__slider-button--right {
+.reviews__slider-button-left,
+.reviews__slider-button-right {
   border: none;
-  outline: none;
   background: transparent;
   cursor: pointer;
   opacity: 0.5;
@@ -135,14 +140,14 @@
   }
 }
 
-.reviews__slider-button--left {
+.reviews__slider-button-left {
   position: absolute;
-  top: 27px;
+  top: 211px;
   left: -6px;
 }
 
-.reviews__slider-button--right {
+.reviews__slider-button-right {
   position: absolute;
-  top: 27px;
+  top: 211px;
   right: -6px;
 }

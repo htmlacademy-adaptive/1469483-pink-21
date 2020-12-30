@@ -3,12 +3,10 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    margin-bottom: 89px;
   }
 
   @media (min-width: $desktop-width) {
     background-color: #f2f2f2;
-    margin-bottom: 55px;
     min-height: 493px;
   }
 }
@@ -22,6 +20,7 @@
   @media (min-width: $desktop-width) {
     padding-left: 370px;
     padding-top: 29px;
+    margin-top: -40px;
   }
 }
 
@@ -57,7 +56,7 @@
 
   @media (min-width: $desktop-width) {
     line-height: 30px;
-    padding-top: 145px;
+    padding-top: 146px;
     padding-bottom: 27px;
 
     br {

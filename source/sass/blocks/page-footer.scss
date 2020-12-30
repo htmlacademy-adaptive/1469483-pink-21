@@ -1,19 +1,17 @@
-.page-footer {
-  margin-top: 36px;
-  margin-bottom: 50px;
-
-  @media (min-width: $desktop-width) {
-    margin-top: 0;
-  }
-}
-
 .page-footer__wrapper {
   display: flex;
   flex-direction: column;
+  padding-top: 42px;
+  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 49px;
   }
 }
 
@@ -26,7 +24,8 @@
   font-size: 14px;
   line-height: 18px;
   color: $main-header-text-color;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: 42%;
 
   @media (min-width: $tablet-width) {
     margin-left: auto;
@@ -50,6 +49,16 @@
   content: "";
   width: 27px;
   height: 34px;
+  fill: #d22856;
+
+  &:hover {
+    fill: #283645;
+  }
+
+  &:active {
+    fill: #283645;
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     left: 103px;

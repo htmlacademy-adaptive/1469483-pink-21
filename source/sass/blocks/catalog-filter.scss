@@ -126,7 +126,7 @@
   margin-top: -1px;
 }
 
-.catalog-filter__description {
+.catalog-filter-header__description {
   font-family: $main-font-family;
   font-style: normal;
   font-weight: normal;
@@ -222,7 +222,7 @@
   }
 }
 
-.item-button__img--active svg {
+.catalog-filter__item-button-img--active svg {
   fill: #d22856;
   opacity: 1;
 }
@@ -256,7 +256,6 @@
   line-height: 18px;
   text-align: center;
   color: $main-header-text-color;
-  outline: none;
   cursor: pointer;
   border: 3px solid #283645;
   box-sizing: border-box;

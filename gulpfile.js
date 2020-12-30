@@ -84,6 +84,7 @@ exports.createWebp = createWebp;
 const copy = (done) => {
   gulp.src([
     "source/fonts/*.{woff2,woff}",
+    "source/css/*.css",
     "source/img/**/*.{jpg,png,svg}",
   ], {
     base: "source"
