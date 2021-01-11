@@ -169,6 +169,7 @@
   font-size: 18px;
   line-height: 30px;
   color: $main-header-text-color;
+  outline: none;
 }
 
 .forms__progress,
@@ -274,8 +275,16 @@
 }
 
 .forms__user-contains::placeholder,
-.forms__contacts-contains::placeholder {
+.forms__contacts-contains::placeholder,
+.forms__emotion-discription::placeholder {
   color: #283645;
+}
+
+.forms__user-contains::-moz-placeholder,
+.forms__contacts-contains::-moz-placeholder,
+.forms__emotion-discription::-moz-placeholder {
+  color: #283645;
+  opacity: 1;
 }
 
 .forms__progress {
@@ -312,6 +321,7 @@
   text-align: center;
   padding-top: 81px;
   width: 218px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
@@ -432,7 +442,7 @@
   display: none;
 
   @media (min-width: $tablet-width) {
-    display: inline-block;
+    display: block;
     font-family: $main-font-family;
     font-style: normal;
     font-weight: normal;
@@ -443,6 +453,7 @@
     text-align: center;
     padding-left: 32px;
     padding-right: 38px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -615,6 +626,7 @@
   text-transform: uppercase;
   color: $forms-header-color;
   text-align: center;
+  margin: 0 auto;
   padding-top: 117px;
   width: 178px;
 
@@ -747,6 +759,7 @@
 .forms__emotion-header {
   text-align: center;
   padding-bottom: 8px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
